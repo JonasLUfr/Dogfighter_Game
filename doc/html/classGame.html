@@ -1,0 +1,1691 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DogFigther: Référence de la classe Game</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">DogFigther
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Types publics</a> &#124;
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pub-attribs">Attributs publics</a> &#124;
+<a href="classGame-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence de la classe Game</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Classe principale du jeu, gère l'état du jeu, les objets du jeu et les entrées utilisateur.  
+ <a href="classGame.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Game_8h_source.html">Game.h</a>&gt;</code></p>
+<div class="dynheader">
+Graphe de collaboration de Game:</div>
+<div class="dyncontent">
+<div class="center"><img src="classGame__coll__graph.png" border="0" usemap="#aGame_coll__map" alt="Collaboration graph"/></div>
+<map name="aGame_coll__map" id="aGame_coll__map">
+<area shape="rect" title="Classe principale du jeu, gère l&#39;état du jeu, les objets du jeu et les entrées utilisateur." alt="" coords="5,5,247,684"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Types publics</h2></td></tr>
+<tr class="memitem:a7f57a7a8408e554d0a72882c287e1d04"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a7f57a7a8408e554d0a72882c287e1d04">GameState</a> { <br />
+&#160;&#160;<a class="el" href="classGame.html#a7f57a7a8408e554d0a72882c287e1d04aad1111b48f98329333237912fc3b371b">MainMenu</a>
+, <a class="el" href="classGame.html#a7f57a7a8408e554d0a72882c287e1d04aa0db49ba470c1c9ae2128c3470339153">Level</a>
+, <a class="el" href="classGame.html#a7f57a7a8408e554d0a72882c287e1d04a5120982d10a4c4867992eda0ee03a969">ControlMenu</a>
+, <a class="el" href="classGame.html#a7f57a7a8408e554d0a72882c287e1d04aa31ef6b3c465c9f44be0a4f02b5fbb06">MouseControl</a>
+, <br />
+&#160;&#160;<a class="el" href="classGame.html#a7f57a7a8408e554d0a72882c287e1d04a5c337937a2aa5c63a63f651b8524c353">KeyboardControl</a>
+, <a class="el" href="classGame.html#a7f57a7a8408e554d0a72882c287e1d04a5bda814c4aedb126839228f1a3d92f09">Running</a>
+, <a class="el" href="classGame.html#a7f57a7a8408e554d0a72882c287e1d04a105b296a83f9c105355403f3332af50f">Pause</a>
+, <a class="el" href="classGame.html#a7f57a7a8408e554d0a72882c287e1d04afdb0c388de01d545017cdf9ccf00eb72">Store</a>
+, <br />
+&#160;&#160;<a class="el" href="classGame.html#a7f57a7a8408e554d0a72882c287e1d04a8f347bc7cebca9fa6d97e70c6bc29eb3">GameOver</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a7f57a7a8408e554d0a72882c287e1d04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Énumération des différents états du jeu.  <a href="classGame.html#a7f57a7a8408e554d0a72882c287e1d04">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a7f57a7a8408e554d0a72882c287e1d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3923ada8ea2ea23e6300e1485bcfbd6"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#ad3923ada8ea2ea23e6300e1485bcfbd6">ControlType</a> { <a class="el" href="classGame.html#ad3923ada8ea2ea23e6300e1485bcfbd6a6ce4d85a628a88bbdb3ac24a8e5a9c2e">Keyboard</a>
+, <a class="el" href="classGame.html#ad3923ada8ea2ea23e6300e1485bcfbd6af2a47c6809d88e175dade0ef7b16aa13">Mouse</a>
+ }</td></tr>
+<tr class="memdesc:ad3923ada8ea2ea23e6300e1485bcfbd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Énumération des différents types de contrôles.  <a href="classGame.html#ad3923ada8ea2ea23e6300e1485bcfbd6">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ad3923ada8ea2ea23e6300e1485bcfbd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aa73faf99baf9bb03d53d6c8785d107"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a9aa73faf99baf9bb03d53d6c8785d107">LevelSelection</a> { <a class="el" href="classGame.html#a9aa73faf99baf9bb03d53d6c8785d107a7f943921724d63dc0ac9c6febf99fa88">Easy</a>
+, <a class="el" href="classGame.html#a9aa73faf99baf9bb03d53d6c8785d107a960b44c579bc2f6818d2daaf9e4c16f0">Normal</a>
+, <a class="el" href="classGame.html#a9aa73faf99baf9bb03d53d6c8785d107a3656183169810334a96b91129dc9d881">Hard</a>
+ }</td></tr>
+<tr class="memdesc:a9aa73faf99baf9bb03d53d6c8785d107"><td class="mdescLeft">&#160;</td><td class="mdescRight">Énumération des différents niveaux de difficulté.  <a href="classGame.html#a9aa73faf99baf9bb03d53d6c8785d107">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a9aa73faf99baf9bb03d53d6c8785d107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:adbbfae184c044c2d544b382704b2bacd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGame.html#a7f57a7a8408e554d0a72882c287e1d04">GameState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#adbbfae184c044c2d544b382704b2bacd">getCurrentState</a> () const</td></tr>
+<tr class="memdesc:adbbfae184c044c2d544b382704b2bacd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtenir l'état actuel du jeu.  <a href="classGame.html#adbbfae184c044c2d544b382704b2bacd">Plus de détails...</a><br /></td></tr>
+<tr class="separator:adbbfae184c044c2d544b382704b2bacd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c58145fa4675144606bace61dd4f833"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a9c58145fa4675144606bace61dd4f833">hasStateChanged</a> () const</td></tr>
+<tr class="memdesc:a9c58145fa4675144606bace61dd4f833"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vérifie si l'état du jeu a changé.  <a href="classGame.html#a9c58145fa4675144606bace61dd4f833">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a9c58145fa4675144606bace61dd4f833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5941b0d0312d4117e1538b7b5cd337dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a5941b0d0312d4117e1538b7b5cd337dc">setCurrentState</a> (<a class="el" href="classGame.html#a7f57a7a8408e554d0a72882c287e1d04">GameState</a> state)</td></tr>
+<tr class="memdesc:a5941b0d0312d4117e1538b7b5cd337dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Définir l'état actuel du jeu.  <a href="classGame.html#a5941b0d0312d4117e1538b7b5cd337dc">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a5941b0d0312d4117e1538b7b5cd337dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad59df6562a58a614fda24622d3715b65"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#ad59df6562a58a614fda24622d3715b65">Game</a> ()</td></tr>
+<tr class="memdesc:ad59df6562a58a614fda24622d3715b65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur par défaut de la classe <a class="el" href="classGame.html" title="Classe principale du jeu, gère l&#39;état du jeu, les objets du jeu et les entrées utilisateur.">Game</a>.  <a href="classGame.html#ad59df6562a58a614fda24622d3715b65">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ad59df6562a58a614fda24622d3715b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe25bb6f99131d5115f307cf0327da95"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#abe25bb6f99131d5115f307cf0327da95">Game</a> (int windowWidth, int windowHeight)</td></tr>
+<tr class="memdesc:abe25bb6f99131d5115f307cf0327da95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de la classe <a class="el" href="classGame.html" title="Classe principale du jeu, gère l&#39;état du jeu, les objets du jeu et les entrées utilisateur.">Game</a> avec les dimensions de la fenêtre.  <a href="classGame.html#abe25bb6f99131d5115f307cf0327da95">Plus de détails...</a><br /></td></tr>
+<tr class="separator:abe25bb6f99131d5115f307cf0327da95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af72a610256e06768a90e8c5fee06ce8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#af72a610256e06768a90e8c5fee06ce8a">menuInput</a> (const char input)</td></tr>
+<tr class="memdesc:af72a610256e06768a90e8c5fee06ce8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traite les entrées utilisateur dans le menu principal.  <a href="classGame.html#af72a610256e06768a90e8c5fee06ce8a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af72a610256e06768a90e8c5fee06ce8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc3523934c40e09601fbff2fb516e388"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#adc3523934c40e09601fbff2fb516e388">runningInput</a> (const char input)</td></tr>
+<tr class="memdesc:adc3523934c40e09601fbff2fb516e388"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traite les entrées utilisateur dans l'état de jeu en cours.  <a href="classGame.html#adc3523934c40e09601fbff2fb516e388">Plus de détails...</a><br /></td></tr>
+<tr class="separator:adc3523934c40e09601fbff2fb516e388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeed841998b4e33b38bca52f224fc02b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#afeed841998b4e33b38bca52f224fc02b">controlInput</a> (const char input)</td></tr>
+<tr class="memdesc:afeed841998b4e33b38bca52f224fc02b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traite les entrées utilisateur dans le menu de contrôle.  <a href="classGame.html#afeed841998b4e33b38bca52f224fc02b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:afeed841998b4e33b38bca52f224fc02b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac660a50f76ec69c2425106cacda5f34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#aac660a50f76ec69c2425106cacda5f34">levelInput</a> (const char input)</td></tr>
+<tr class="memdesc:aac660a50f76ec69c2425106cacda5f34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traite les entrées utilisateur dans le menu de sélection de niveau.  <a href="classGame.html#aac660a50f76ec69c2425106cacda5f34">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aac660a50f76ec69c2425106cacda5f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cb5649ab0767ff9eef7ee7440f18328"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a1cb5649ab0767ff9eef7ee7440f18328">storeInput</a> (const char input)</td></tr>
+<tr class="memdesc:a1cb5649ab0767ff9eef7ee7440f18328"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traite les entrées utilisateur dans le menu du magasin.  <a href="classGame.html#a1cb5649ab0767ff9eef7ee7440f18328">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a1cb5649ab0767ff9eef7ee7440f18328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79df6376b332d63c9eca0dcee30305c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a79df6376b332d63c9eca0dcee30305c3">update</a> ()</td></tr>
+<tr class="memdesc:a79df6376b332d63c9eca0dcee30305c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met à jour l'état du jeu et les objets du jeu.  <a href="classGame.html#a79df6376b332d63c9eca0dcee30305c3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a79df6376b332d63c9eca0dcee30305c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d802d875fcc798661b3a38c2dc21bb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a5d802d875fcc798661b3a38c2dc21bb4">resetGameObjects</a> ()</td></tr>
+<tr class="memdesc:a5d802d875fcc798661b3a38c2dc21bb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Réinitialise les objets du jeu.  <a href="classGame.html#a5d802d875fcc798661b3a38c2dc21bb4">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a5d802d875fcc798661b3a38c2dc21bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1888041ac8d15adc6aeab61c5d9f53e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a1888041ac8d15adc6aeab61c5d9f53e0">saveScore</a> ()</td></tr>
+<tr class="memdesc:a1888041ac8d15adc6aeab61c5d9f53e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enregistre le score du joueur.  <a href="classGame.html#a1888041ac8d15adc6aeab61c5d9f53e0">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a1888041ac8d15adc6aeab61c5d9f53e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a244e237939a292959327d37bc82978cb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a244e237939a292959327d37bc82978cb">getPlayerScore</a> () const</td></tr>
+<tr class="memdesc:a244e237939a292959327d37bc82978cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Récupère le score actuel du joueur.  <a href="classGame.html#a244e237939a292959327d37bc82978cb">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a244e237939a292959327d37bc82978cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe944bbcac70655eb71e4c9701991da1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#afe944bbcac70655eb71e4c9701991da1">setPlayerScore</a> (int score)</td></tr>
+<tr class="memdesc:afe944bbcac70655eb71e4c9701991da1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Définit le score du joueur.  <a href="classGame.html#afe944bbcac70655eb71e4c9701991da1">Plus de détails...</a><br /></td></tr>
+<tr class="separator:afe944bbcac70655eb71e4c9701991da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a042f79c6a3aeffafd6bbca2bb31ae891"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a042f79c6a3aeffafd6bbca2bb31ae891">save</a> ()</td></tr>
+<tr class="memdesc:a042f79c6a3aeffafd6bbca2bb31ae891"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enregistre le score du joueur.  <a href="classGame.html#a042f79c6a3aeffafd6bbca2bb31ae891">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a042f79c6a3aeffafd6bbca2bb31ae891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80ba0cfd8db13f2e642fa7390da80ffe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a80ba0cfd8db13f2e642fa7390da80ffe">recordGame</a> (int playerScore, float gameTime)</td></tr>
+<tr class="memdesc:a80ba0cfd8db13f2e642fa7390da80ffe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enregistre une partie de jeu avec le score et le temps de jeu.  <a href="classGame.html#a80ba0cfd8db13f2e642fa7390da80ffe">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a80ba0cfd8db13f2e642fa7390da80ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31f465db3ff4353579b2b9ff9c57f1b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a31f465db3ff4353579b2b9ff9c57f1b2">setBombSound</a> (bool value)</td></tr>
+<tr class="memdesc:a31f465db3ff4353579b2b9ff9c57f1b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Définit si le son de la bombe doit être joué.  <a href="classGame.html#a31f465db3ff4353579b2b9ff9c57f1b2">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a31f465db3ff4353579b2b9ff9c57f1b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a53ed3382a2cf3e3c66f060ce61d912"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a2a53ed3382a2cf3e3c66f060ce61d912">getBombSound</a> () const</td></tr>
+<tr class="memdesc:a2a53ed3382a2cf3e3c66f060ce61d912"><td class="mdescLeft">&#160;</td><td class="mdescRight">Récupère l'état du son de la bombe (joué ou non).  <a href="classGame.html#a2a53ed3382a2cf3e3c66f060ce61d912">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a2a53ed3382a2cf3e3c66f060ce61d912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fe4eb06f64a6330eeb4cd657324fcbe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGame.html#ad3923ada8ea2ea23e6300e1485bcfbd6">ControlType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a7fe4eb06f64a6330eeb4cd657324fcbe">getControlType</a> () const</td></tr>
+<tr class="memdesc:a7fe4eb06f64a6330eeb4cd657324fcbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Récupère le type de contrôle actuel (clavier ou souris).  <a href="classGame.html#a7fe4eb06f64a6330eeb4cd657324fcbe">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a7fe4eb06f64a6330eeb4cd657324fcbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b4a9f5610f7fd3042c345a7583faadc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a8b4a9f5610f7fd3042c345a7583faadc">setControlType</a> (<a class="el" href="classGame.html#ad3923ada8ea2ea23e6300e1485bcfbd6">ControlType</a> controlType)</td></tr>
+<tr class="memdesc:a8b4a9f5610f7fd3042c345a7583faadc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Définit le type de contrôle à utiliser (clavier ou souris).  <a href="classGame.html#a8b4a9f5610f7fd3042c345a7583faadc">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8b4a9f5610f7fd3042c345a7583faadc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab752bd0b990d13f2f17f439b627991bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGame.html#a9aa73faf99baf9bb03d53d6c8785d107">LevelSelection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#ab752bd0b990d13f2f17f439b627991bf">getCurrentLevel</a> () const</td></tr>
+<tr class="memdesc:ab752bd0b990d13f2f17f439b627991bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Récupère le niveau actuel (facile, normal ou difficile).  <a href="classGame.html#ab752bd0b990d13f2f17f439b627991bf">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab752bd0b990d13f2f17f439b627991bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfe95aecfa9a75780152d0d463a0c3b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#acfe95aecfa9a75780152d0d463a0c3b3">setCurrentLevel</a> (<a class="el" href="classGame.html#a9aa73faf99baf9bb03d53d6c8785d107">LevelSelection</a> level)</td></tr>
+<tr class="memdesc:acfe95aecfa9a75780152d0d463a0c3b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Définit le niveau actuel (facile, normal ou difficile).  <a href="classGame.html#acfe95aecfa9a75780152d0d463a0c3b3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:acfe95aecfa9a75780152d0d463a0c3b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac499e95ed73c534b7482c85a2c3ea117"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#ac499e95ed73c534b7482c85a2c3ea117">fireBullet</a> (<a class="el" href="classBullet.html#a74e59768613e272c1094ff0d2b3de3d4">Bullet::BulletTrajectory</a> trajectory)</td></tr>
+<tr class="memdesc:ac499e95ed73c534b7482c85a2c3ea117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tire une balle avec une trajectoire donnée.  <a href="classGame.html#ac499e95ed73c534b7482c85a2c3ea117">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ac499e95ed73c534b7482c85a2c3ea117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa28efbc178b756dc9c5cd725cb277ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#aaa28efbc178b756dc9c5cd725cb277ec">fireSingleBullet</a> (<a class="el" href="classBullet.html#a74e59768613e272c1094ff0d2b3de3d4">Bullet::BulletTrajectory</a> trajectory)</td></tr>
+<tr class="memdesc:aaa28efbc178b756dc9c5cd725cb277ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tire une seule balle avec une trajectoire donnée.  <a href="classGame.html#aaa28efbc178b756dc9c5cd725cb277ec">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aaa28efbc178b756dc9c5cd725cb277ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a855cf78d3dec934c888253fa23c7ffbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a855cf78d3dec934c888253fa23c7ffbe">fireMultipleBullets</a> (<a class="el" href="classBullet.html#a74e59768613e272c1094ff0d2b3de3d4">Bullet::BulletTrajectory</a> trajectory, int bulletCount)</td></tr>
+<tr class="memdesc:a855cf78d3dec934c888253fa23c7ffbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tire plusieurs balles avec une trajectoire donnée.  <a href="classGame.html#a855cf78d3dec934c888253fa23c7ffbe">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a855cf78d3dec934c888253fa23c7ffbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a885ff05f7b84479a0e521e2e27880693"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a885ff05f7b84479a0e521e2e27880693">getMyTimer</a> () const</td></tr>
+<tr class="memdesc:a885ff05f7b84479a0e521e2e27880693"><td class="mdescLeft">&#160;</td><td class="mdescRight">Récupère le timer actuel.  <a href="classGame.html#a885ff05f7b84479a0e521e2e27880693">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a885ff05f7b84479a0e521e2e27880693"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedc3c4bc82512f49583d1077d7e8f28c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#aedc3c4bc82512f49583d1077d7e8f28c">updateMyTimer</a> (uint32_t deltaTime)</td></tr>
+<tr class="memdesc:aedc3c4bc82512f49583d1077d7e8f28c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met à jour le timer avec un delta de temps.  <a href="classGame.html#aedc3c4bc82512f49583d1077d7e8f28c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aedc3c4bc82512f49583d1077d7e8f28c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a618cd24f8a672720ed085f41cf90af6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPlayer.html">Player</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a618cd24f8a672720ed085f41cf90af6f">getPlayer</a> ()</td></tr>
+<tr class="separator:a618cd24f8a672720ed085f41cf90af6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23d3ed25f5b052d51530a048fe1a5e37"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classBullet.html">Bullet</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a23d3ed25f5b052d51530a048fe1a5e37">getBullets</a> ()</td></tr>
+<tr class="separator:a23d3ed25f5b052d51530a048fe1a5e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ae751c1997b0bc239a02abbfc5f1722"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classEnemy.html">Enemy</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a3ae751c1997b0bc239a02abbfc5f1722">getEnemies</a> ()</td></tr>
+<tr class="separator:a3ae751c1997b0bc239a02abbfc5f1722"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40f8924b8ca9553cb1bf1848ba899763"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMap.html">Map</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a40f8924b8ca9553cb1bf1848ba899763">getMap</a> ()</td></tr>
+<tr class="separator:a40f8924b8ca9553cb1bf1848ba899763"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c4142f8835b26aae9ac1fc6526a5759"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classBomb.html">Bomb</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a7c4142f8835b26aae9ac1fc6526a5759">getBombs</a> ()</td></tr>
+<tr class="separator:a7c4142f8835b26aae9ac1fc6526a5759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ab9a32fbddc4d757a7aaba4efa5b0b4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classDrop.html">Drop</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a6ab9a32fbddc4d757a7aaba4efa5b0b4">getDrops</a> ()</td></tr>
+<tr class="separator:a6ab9a32fbddc4d757a7aaba4efa5b0b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1557c637b249398094d51ce2ff020b9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classScoreManager.html">ScoreManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a1557c637b249398094d51ce2ff020b9c">getScoreManager</a> ()</td></tr>
+<tr class="separator:a1557c637b249398094d51ce2ff020b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab06fffb8b5c361018b7df849928c0f11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBullet.html#a74e59768613e272c1094ff0d2b3de3d4">Bullet::BulletTrajectory</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#ab06fffb8b5c361018b7df849928c0f11">getTrajectory</a> () const</td></tr>
+<tr class="separator:ab06fffb8b5c361018b7df849928c0f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab433d1c8de53bedf34595eadead4e7f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classStore.html#ab33bb3829205915b763973387a721eb7">Store::PurchaseState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#ab433d1c8de53bedf34595eadead4e7f6">getPurchaseState</a> () const</td></tr>
+<tr class="separator:ab433d1c8de53bedf34595eadead4e7f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac24a11b15b4ce4293e2464e08f79ae78"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#ac24a11b15b4ce4293e2464e08f79ae78">getFireInterval</a> () const</td></tr>
+<tr class="separator:ac24a11b15b4ce4293e2464e08f79ae78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb5311bf0f5c02da15622197f68c2f55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#afb5311bf0f5c02da15622197f68c2f55">setFireInterval</a> (double newFireInterval)</td></tr>
+<tr class="separator:afb5311bf0f5c02da15622197f68c2f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac343e0af11b4b707456b7439a23cafb4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classDrop.html#a2de083545776187b1125c73c1aa736e9">Drop::DropType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#ac343e0af11b4b707456b7439a23cafb4">getDropType</a> () const</td></tr>
+<tr class="separator:ac343e0af11b4b707456b7439a23cafb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Attributs publics</h2></td></tr>
+<tr class="memitem:a0d9568c1b133d9052d439ed39571d575"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGame.html#a7f57a7a8408e554d0a72882c287e1d04">GameState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a0d9568c1b133d9052d439ed39571d575">currentState</a></td></tr>
+<tr class="separator:a0d9568c1b133d9052d439ed39571d575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab83828671aa0402e3adc930acd39cb9c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#ab83828671aa0402e3adc930acd39cb9c">menuSelection</a></td></tr>
+<tr class="separator:ab83828671aa0402e3adc930acd39cb9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59857c6de4417e1422a52addfab07a97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a59857c6de4417e1422a52addfab07a97">optionsMenuSelection</a></td></tr>
+<tr class="separator:a59857c6de4417e1422a52addfab07a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e38634125453a42ca921a552e30205c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a6e38634125453a42ca921a552e30205c">controlSelection</a></td></tr>
+<tr class="separator:a6e38634125453a42ca921a552e30205c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61dd66ef744405d42a2ab62e85724223"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a61dd66ef744405d42a2ab62e85724223">controlMenuSelection</a></td></tr>
+<tr class="separator:a61dd66ef744405d42a2ab62e85724223"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab05b831e42a889f8a143e16f367512a5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#ab05b831e42a889f8a143e16f367512a5">levelMenuSelection</a></td></tr>
+<tr class="separator:ab05b831e42a889f8a143e16f367512a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1c39b5045ea46f70cce20a2a375d8d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#af1c39b5045ea46f70cce20a2a375d8d4">storeMenuSelection</a></td></tr>
+<tr class="separator:af1c39b5045ea46f70cce20a2a375d8d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32c594a6a0dec825c79fdf32616f0970"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a32c594a6a0dec825c79fdf32616f0970">magazineSize</a> = 100</td></tr>
+<tr class="separator:a32c594a6a0dec825c79fdf32616f0970"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d1130c07feb6642e084cc5a603b69c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGame.html#a7f57a7a8408e554d0a72882c287e1d04">GameState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a1d1130c07feb6642e084cc5a603b69c4">previousState</a></td></tr>
+<tr class="separator:a1d1130c07feb6642e084cc5a603b69c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53f49cbb4292160206abda906179bc9d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a53f49cbb4292160206abda906179bc9d">playSound</a> = false</td></tr>
+<tr class="separator:a53f49cbb4292160206abda906179bc9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa253b2d65ab71e9408c992a169cb3064"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#aa253b2d65ab71e9408c992a169cb3064">useMouseControl</a></td></tr>
+<tr class="separator:aa253b2d65ab71e9408c992a169cb3064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d1efbe9e2e1504c0bc3519a721e36aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGame.html#ad3923ada8ea2ea23e6300e1485bcfbd6">ControlType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a1d1efbe9e2e1504c0bc3519a721e36aa">currentControlType</a> = <a class="el" href="classGame.html#ad3923ada8ea2ea23e6300e1485bcfbd6a6ce4d85a628a88bbdb3ac24a8e5a9c2e">ControlType::Keyboard</a></td></tr>
+<tr class="separator:a1d1efbe9e2e1504c0bc3519a721e36aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe87e5f1da46d44d2fe209f5797c53d5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#abe87e5f1da46d44d2fe209f5797c53d5">lastEnemySpawnTime</a></td></tr>
+<tr class="separator:abe87e5f1da46d44d2fe209f5797c53d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac042de2abec986ecbf68140887877fb8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#ac042de2abec986ecbf68140887877fb8">enemySpawnInterval</a></td></tr>
+<tr class="separator:ac042de2abec986ecbf68140887877fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a942987456ccccb31fd2b9c846bbf3a30"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a942987456ccccb31fd2b9c846bbf3a30">maxEnemyCount</a></td></tr>
+<tr class="separator:a942987456ccccb31fd2b9c846bbf3a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1683eb2e8a0b5f35765667ba75de1219"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGame.html#a9aa73faf99baf9bb03d53d6c8785d107">LevelSelection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html#a1683eb2e8a0b5f35765667ba75de1219">currentLevel</a> = <a class="el" href="classGame.html#a9aa73faf99baf9bb03d53d6c8785d107a960b44c579bc2f6818d2daaf9e4c16f0">LevelSelection::Normal</a></td></tr>
+<tr class="separator:a1683eb2e8a0b5f35765667ba75de1219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Classe principale du jeu, gère l'état du jeu, les objets du jeu et les entrées utilisateur. </p>
+</div><h2 class="groupheader">Documentation des énumérations membres</h2>
+<a id="ad3923ada8ea2ea23e6300e1485bcfbd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3923ada8ea2ea23e6300e1485bcfbd6">&#9670;&nbsp;</a></span>ControlType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classGame.html#ad3923ada8ea2ea23e6300e1485bcfbd6">Game::ControlType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Énumération des différents types de contrôles. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="ad3923ada8ea2ea23e6300e1485bcfbd6a6ce4d85a628a88bbdb3ac24a8e5a9c2e"></a>Keyboard&#160;</td><td class="fielddoc"><p>Contrôle au clavier. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad3923ada8ea2ea23e6300e1485bcfbd6af2a47c6809d88e175dade0ef7b16aa13"></a>Mouse&#160;</td><td class="fielddoc"><p>Contrôle à la souris. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a7f57a7a8408e554d0a72882c287e1d04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f57a7a8408e554d0a72882c287e1d04">&#9670;&nbsp;</a></span>GameState</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classGame.html#a7f57a7a8408e554d0a72882c287e1d04">Game::GameState</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Énumération des différents états du jeu. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="a7f57a7a8408e554d0a72882c287e1d04aad1111b48f98329333237912fc3b371b"></a>MainMenu&#160;</td><td class="fielddoc"><p>Menu principal. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7f57a7a8408e554d0a72882c287e1d04aa0db49ba470c1c9ae2128c3470339153"></a>Level&#160;</td><td class="fielddoc"><p>Sélection du niveau. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7f57a7a8408e554d0a72882c287e1d04a5120982d10a4c4867992eda0ee03a969"></a>ControlMenu&#160;</td><td class="fielddoc"><p>Menu de sélection des contrôles. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7f57a7a8408e554d0a72882c287e1d04aa31ef6b3c465c9f44be0a4f02b5fbb06"></a>MouseControl&#160;</td><td class="fielddoc"><p>Contrôle à la souris. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7f57a7a8408e554d0a72882c287e1d04a5c337937a2aa5c63a63f651b8524c353"></a>KeyboardControl&#160;</td><td class="fielddoc"><p>Contrôle au clavier. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7f57a7a8408e554d0a72882c287e1d04a5bda814c4aedb126839228f1a3d92f09"></a>Running&#160;</td><td class="fielddoc"><p>Jeu en cours. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7f57a7a8408e554d0a72882c287e1d04a105b296a83f9c105355403f3332af50f"></a>Pause&#160;</td><td class="fielddoc"><p>Jeu en pause. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7f57a7a8408e554d0a72882c287e1d04afdb0c388de01d545017cdf9ccf00eb72"></a>Store&#160;</td><td class="fielddoc"><p>Magasin. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a7f57a7a8408e554d0a72882c287e1d04a8f347bc7cebca9fa6d97e70c6bc29eb3"></a>GameOver&#160;</td><td class="fielddoc"><p>Fin du jeu. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a9aa73faf99baf9bb03d53d6c8785d107"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aa73faf99baf9bb03d53d6c8785d107">&#9670;&nbsp;</a></span>LevelSelection</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classGame.html#a9aa73faf99baf9bb03d53d6c8785d107">Game::LevelSelection</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Énumération des différents niveaux de difficulté. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="a9aa73faf99baf9bb03d53d6c8785d107a7f943921724d63dc0ac9c6febf99fa88"></a>Easy&#160;</td><td class="fielddoc"><p>Niveau facile. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9aa73faf99baf9bb03d53d6c8785d107a960b44c579bc2f6818d2daaf9e4c16f0"></a>Normal&#160;</td><td class="fielddoc"><p>Niveau normal. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a9aa73faf99baf9bb03d53d6c8785d107a3656183169810334a96b91129dc9d881"></a>Hard&#160;</td><td class="fielddoc"><p>Niveau difficile. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="ad59df6562a58a614fda24622d3715b65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad59df6562a58a614fda24622d3715b65">&#9670;&nbsp;</a></span>Game() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Game::Game </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructeur par défaut de la classe <a class="el" href="classGame.html" title="Classe principale du jeu, gère l&#39;état du jeu, les objets du jeu et les entrées utilisateur.">Game</a>. </p>
+
+</div>
+</div>
+<a id="abe25bb6f99131d5115f307cf0327da95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe25bb6f99131d5115f307cf0327da95">&#9670;&nbsp;</a></span>Game() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Game::Game </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>windowWidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>windowHeight</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructeur de la classe <a class="el" href="classGame.html" title="Classe principale du jeu, gère l&#39;état du jeu, les objets du jeu et les entrées utilisateur.">Game</a> avec les dimensions de la fenêtre. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">windowWidth</td><td>Largeur de la fenêtre de jeu. </td></tr>
+    <tr><td class="paramname">windowHeight</td><td>Hauteur de la fenêtre de jeu. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="afeed841998b4e33b38bca52f224fc02b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afeed841998b4e33b38bca52f224fc02b">&#9670;&nbsp;</a></span>controlInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::controlInput </td>
+          <td>(</td>
+          <td class="paramtype">const char&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Traite les entrées utilisateur dans le menu de contrôle. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Caractère d'entrée utilisateur. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac499e95ed73c534b7482c85a2c3ea117"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac499e95ed73c534b7482c85a2c3ea117">&#9670;&nbsp;</a></span>fireBullet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::fireBullet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classBullet.html#a74e59768613e272c1094ff0d2b3de3d4">Bullet::BulletTrajectory</a>&#160;</td>
+          <td class="paramname"><em>trajectory</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tire une balle avec une trajectoire donnée. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">trajectory</td><td>La trajectoire de la balle. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a855cf78d3dec934c888253fa23c7ffbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a855cf78d3dec934c888253fa23c7ffbe">&#9670;&nbsp;</a></span>fireMultipleBullets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::fireMultipleBullets </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classBullet.html#a74e59768613e272c1094ff0d2b3de3d4">Bullet::BulletTrajectory</a>&#160;</td>
+          <td class="paramname"><em>trajectory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bulletCount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tire plusieurs balles avec une trajectoire donnée. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">trajectory</td><td>La trajectoire des balles. </td></tr>
+    <tr><td class="paramname">bulletCount</td><td>Le nombre de balles à tirer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaa28efbc178b756dc9c5cd725cb277ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa28efbc178b756dc9c5cd725cb277ec">&#9670;&nbsp;</a></span>fireSingleBullet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::fireSingleBullet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classBullet.html#a74e59768613e272c1094ff0d2b3de3d4">Bullet::BulletTrajectory</a>&#160;</td>
+          <td class="paramname"><em>trajectory</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tire une seule balle avec une trajectoire donnée. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">trajectory</td><td>La trajectoire de la balle. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7c4142f8835b26aae9ac1fc6526a5759"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c4142f8835b26aae9ac1fc6526a5759">&#9670;&nbsp;</a></span>getBombs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classBomb.html">Bomb</a>&gt;&amp; Game::getBombs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2a53ed3382a2cf3e3c66f060ce61d912"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a53ed3382a2cf3e3c66f060ce61d912">&#9670;&nbsp;</a></span>getBombSound()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Game::getBombSound </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Récupère l'état du son de la bombe (joué ou non). </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Vrai si le son de la bombe est joué, faux sinon. </dd></dl>
+
+</div>
+</div>
+<a id="a23d3ed25f5b052d51530a048fe1a5e37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23d3ed25f5b052d51530a048fe1a5e37">&#9670;&nbsp;</a></span>getBullets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classBullet.html">Bullet</a>&gt;&amp; Game::getBullets </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7fe4eb06f64a6330eeb4cd657324fcbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fe4eb06f64a6330eeb4cd657324fcbe">&#9670;&nbsp;</a></span>getControlType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classGame.html#ad3923ada8ea2ea23e6300e1485bcfbd6">ControlType</a> Game::getControlType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Récupère le type de contrôle actuel (clavier ou souris). </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Le type de contrôle actuel. </dd></dl>
+
+</div>
+</div>
+<a id="ab752bd0b990d13f2f17f439b627991bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab752bd0b990d13f2f17f439b627991bf">&#9670;&nbsp;</a></span>getCurrentLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classGame.html#a9aa73faf99baf9bb03d53d6c8785d107">LevelSelection</a> Game::getCurrentLevel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Récupère le niveau actuel (facile, normal ou difficile). </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Le niveau actuel. </dd></dl>
+
+</div>
+</div>
+<a id="adbbfae184c044c2d544b382704b2bacd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbbfae184c044c2d544b382704b2bacd">&#9670;&nbsp;</a></span>getCurrentState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classGame.html#a7f57a7a8408e554d0a72882c287e1d04">GameState</a> Game::getCurrentState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtenir l'état actuel du jeu. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>L'état actuel du jeu. </dd></dl>
+
+</div>
+</div>
+<a id="a6ab9a32fbddc4d757a7aaba4efa5b0b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ab9a32fbddc4d757a7aaba4efa5b0b4">&#9670;&nbsp;</a></span>getDrops()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classDrop.html">Drop</a>&gt;&amp; Game::getDrops </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac343e0af11b4b707456b7439a23cafb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac343e0af11b4b707456b7439a23cafb4">&#9670;&nbsp;</a></span>getDropType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classDrop.html#a2de083545776187b1125c73c1aa736e9">Drop::DropType</a>&gt;&amp; Game::getDropType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3ae751c1997b0bc239a02abbfc5f1722"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ae751c1997b0bc239a02abbfc5f1722">&#9670;&nbsp;</a></span>getEnemies()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classEnemy.html">Enemy</a>&gt;&amp; Game::getEnemies </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac24a11b15b4ce4293e2464e08f79ae78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac24a11b15b4ce4293e2464e08f79ae78">&#9670;&nbsp;</a></span>getFireInterval()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Game::getFireInterval </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a40f8924b8ca9553cb1bf1848ba899763"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40f8924b8ca9553cb1bf1848ba899763">&#9670;&nbsp;</a></span>getMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classMap.html">Map</a>&amp; Game::getMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a885ff05f7b84479a0e521e2e27880693"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a885ff05f7b84479a0e521e2e27880693">&#9670;&nbsp;</a></span>getMyTimer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t Game::getMyTimer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Récupère le timer actuel. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Le timer actuel. </dd></dl>
+
+</div>
+</div>
+<a id="a618cd24f8a672720ed085f41cf90af6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a618cd24f8a672720ed085f41cf90af6f">&#9670;&nbsp;</a></span>getPlayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classPlayer.html">Player</a>&amp; Game::getPlayer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a244e237939a292959327d37bc82978cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a244e237939a292959327d37bc82978cb">&#9670;&nbsp;</a></span>getPlayerScore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::getPlayerScore </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Récupère le score actuel du joueur. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Le score actuel du joueur. </dd></dl>
+
+</div>
+</div>
+<a id="ab433d1c8de53bedf34595eadead4e7f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab433d1c8de53bedf34595eadead4e7f6">&#9670;&nbsp;</a></span>getPurchaseState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classStore.html#ab33bb3829205915b763973387a721eb7">Store::PurchaseState</a> Game::getPurchaseState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1557c637b249398094d51ce2ff020b9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1557c637b249398094d51ce2ff020b9c">&#9670;&nbsp;</a></span>getScoreManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classScoreManager.html">ScoreManager</a>&amp; Game::getScoreManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab06fffb8b5c361018b7df849928c0f11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab06fffb8b5c361018b7df849928c0f11">&#9670;&nbsp;</a></span>getTrajectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classBullet.html#a74e59768613e272c1094ff0d2b3de3d4">Bullet::BulletTrajectory</a> Game::getTrajectory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9c58145fa4675144606bace61dd4f833"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c58145fa4675144606bace61dd4f833">&#9670;&nbsp;</a></span>hasStateChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Game::hasStateChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vérifie si l'état du jeu a changé. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>True si l'état du jeu a changé, False sinon. </dd></dl>
+
+</div>
+</div>
+<a id="aac660a50f76ec69c2425106cacda5f34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac660a50f76ec69c2425106cacda5f34">&#9670;&nbsp;</a></span>levelInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::levelInput </td>
+          <td>(</td>
+          <td class="paramtype">const char&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Traite les entrées utilisateur dans le menu de sélection de niveau. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Caractère d'entrée utilisateur. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af72a610256e06768a90e8c5fee06ce8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af72a610256e06768a90e8c5fee06ce8a">&#9670;&nbsp;</a></span>menuInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::menuInput </td>
+          <td>(</td>
+          <td class="paramtype">const char&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Traite les entrées utilisateur dans le menu principal. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Caractère d'entrée utilisateur. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a80ba0cfd8db13f2e642fa7390da80ffe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80ba0cfd8db13f2e642fa7390da80ffe">&#9670;&nbsp;</a></span>recordGame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::recordGame </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>playerScore</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>gameTime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enregistre une partie de jeu avec le score et le temps de jeu. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">playerScore</td><td>Score du joueur à enregistrer. </td></tr>
+    <tr><td class="paramname">gameTime</td><td>Temps de jeu à enregistrer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5d802d875fcc798661b3a38c2dc21bb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d802d875fcc798661b3a38c2dc21bb4">&#9670;&nbsp;</a></span>resetGameObjects()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::resetGameObjects </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Réinitialise les objets du jeu. </p>
+
+</div>
+</div>
+<a id="adc3523934c40e09601fbff2fb516e388"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc3523934c40e09601fbff2fb516e388">&#9670;&nbsp;</a></span>runningInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::runningInput </td>
+          <td>(</td>
+          <td class="paramtype">const char&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Traite les entrées utilisateur dans l'état de jeu en cours. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Caractère d'entrée utilisateur. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a042f79c6a3aeffafd6bbca2bb31ae891"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a042f79c6a3aeffafd6bbca2bb31ae891">&#9670;&nbsp;</a></span>save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::save </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enregistre le score du joueur. </p>
+
+</div>
+</div>
+<a id="a1888041ac8d15adc6aeab61c5d9f53e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1888041ac8d15adc6aeab61c5d9f53e0">&#9670;&nbsp;</a></span>saveScore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::saveScore </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enregistre le score du joueur. </p>
+
+</div>
+</div>
+<a id="a31f465db3ff4353579b2b9ff9c57f1b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31f465db3ff4353579b2b9ff9c57f1b2">&#9670;&nbsp;</a></span>setBombSound()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::setBombSound </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définit si le son de la bombe doit être joué. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Vrai pour jouer le son, faux sinon. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8b4a9f5610f7fd3042c345a7583faadc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b4a9f5610f7fd3042c345a7583faadc">&#9670;&nbsp;</a></span>setControlType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::setControlType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classGame.html#ad3923ada8ea2ea23e6300e1485bcfbd6">ControlType</a>&#160;</td>
+          <td class="paramname"><em>controlType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définit le type de contrôle à utiliser (clavier ou souris). </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">controlType</td><td>Le type de contrôle à utiliser. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acfe95aecfa9a75780152d0d463a0c3b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfe95aecfa9a75780152d0d463a0c3b3">&#9670;&nbsp;</a></span>setCurrentLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::setCurrentLevel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classGame.html#a9aa73faf99baf9bb03d53d6c8785d107">LevelSelection</a>&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définit le niveau actuel (facile, normal ou difficile). </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>Le niveau à définir. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5941b0d0312d4117e1538b7b5cd337dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5941b0d0312d4117e1538b7b5cd337dc">&#9670;&nbsp;</a></span>setCurrentState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::setCurrentState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classGame.html#a7f57a7a8408e554d0a72882c287e1d04">GameState</a>&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définir l'état actuel du jeu. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>Le nouvel état du jeu. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afb5311bf0f5c02da15622197f68c2f55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb5311bf0f5c02da15622197f68c2f55">&#9670;&nbsp;</a></span>setFireInterval()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::setFireInterval </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>newFireInterval</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe944bbcac70655eb71e4c9701991da1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe944bbcac70655eb71e4c9701991da1">&#9670;&nbsp;</a></span>setPlayerScore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::setPlayerScore </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>score</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Définit le score du joueur. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">score</td><td>Le nouveau score du joueur. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1cb5649ab0767ff9eef7ee7440f18328"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cb5649ab0767ff9eef7ee7440f18328">&#9670;&nbsp;</a></span>storeInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::storeInput </td>
+          <td>(</td>
+          <td class="paramtype">const char&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Traite les entrées utilisateur dans le menu du magasin. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Caractère d'entrée utilisateur. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a79df6376b332d63c9eca0dcee30305c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79df6376b332d63c9eca0dcee30305c3">&#9670;&nbsp;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Met à jour l'état du jeu et les objets du jeu. </p>
+
+</div>
+</div>
+<a id="aedc3c4bc82512f49583d1077d7e8f28c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedc3c4bc82512f49583d1077d7e8f28c">&#9670;&nbsp;</a></span>updateMyTimer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Game::updateMyTimer </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>deltaTime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Met à jour le timer avec un delta de temps. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deltaTime</td><td>Le delta de temps à ajouter au timer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a id="a61dd66ef744405d42a2ab62e85724223"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61dd66ef744405d42a2ab62e85724223">&#9670;&nbsp;</a></span>controlMenuSelection</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::controlMenuSelection</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>La sélection de menu de contrôle actuelle. </p>
+
+</div>
+</div>
+<a id="a6e38634125453a42ca921a552e30205c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e38634125453a42ca921a552e30205c">&#9670;&nbsp;</a></span>controlSelection</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::controlSelection</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>La sélection de contrôle actuelle. </p>
+
+</div>
+</div>
+<a id="a1d1efbe9e2e1504c0bc3519a721e36aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d1efbe9e2e1504c0bc3519a721e36aa">&#9670;&nbsp;</a></span>currentControlType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classGame.html#ad3923ada8ea2ea23e6300e1485bcfbd6">ControlType</a> Game::currentControlType = <a class="el" href="classGame.html#ad3923ada8ea2ea23e6300e1485bcfbd6a6ce4d85a628a88bbdb3ac24a8e5a9c2e">ControlType::Keyboard</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1683eb2e8a0b5f35765667ba75de1219"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1683eb2e8a0b5f35765667ba75de1219">&#9670;&nbsp;</a></span>currentLevel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classGame.html#a9aa73faf99baf9bb03d53d6c8785d107">LevelSelection</a> Game::currentLevel = <a class="el" href="classGame.html#a9aa73faf99baf9bb03d53d6c8785d107a960b44c579bc2f6818d2daaf9e4c16f0">LevelSelection::Normal</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d9568c1b133d9052d439ed39571d575"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d9568c1b133d9052d439ed39571d575">&#9670;&nbsp;</a></span>currentState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classGame.html#a7f57a7a8408e554d0a72882c287e1d04">GameState</a> Game::currentState</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>L'état actuel du jeu. </p>
+
+</div>
+</div>
+<a id="ac042de2abec986ecbf68140887877fb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac042de2abec986ecbf68140887877fb8">&#9670;&nbsp;</a></span>enemySpawnInterval</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::enemySpawnInterval</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abe87e5f1da46d44d2fe209f5797c53d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe87e5f1da46d44d2fe209f5797c53d5">&#9670;&nbsp;</a></span>lastEnemySpawnTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t Game::lastEnemySpawnTime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab05b831e42a889f8a143e16f367512a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab05b831e42a889f8a143e16f367512a5">&#9670;&nbsp;</a></span>levelMenuSelection</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::levelMenuSelection</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>La sélection de menu de niveau actuelle. </p>
+
+</div>
+</div>
+<a id="a32c594a6a0dec825c79fdf32616f0970"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32c594a6a0dec825c79fdf32616f0970">&#9670;&nbsp;</a></span>magazineSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::magazineSize = 100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>La taille initiale du chargeur. </p>
+
+</div>
+</div>
+<a id="a942987456ccccb31fd2b9c846bbf3a30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a942987456ccccb31fd2b9c846bbf3a30">&#9670;&nbsp;</a></span>maxEnemyCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::maxEnemyCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab83828671aa0402e3adc930acd39cb9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab83828671aa0402e3adc930acd39cb9c">&#9670;&nbsp;</a></span>menuSelection</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::menuSelection</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>La sélection de menu actuelle. </p>
+
+</div>
+</div>
+<a id="a59857c6de4417e1422a52addfab07a97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59857c6de4417e1422a52addfab07a97">&#9670;&nbsp;</a></span>optionsMenuSelection</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::optionsMenuSelection</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>La sélection de menu des options actuelle. </p>
+
+</div>
+</div>
+<a id="a53f49cbb4292160206abda906179bc9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53f49cbb4292160206abda906179bc9d">&#9670;&nbsp;</a></span>playSound</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Game::playSound = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d1130c07feb6642e084cc5a603b69c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d1130c07feb6642e084cc5a603b69c4">&#9670;&nbsp;</a></span>previousState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classGame.html#a7f57a7a8408e554d0a72882c287e1d04">GameState</a> Game::previousState</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>L'état précédent du jeu. </p>
+
+</div>
+</div>
+<a id="af1c39b5045ea46f70cce20a2a375d8d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1c39b5045ea46f70cce20a2a375d8d4">&#9670;&nbsp;</a></span>storeMenuSelection</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Game::storeMenuSelection</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>La sélection de menu de magasin actuelle. </p>
+
+</div>
+</div>
+<a id="aa253b2d65ab71e9408c992a169cb3064"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa253b2d65ab71e9408c992a169cb3064">&#9670;&nbsp;</a></span>useMouseControl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Game::useMouseControl</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir du fichier suivant :<ul>
+<li>src/core/<a class="el" href="Game_8h_source.html">Game.h</a></li>
+<li>src/core/<a class="el" href="Game_8cpp.html">Game.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

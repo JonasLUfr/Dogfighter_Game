@@ -1,0 +1,3 @@
+<map id="Game" name="Game">
+<area shape="rect" id="node1" title="Classe principale du jeu, gère l&#39;état du jeu, les objets du jeu et les entrées utilisateur." alt="" coords="5,5,247,684"/>
+</map>

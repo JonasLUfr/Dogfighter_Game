@@ -1,0 +1,11 @@
+<map id="src/core/Enemy.h" name="src/core/Enemy.h">
+<area shape="rect" id="node1" title="Définition de la classe Enemy représentant un ennemi." alt="" coords="123,5,255,32"/>
+<area shape="rect" id="node2" href="$Enemy_8cpp.html" title="Fichier de code source pour la classe Enemy." alt="" coords="5,80,152,107"/>
+<area shape="rect" id="node3" href="$Game_8h.html" title="Fichier d&#39;en&#45;tête pour la classe Game objet." alt="" coords="125,155,253,181"/>
+<area shape="rect" id="node8" href="$Map_8h.html" title="Définition de la classe Map." alt="" coords="227,80,344,107"/>
+<area shape="rect" id="node4" href="$Game_8cpp.html" title="Fichier de code source pour la classe Game." alt="" coords="34,229,177,256"/>
+<area shape="rect" id="node5" href="$mainSDL_8h.html" title=" " alt="" coords="201,229,348,256"/>
+<area shape="rect" id="node6" href="$main_8cpp.html" title=" " alt="" coords="120,304,256,331"/>
+<area shape="rect" id="node7" href="$mainSDL_8cpp.html" title=" " alt="" coords="281,304,442,331"/>
+<area shape="rect" id="node9" href="$Map_8cpp.html" title="Fichier de code source pour la classe Map." alt="" coords="278,155,410,181"/>
+</map>

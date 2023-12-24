@@ -1,0 +1,202 @@
+\hypertarget{classScoreManager}{}\doxysection{Référence de la classe Score\+Manager}
+\label{classScoreManager}\index{ScoreManager@{ScoreManager}}
+
+
+Classe représentant un gestionnaire de score.  
+
+
+
+
+{\ttfamily \#include $<$Score\+Manager.\+h$>$}
+
+
+
+Graphe de collaboration de Score\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{classScoreManager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classScoreManager_a4f3866ff832127664543349da5c4fbf4}{Score\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Construit un nouvel objet \mbox{\hyperlink{classScoreManager}{Score\+Manager}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classScoreManager_aed0eff96b9869439fdcd129dde9afd8a}{$\sim$\+Score\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Détruit l\textquotesingle{}objet \mbox{\hyperlink{classScoreManager}{Score\+Manager}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classScoreManager_a48c0a98731f5a5ff688d965ab2432ee0}{get\+Player\+Score}} () const
+\begin{DoxyCompactList}\small\item\em Obtient le score actuel du joueur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScoreManager_a6c8942acf68de2c8a85e226cd1821fe3}{set\+Player\+Score}} (int score)
+\begin{DoxyCompactList}\small\item\em Définit le score actuel du joueur. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classScoreManager_a44cca8af4291600cc8a18d93d30ee803}{get\+High\+Score}} () const
+\begin{DoxyCompactList}\small\item\em Obtient le meilleur score actuel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScoreManager_a0bfd391540e807c07d8c2771a8c29a35}{set\+High\+Score}} (int score)
+\begin{DoxyCompactList}\small\item\em Définit le meilleur score actuel. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classScoreManager_ad949d10478386ef42a2e4ec1c904842a}{get\+Total\+Score}} ()
+\begin{DoxyCompactList}\small\item\em Obtient le score total. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScoreManager_aa2af472f6d8bbb56b5bba406168d762f}{load\+Score}} ()
+\begin{DoxyCompactList}\small\item\em Charge le score depuis un fichier. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScoreManager_a90311561d54f94dc24a85a00a80a37e9}{save\+Score}} ()
+\begin{DoxyCompactList}\small\item\em Sauvegarde le score dans un fichier. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScoreManager_af7ec8f474b9c82a083770e202b494adb}{update\+High\+Score}} (int score)
+\begin{DoxyCompactList}\small\item\em Met à jour le meilleur score. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScoreManager_a7a7bb80cdf5b113fe0d13f330502a999}{record\+Game}} (int score, float game\+Time)
+\begin{DoxyCompactList}\small\item\em Enregistre le score et le temps de jeu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Classe représentant un gestionnaire de score. 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classScoreManager_a4f3866ff832127664543349da5c4fbf4}\label{classScoreManager_a4f3866ff832127664543349da5c4fbf4}} 
+\index{ScoreManager@{ScoreManager}!ScoreManager@{ScoreManager}}
+\index{ScoreManager@{ScoreManager}!ScoreManager@{ScoreManager}}
+\doxysubsubsection{\texorpdfstring{ScoreManager()}{ScoreManager()}}
+{\footnotesize\ttfamily Score\+Manager\+::\+Score\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construit un nouvel objet \mbox{\hyperlink{classScoreManager}{Score\+Manager}}. 
+
+\mbox{\Hypertarget{classScoreManager_aed0eff96b9869439fdcd129dde9afd8a}\label{classScoreManager_aed0eff96b9869439fdcd129dde9afd8a}} 
+\index{ScoreManager@{ScoreManager}!````~ScoreManager@{$\sim$ScoreManager}}
+\index{````~ScoreManager@{$\sim$ScoreManager}!ScoreManager@{ScoreManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$ScoreManager()}{~ScoreManager()}}
+{\footnotesize\ttfamily Score\+Manager\+::$\sim$\+Score\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Détruit l\textquotesingle{}objet \mbox{\hyperlink{classScoreManager}{Score\+Manager}}. 
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classScoreManager_a44cca8af4291600cc8a18d93d30ee803}\label{classScoreManager_a44cca8af4291600cc8a18d93d30ee803}} 
+\index{ScoreManager@{ScoreManager}!getHighScore@{getHighScore}}
+\index{getHighScore@{getHighScore}!ScoreManager@{ScoreManager}}
+\doxysubsubsection{\texorpdfstring{getHighScore()}{getHighScore()}}
+{\footnotesize\ttfamily int Score\+Manager\+::get\+High\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtient le meilleur score actuel. 
+
+\begin{DoxyReturn}{Renvoie}
+Le meilleur score actuel. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScoreManager_a48c0a98731f5a5ff688d965ab2432ee0}\label{classScoreManager_a48c0a98731f5a5ff688d965ab2432ee0}} 
+\index{ScoreManager@{ScoreManager}!getPlayerScore@{getPlayerScore}}
+\index{getPlayerScore@{getPlayerScore}!ScoreManager@{ScoreManager}}
+\doxysubsubsection{\texorpdfstring{getPlayerScore()}{getPlayerScore()}}
+{\footnotesize\ttfamily int Score\+Manager\+::get\+Player\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtient le score actuel du joueur. 
+
+\begin{DoxyReturn}{Renvoie}
+Le score actuel du joueur. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScoreManager_ad949d10478386ef42a2e4ec1c904842a}\label{classScoreManager_ad949d10478386ef42a2e4ec1c904842a}} 
+\index{ScoreManager@{ScoreManager}!getTotalScore@{getTotalScore}}
+\index{getTotalScore@{getTotalScore}!ScoreManager@{ScoreManager}}
+\doxysubsubsection{\texorpdfstring{getTotalScore()}{getTotalScore()}}
+{\footnotesize\ttfamily int Score\+Manager\+::get\+Total\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtient le score total. 
+
+\begin{DoxyReturn}{Renvoie}
+Le score total. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScoreManager_aa2af472f6d8bbb56b5bba406168d762f}\label{classScoreManager_aa2af472f6d8bbb56b5bba406168d762f}} 
+\index{ScoreManager@{ScoreManager}!loadScore@{loadScore}}
+\index{loadScore@{loadScore}!ScoreManager@{ScoreManager}}
+\doxysubsubsection{\texorpdfstring{loadScore()}{loadScore()}}
+{\footnotesize\ttfamily void Score\+Manager\+::load\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Charge le score depuis un fichier. 
+
+\mbox{\Hypertarget{classScoreManager_a7a7bb80cdf5b113fe0d13f330502a999}\label{classScoreManager_a7a7bb80cdf5b113fe0d13f330502a999}} 
+\index{ScoreManager@{ScoreManager}!recordGame@{recordGame}}
+\index{recordGame@{recordGame}!ScoreManager@{ScoreManager}}
+\doxysubsubsection{\texorpdfstring{recordGame()}{recordGame()}}
+{\footnotesize\ttfamily void Score\+Manager\+::record\+Game (\begin{DoxyParamCaption}\item[{int}]{score,  }\item[{float}]{game\+Time }\end{DoxyParamCaption})}
+
+
+
+Enregistre le score et le temps de jeu. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em score} & Le score de la partie. \\
+\hline
+{\em game\+Time} & Le temps de jeu. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScoreManager_a90311561d54f94dc24a85a00a80a37e9}\label{classScoreManager_a90311561d54f94dc24a85a00a80a37e9}} 
+\index{ScoreManager@{ScoreManager}!saveScore@{saveScore}}
+\index{saveScore@{saveScore}!ScoreManager@{ScoreManager}}
+\doxysubsubsection{\texorpdfstring{saveScore()}{saveScore()}}
+{\footnotesize\ttfamily void Score\+Manager\+::save\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sauvegarde le score dans un fichier. 
+
+\mbox{\Hypertarget{classScoreManager_a0bfd391540e807c07d8c2771a8c29a35}\label{classScoreManager_a0bfd391540e807c07d8c2771a8c29a35}} 
+\index{ScoreManager@{ScoreManager}!setHighScore@{setHighScore}}
+\index{setHighScore@{setHighScore}!ScoreManager@{ScoreManager}}
+\doxysubsubsection{\texorpdfstring{setHighScore()}{setHighScore()}}
+{\footnotesize\ttfamily void Score\+Manager\+::set\+High\+Score (\begin{DoxyParamCaption}\item[{int}]{score }\end{DoxyParamCaption})}
+
+
+
+Définit le meilleur score actuel. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em score} & Le nouveau meilleur score. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScoreManager_a6c8942acf68de2c8a85e226cd1821fe3}\label{classScoreManager_a6c8942acf68de2c8a85e226cd1821fe3}} 
+\index{ScoreManager@{ScoreManager}!setPlayerScore@{setPlayerScore}}
+\index{setPlayerScore@{setPlayerScore}!ScoreManager@{ScoreManager}}
+\doxysubsubsection{\texorpdfstring{setPlayerScore()}{setPlayerScore()}}
+{\footnotesize\ttfamily void Score\+Manager\+::set\+Player\+Score (\begin{DoxyParamCaption}\item[{int}]{score }\end{DoxyParamCaption})}
+
+
+
+Définit le score actuel du joueur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em score} & Le nouveau score du joueur. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScoreManager_af7ec8f474b9c82a083770e202b494adb}\label{classScoreManager_af7ec8f474b9c82a083770e202b494adb}} 
+\index{ScoreManager@{ScoreManager}!updateHighScore@{updateHighScore}}
+\index{updateHighScore@{updateHighScore}!ScoreManager@{ScoreManager}}
+\doxysubsubsection{\texorpdfstring{updateHighScore()}{updateHighScore()}}
+{\footnotesize\ttfamily void Score\+Manager\+::update\+High\+Score (\begin{DoxyParamCaption}\item[{int}]{score }\end{DoxyParamCaption})}
+
+
+
+Met à jour le meilleur score. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em score} & Le nouveau score à comparer avec le meilleur score actuel. \\
+\hline
+\end{DoxyParams}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/core/\mbox{\hyperlink{ScoreManager_8h}{Score\+Manager.\+h}}\item 
+src/core/\mbox{\hyperlink{ScoreManager_8cpp}{Score\+Manager.\+cpp}}\end{DoxyCompactItemize}

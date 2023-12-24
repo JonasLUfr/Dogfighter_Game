@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DogFigther:  Fichier source de src/core/Player.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">DogFigther
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Player.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Player_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef PLAYER_H</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define PLAYER_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Collision_8h.html">Collision.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classPlayer.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPlayer.html">Player</a> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classPlayer.html#a7d5e5ce9e814571fae724dd411e5bc31">Player</a>(<span class="keywordtype">int</span> windowWidth, <span class="keywordtype">int</span> windowHeight);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPlayer.html#ae3bbcf1159bdc059bff1c2513f2505f7">moveLeft</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPlayer.html#a6a2b68bc4b21d4c4a79a23b498896ec2">moveRight</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPlayer.html#a225a3e732b737cb8a9d807f97b7930aa">moveUp</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPlayer.html#a6e759d186d9d40609ecf0511e8f50e4c">moveDown</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classPlayer.html#a9d284ba174e4f2655a7cae8088b7eb3d">getSpeed</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPlayer.html#a2820d3154962f2dd5698b95c84b583d3">setSpeed</a>(<span class="keywordtype">int</span> newSpeed);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classPlayer.html#ae9bcae10b1841b186b2ac0a5b07dd6e1">getX</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classPlayer.html#ab761a1ddba353a619403be9af249b835">getY</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPlayer.html#a1dc6a6798a23bd5b743dfda7a7e3ece2">setX</a>(<span class="keywordtype">int</span> x);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPlayer.html#a6f2857bc9600f500303fde59a76038f1">setY</a>(<span class="keywordtype">int</span> y);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPlayer.html#a1af5d39f7bac2aeaa1e30c7dda2332fa">reset</a>();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="structRect_1_1My__Rect.html">Rect::My_Rect</a> <a class="code" href="classPlayer.html#a12cc53288cb955c29f518e55ecfefe0e">getCollisionRect</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classPlayer.html#a518eb6e16ed51238b7c1511ccfe6572f">   78</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classPlayer.html#a518eb6e16ed51238b7c1511ccfe6572f">getHealth</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classPlayer.html#a9fa3b806810b40e0465f1c0dbbd94bd8">   84</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPlayer.html#a9fa3b806810b40e0465f1c0dbbd94bd8">setHealth</a>(<span class="keywordtype">int</span> newHealth);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">int</span> x;                  </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">int</span> y;                  </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">int</span> speed;              </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">int</span> windowWidth;        </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">int</span> windowHeight;       </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">int</span> playerWidth;        </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">int</span> playerHeight;       </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">//int health;           /**&lt; La santé du joueur. */</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// PLAYER_H</span></div>
+<div class="ttc" id="aCollision_8h_html"><div class="ttname"><a href="Collision_8h.html">Collision.h</a></div><div class="ttdoc">Définition de la classe Rect pour la détection de collisions.</div></div>
+<div class="ttc" id="aclassPlayer_html"><div class="ttname"><a href="classPlayer.html">Player</a></div><div class="ttdoc">Une classe représentant le joueur du jeu.</div><div class="ttdef"><b>Definition:</b> Player.h:13</div></div>
+<div class="ttc" id="aclassPlayer_html_a12cc53288cb955c29f518e55ecfefe0e"><div class="ttname"><a href="classPlayer.html#a12cc53288cb955c29f518e55ecfefe0e">Player::getCollisionRect</a></div><div class="ttdeci">Rect::My_Rect getCollisionRect() const</div><div class="ttdoc">Obtient le rectangle de collision du joueur.</div><div class="ttdef"><b>Definition:</b> Player.cpp:96</div></div>
+<div class="ttc" id="aclassPlayer_html_a1af5d39f7bac2aeaa1e30c7dda2332fa"><div class="ttname"><a href="classPlayer.html#a1af5d39f7bac2aeaa1e30c7dda2332fa">Player::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdoc">Réinitialise la position du joueur au centre de la fenêtre.</div><div class="ttdef"><b>Definition:</b> Player.cpp:88</div></div>
+<div class="ttc" id="aclassPlayer_html_a1dc6a6798a23bd5b743dfda7a7e3ece2"><div class="ttname"><a href="classPlayer.html#a1dc6a6798a23bd5b743dfda7a7e3ece2">Player::setX</a></div><div class="ttdeci">void setX(int x)</div><div class="ttdoc">Définit la coordonnée x du joueur.</div><div class="ttdef"><b>Definition:</b> Player.cpp:60</div></div>
+<div class="ttc" id="aclassPlayer_html_a225a3e732b737cb8a9d807f97b7930aa"><div class="ttname"><a href="classPlayer.html#a225a3e732b737cb8a9d807f97b7930aa">Player::moveUp</a></div><div class="ttdeci">void moveUp()</div><div class="ttdef"><b>Definition:</b> Player.cpp:37</div></div>
+<div class="ttc" id="aclassPlayer_html_a2820d3154962f2dd5698b95c84b583d3"><div class="ttname"><a href="classPlayer.html#a2820d3154962f2dd5698b95c84b583d3">Player::setSpeed</a></div><div class="ttdeci">void setSpeed(int newSpeed)</div><div class="ttdoc">Définit la vitesse du joueur.</div><div class="ttdef"><b>Definition:</b> Player.cpp:18</div></div>
+<div class="ttc" id="aclassPlayer_html_a518eb6e16ed51238b7c1511ccfe6572f"><div class="ttname"><a href="classPlayer.html#a518eb6e16ed51238b7c1511ccfe6572f">Player::getHealth</a></div><div class="ttdeci">int getHealth() const</div><div class="ttdoc">Obtient la santé du joueur.</div></div>
+<div class="ttc" id="aclassPlayer_html_a6a2b68bc4b21d4c4a79a23b498896ec2"><div class="ttname"><a href="classPlayer.html#a6a2b68bc4b21d4c4a79a23b498896ec2">Player::moveRight</a></div><div class="ttdeci">void moveRight()</div><div class="ttdef"><b>Definition:</b> Player.cpp:30</div></div>
+<div class="ttc" id="aclassPlayer_html_a6e759d186d9d40609ecf0511e8f50e4c"><div class="ttname"><a href="classPlayer.html#a6e759d186d9d40609ecf0511e8f50e4c">Player::moveDown</a></div><div class="ttdeci">void moveDown()</div><div class="ttdef"><b>Definition:</b> Player.cpp:45</div></div>
+<div class="ttc" id="aclassPlayer_html_a6f2857bc9600f500303fde59a76038f1"><div class="ttname"><a href="classPlayer.html#a6f2857bc9600f500303fde59a76038f1">Player::setY</a></div><div class="ttdeci">void setY(int y)</div><div class="ttdoc">Définit la coordonnée y du joueur.</div><div class="ttdef"><b>Definition:</b> Player.cpp:69</div></div>
+<div class="ttc" id="aclassPlayer_html_a7d5e5ce9e814571fae724dd411e5bc31"><div class="ttname"><a href="classPlayer.html#a7d5e5ce9e814571fae724dd411e5bc31">Player::Player</a></div><div class="ttdeci">Player(int windowWidth, int windowHeight)</div><div class="ttdoc">Construit un nouvel objet Player.</div><div class="ttdef"><b>Definition:</b> Player.cpp:7</div></div>
+<div class="ttc" id="aclassPlayer_html_a9d284ba174e4f2655a7cae8088b7eb3d"><div class="ttname"><a href="classPlayer.html#a9d284ba174e4f2655a7cae8088b7eb3d">Player::getSpeed</a></div><div class="ttdeci">int getSpeed() const</div><div class="ttdoc">Obtient la vitesse du joueur.</div><div class="ttdef"><b>Definition:</b> Player.cpp:14</div></div>
+<div class="ttc" id="aclassPlayer_html_a9fa3b806810b40e0465f1c0dbbd94bd8"><div class="ttname"><a href="classPlayer.html#a9fa3b806810b40e0465f1c0dbbd94bd8">Player::setHealth</a></div><div class="ttdeci">void setHealth(int newHealth)</div><div class="ttdoc">Définit la santé du joueur.</div></div>
+<div class="ttc" id="aclassPlayer_html_ab761a1ddba353a619403be9af249b835"><div class="ttname"><a href="classPlayer.html#ab761a1ddba353a619403be9af249b835">Player::getY</a></div><div class="ttdeci">int getY() const</div><div class="ttdoc">Obtient la coordonnée y du joueur.</div><div class="ttdef"><b>Definition:</b> Player.cpp:56</div></div>
+<div class="ttc" id="aclassPlayer_html_ae3bbcf1159bdc059bff1c2513f2505f7"><div class="ttname"><a href="classPlayer.html#ae3bbcf1159bdc059bff1c2513f2505f7">Player::moveLeft</a></div><div class="ttdeci">void moveLeft()</div><div class="ttdef"><b>Definition:</b> Player.cpp:22</div></div>
+<div class="ttc" id="aclassPlayer_html_ae9bcae10b1841b186b2ac0a5b07dd6e1"><div class="ttname"><a href="classPlayer.html#ae9bcae10b1841b186b2ac0a5b07dd6e1">Player::getX</a></div><div class="ttdeci">int getX() const</div><div class="ttdoc">Obtient la coordonnée x du joueur.</div><div class="ttdef"><b>Definition:</b> Player.cpp:52</div></div>
+<div class="ttc" id="astructRect_1_1My__Rect_html"><div class="ttname"><a href="structRect_1_1My__Rect.html">Rect::My_Rect</a></div><div class="ttdoc">Structure représentant un rectangle.</div><div class="ttdef"><b>Definition:</b> Collision.h:18</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

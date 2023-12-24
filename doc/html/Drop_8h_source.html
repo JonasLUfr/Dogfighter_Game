@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DogFigther:  Fichier source de src/core/Drop.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">DogFigther
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Drop.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Drop_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Collision_8h.html">Collision.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classDrop.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDrop.html">Drop</a>{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">int</span> x;      </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">int</span> y;      </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">int</span> speed;  </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">bool</span> active;    </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">int</span> width_;     </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">int</span> height_;    </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classDrop.html#a2de083545776187b1125c73c1aa736e9">   30</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="classDrop.html#a2de083545776187b1125c73c1aa736e9">DropType</a> {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="classDrop.html#a2de083545776187b1125c73c1aa736e9a3c0ee4bacc905ad4abb857127975acfc">Bonus</a>,         </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="classDrop.html#a2de083545776187b1125c73c1aa736e9ae397fdb463f1d62721c0a5aa6038efa1">SpeedBoost</a>,    </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="classDrop.html#a2de083545776187b1125c73c1aa736e9a7cb970657cbafdbd953e5759134f0742">FireRateBoost</a>  </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    };</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classDrop.html#a18cca2b8ce3582335106e5564a88e28f">   36</a></span>&#160;    <a class="code" href="classDrop.html#a2de083545776187b1125c73c1aa736e9">DropType</a> <a class="code" href="classDrop.html#a18cca2b8ce3582335106e5564a88e28f">type</a>;  </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="classDrop.html#a899cba0709cf1d3ca420529e1c4bcc99">Drop</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> speed, <a class="code" href="classDrop.html#a2de083545776187b1125c73c1aa736e9">DropType</a> <a class="code" href="classDrop.html#a18cca2b8ce3582335106e5564a88e28f">type</a>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classDrop.html#a899cba0709cf1d3ca420529e1c4bcc99">   50</a></span>&#160;    <a class="code" href="classDrop.html#a899cba0709cf1d3ca420529e1c4bcc99">Drop</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classDrop.html#ae8decf3a99f7ee66d6f8fb8d5353072a">getX</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classDrop.html#a3c686835155d00b0d3a6084097af2fff">getY</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDrop.html#a79d21a3ccaa0e9d57b6c109b023ce4ee">setX</a>(<span class="keywordtype">int</span> setx);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDrop.html#a02052e6ee5e7288156f34ca017b262d8">setY</a>(<span class="keywordtype">int</span> sety);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="classDrop.html#a2de083545776187b1125c73c1aa736e9">DropType</a> <a class="code" href="classDrop.html#a67d3152c6a479cd7fb3d90094074d1c3">getType</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classDrop.html#a0cd1814a9dac0c37a9bbdc9789c7e342">isActive</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDrop.html#a31fff427714fc2c4b8b8ec4733a9a568">setActive</a>(<span class="keywordtype">bool</span> active);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDrop.html#a420739c7ba3bf7ba825ffabc38e7d946">update</a>();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <a class="code" href="structRect_1_1My__Rect.html">Rect::My_Rect</a> <a class="code" href="classDrop.html#ad02482b38f905b4ff1298e3f0c10bf02">getCollisionRect</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;};</div>
+<div class="ttc" id="aCollision_8h_html"><div class="ttname"><a href="Collision_8h.html">Collision.h</a></div><div class="ttdoc">Définition de la classe Rect pour la détection de collisions.</div></div>
+<div class="ttc" id="aclassDrop_html"><div class="ttname"><a href="classDrop.html">Drop</a></div><div class="ttdoc">Classe représentant un objet qui tombe.</div><div class="ttdef"><b>Definition:</b> Drop.h:14</div></div>
+<div class="ttc" id="aclassDrop_html_a02052e6ee5e7288156f34ca017b262d8"><div class="ttname"><a href="classDrop.html#a02052e6ee5e7288156f34ca017b262d8">Drop::setY</a></div><div class="ttdeci">void setY(int sety)</div><div class="ttdoc">Modifie la coordonnée y de l'objet.</div><div class="ttdef"><b>Definition:</b> Drop.cpp:24</div></div>
+<div class="ttc" id="aclassDrop_html_a0cd1814a9dac0c37a9bbdc9789c7e342"><div class="ttname"><a href="classDrop.html#a0cd1814a9dac0c37a9bbdc9789c7e342">Drop::isActive</a></div><div class="ttdeci">bool isActive() const</div><div class="ttdoc">Indique si l'objet est actif.</div><div class="ttdef"><b>Definition:</b> Drop.cpp:32</div></div>
+<div class="ttc" id="aclassDrop_html_a18cca2b8ce3582335106e5564a88e28f"><div class="ttname"><a href="classDrop.html#a18cca2b8ce3582335106e5564a88e28f">Drop::type</a></div><div class="ttdeci">DropType type</div><div class="ttdef"><b>Definition:</b> Drop.h:36</div></div>
+<div class="ttc" id="aclassDrop_html_a2de083545776187b1125c73c1aa736e9"><div class="ttname"><a href="classDrop.html#a2de083545776187b1125c73c1aa736e9">Drop::DropType</a></div><div class="ttdeci">DropType</div><div class="ttdoc">Énumération des différents types de bonus.</div><div class="ttdef"><b>Definition:</b> Drop.h:30</div></div>
+<div class="ttc" id="aclassDrop_html_a2de083545776187b1125c73c1aa736e9a3c0ee4bacc905ad4abb857127975acfc"><div class="ttname"><a href="classDrop.html#a2de083545776187b1125c73c1aa736e9a3c0ee4bacc905ad4abb857127975acfc">Drop::DropType::Bonus</a></div><div class="ttdeci">@ Bonus</div></div>
+<div class="ttc" id="aclassDrop_html_a2de083545776187b1125c73c1aa736e9a7cb970657cbafdbd953e5759134f0742"><div class="ttname"><a href="classDrop.html#a2de083545776187b1125c73c1aa736e9a7cb970657cbafdbd953e5759134f0742">Drop::DropType::FireRateBoost</a></div><div class="ttdeci">@ FireRateBoost</div></div>
+<div class="ttc" id="aclassDrop_html_a2de083545776187b1125c73c1aa736e9ae397fdb463f1d62721c0a5aa6038efa1"><div class="ttname"><a href="classDrop.html#a2de083545776187b1125c73c1aa736e9ae397fdb463f1d62721c0a5aa6038efa1">Drop::DropType::SpeedBoost</a></div><div class="ttdeci">@ SpeedBoost</div></div>
+<div class="ttc" id="aclassDrop_html_a31fff427714fc2c4b8b8ec4733a9a568"><div class="ttname"><a href="classDrop.html#a31fff427714fc2c4b8b8ec4733a9a568">Drop::setActive</a></div><div class="ttdeci">void setActive(bool active)</div><div class="ttdoc">Modifie l'état actif de l'objet.</div><div class="ttdef"><b>Definition:</b> Drop.cpp:36</div></div>
+<div class="ttc" id="aclassDrop_html_a3c686835155d00b0d3a6084097af2fff"><div class="ttname"><a href="classDrop.html#a3c686835155d00b0d3a6084097af2fff">Drop::getY</a></div><div class="ttdeci">int getY() const</div><div class="ttdoc">Récupère la coordonnée y de l'objet.</div><div class="ttdef"><b>Definition:</b> Drop.cpp:16</div></div>
+<div class="ttc" id="aclassDrop_html_a420739c7ba3bf7ba825ffabc38e7d946"><div class="ttname"><a href="classDrop.html#a420739c7ba3bf7ba825ffabc38e7d946">Drop::update</a></div><div class="ttdeci">void update()</div><div class="ttdoc">Met à jour l'objet.</div><div class="ttdef"><b>Definition:</b> Drop.cpp:40</div></div>
+<div class="ttc" id="aclassDrop_html_a67d3152c6a479cd7fb3d90094074d1c3"><div class="ttname"><a href="classDrop.html#a67d3152c6a479cd7fb3d90094074d1c3">Drop::getType</a></div><div class="ttdeci">DropType getType() const</div><div class="ttdoc">Récupère le type de l'objet qui tombe.</div><div class="ttdef"><b>Definition:</b> Drop.cpp:28</div></div>
+<div class="ttc" id="aclassDrop_html_a79d21a3ccaa0e9d57b6c109b023ce4ee"><div class="ttname"><a href="classDrop.html#a79d21a3ccaa0e9d57b6c109b023ce4ee">Drop::setX</a></div><div class="ttdeci">void setX(int setx)</div><div class="ttdoc">Modifie la coordonnée x de l'objet.</div><div class="ttdef"><b>Definition:</b> Drop.cpp:20</div></div>
+<div class="ttc" id="aclassDrop_html_a899cba0709cf1d3ca420529e1c4bcc99"><div class="ttname"><a href="classDrop.html#a899cba0709cf1d3ca420529e1c4bcc99">Drop::Drop</a></div><div class="ttdeci">Drop()=default</div><div class="ttdoc">Construit un nouvel objet qui tombe.</div></div>
+<div class="ttc" id="aclassDrop_html_ad02482b38f905b4ff1298e3f0c10bf02"><div class="ttname"><a href="classDrop.html#ad02482b38f905b4ff1298e3f0c10bf02">Drop::getCollisionRect</a></div><div class="ttdeci">Rect::My_Rect getCollisionRect() const</div><div class="ttdoc">Récupère le rectangle de collision de l'objet.</div><div class="ttdef"><b>Definition:</b> Drop.cpp:50</div></div>
+<div class="ttc" id="aclassDrop_html_ae8decf3a99f7ee66d6f8fb8d5353072a"><div class="ttname"><a href="classDrop.html#ae8decf3a99f7ee66d6f8fb8d5353072a">Drop::getX</a></div><div class="ttdeci">int getX() const</div><div class="ttdoc">Récupère la coordonnée x de l'objet.</div><div class="ttdef"><b>Definition:</b> Drop.cpp:12</div></div>
+<div class="ttc" id="astructRect_1_1My__Rect_html"><div class="ttname"><a href="structRect_1_1My__Rect.html">Rect::My_Rect</a></div><div class="ttdoc">Structure représentant un rectangle.</div><div class="ttdef"><b>Definition:</b> Collision.h:18</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

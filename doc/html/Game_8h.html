@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DogFigther: Référence du fichier src/core/Game.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">DogFigther
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier Game.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fichier d'en-tête pour la classe <a class="el" href="classGame.html" title="Classe principale du jeu, gère l&#39;état du jeu, les objets du jeu et les entrées utilisateur.">Game</a> objet.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &quot;<a class="el" href="Player_8h_source.html">Player.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Bullet_8h_source.html">Bullet.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Enemy_8h_source.html">Enemy.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Bomb_8h_source.html">Bomb.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Drop_8h_source.html">Drop.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Collision_8h_source.html">Collision.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ScoreManager_8h_source.html">ScoreManager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Map_8h_source.html">Map.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Store_8h_source.html">Store.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de Game.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="Game_8h__incl.png" border="0" usemap="#asrc_2core_2Game_8h" alt=""/></div>
+<map name="asrc_2core_2Game_8h" id="asrc_2core_2Game_8h">
+<area shape="rect" title="Fichier d&#39;en&#45;tête pour la classe Game objet." alt="" coords="437,5,565,32"/>
+<area shape="rect" title=" " alt="" coords="5,80,68,107"/>
+<area shape="rect" title=" " alt="" coords="92,80,155,107"/>
+<area shape="rect" href="Player_8h.html" title="Fichier d&#39;en&#45;tête pour la classe Player." alt="" coords="207,229,282,256"/>
+<area shape="rect" href="Collision_8h.html" title="Définition de la classe Rect pour la détection de collisions." alt="" coords="510,304,601,331"/>
+<area shape="rect" href="Bullet_8h.html" title="Définition de la classe Bullet représentant une balle." alt="" coords="602,229,674,256"/>
+<area shape="rect" href="Enemy_8h.html" title="Définition de la classe Enemy représentant un ennemi." alt="" coords="281,155,358,181"/>
+<area shape="rect" href="Bomb_8h.html" title="Définition de la classe Bomb représentant un objet bombe." alt="" coords="465,155,537,181"/>
+<area shape="rect" href="Drop_8h.html" title="Définition de la classe Drop représentant un objet qui tombe." alt="" coords="807,229,872,256"/>
+<area shape="rect" href="ScoreManager_8h.html" title="Définition de la classe ScoreManager représentant un gestionnaire de score." alt="" coords="857,80,984,107"/>
+<area shape="rect" href="Map_8h.html" title="Définition de la classe Map." alt="" coords="391,80,453,107"/>
+<area shape="rect" href="Store_8h.html" title="Fichier d&#39;en&#45;tête pour la classe Store." alt="" coords="612,155,680,181"/>
+<area shape="rect" title=" " alt="" coords="357,229,428,256"/>
+<area shape="rect" title=" " alt="" coords="511,229,578,256"/>
+<area shape="rect" title=" " alt="" coords="869,155,949,181"/>
+<area shape="rect" title=" " alt="" coords="973,155,1047,181"/>
+<area shape="rect" title=" " alt="" coords="382,155,441,181"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier :</div>
+<div class="dyncontent">
+<div class="center"><img src="Game_8h__dep__incl.png" border="0" usemap="#asrc_2core_2Game_8hdep" alt=""/></div>
+<map name="asrc_2core_2Game_8hdep" id="asrc_2core_2Game_8hdep">
+<area shape="rect" title="Fichier d&#39;en&#45;tête pour la classe Game objet." alt="" coords="97,5,225,32"/>
+<area shape="rect" href="Game_8cpp.html" title="Fichier de code source pour la classe Game." alt="" coords="5,80,148,107"/>
+<area shape="rect" href="mainSDL_8h.html" title=" " alt="" coords="173,80,319,107"/>
+<area shape="rect" href="main_8cpp.html" title=" " alt="" coords="91,155,227,181"/>
+<area shape="rect" href="mainSDL_8cpp.html" title=" " alt="" coords="252,155,413,181"/>
+</map>
+</div>
+</div>
+<p><a href="Game_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGame.html">Game</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classe principale du jeu, gère l'état du jeu, les objets du jeu et les entrées utilisateur.  <a href="classGame.html#details">Plus de détails...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Fichier d'en-tête pour la classe <a class="el" href="classGame.html" title="Classe principale du jeu, gère l&#39;état du jeu, les objets du jeu et les entrées utilisateur.">Game</a> objet. </p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

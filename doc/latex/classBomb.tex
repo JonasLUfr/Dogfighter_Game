@@ -1,0 +1,240 @@
+\hypertarget{classBomb}{}\doxysection{Référence de la classe Bomb}
+\label{classBomb}\index{Bomb@{Bomb}}
+
+
+Classe représentant un objet bombe.  
+
+
+
+
+{\ttfamily \#include $<$Bomb.\+h$>$}
+
+
+
+Graphe de collaboration de Bomb\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{classBomb__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{classBomb_a3fb0af58477c6fec0052be23dcb4e236}{Bomb\+State}} \{ \mbox{\hyperlink{classBomb_a3fb0af58477c6fec0052be23dcb4e236a4d3d769b812b6faa6b76e1a8abaece2d}{Active}}
+, \mbox{\hyperlink{classBomb_a3fb0af58477c6fec0052be23dcb4e236a3cab03c00dbd11bc3569afa0748013f0}{Inactive}}
+ \}
+\begin{DoxyCompactList}\small\item\em Énumération des états possibles de la bombe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBomb_a318b2684bf1c574999874a943478b264}{Bomb}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Construit un nouvel objet Bombe. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBomb_acbb47327cfb2fa429887774ef3597965}{$\sim$\+Bomb}} ()
+\begin{DoxyCompactList}\small\item\em Détruit l\textquotesingle{}objet Bombe. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBomb_a3fb0af58477c6fec0052be23dcb4e236}{Bomb\+State}} \mbox{\hyperlink{classBomb_a8e1b1ac6c7ec69afc5f28c224fa98270}{get\+State}} () const
+\begin{DoxyCompactList}\small\item\em Récupère l\textquotesingle{}état de la bombe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBomb_a9c8e19a4cbfcc2601c9de7164045089b}{set\+State}} (\mbox{\hyperlink{classBomb_a3fb0af58477c6fec0052be23dcb4e236}{Bomb\+State}} new\+State)
+\begin{DoxyCompactList}\small\item\em Modifie l\textquotesingle{}état de la bombe. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBomb_a9783cf547a5ef5cf224b964ed30e8008}{getX}} () const
+\begin{DoxyCompactList}\small\item\em Récupère la coordonnée x de la bombe. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBomb_ab1d447bb08a6fd78f79caba03308be19}{getY}} () const
+\begin{DoxyCompactList}\small\item\em Récupère la coordonnée y de la bombe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBomb_a98a0282a6c695f0fc6a0a05683084bd9}{setX}} (int x)
+\begin{DoxyCompactList}\small\item\em Modifie la coordonnée x de la bombe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBomb_aea71ea33e134e588cbd0a67b7f4932c5}{setY}} (int y)
+\begin{DoxyCompactList}\small\item\em Modifie la coordonnée y de la bombe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBomb_a780fc6b4666be7f9034c9a751e9d070b}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Réinitialise l\textquotesingle{}objet bombe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBomb_a5b6ada759b550fd4687b232e10dc9b31}{update}} (uint32\+\_\+t current\+Time)
+\begin{DoxyCompactList}\small\item\em Met à jour l\textquotesingle{}objet bombe. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBomb_a61a189de4457776fb7ae5257e69b3495}{get\+Current\+Frame}} () const
+\begin{DoxyCompactList}\small\item\em Récupère le numéro de l\textquotesingle{}image actuelle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Classe représentant un objet bombe. 
+
+\doxysubsection{Documentation des énumérations membres}
+\mbox{\Hypertarget{classBomb_a3fb0af58477c6fec0052be23dcb4e236}\label{classBomb_a3fb0af58477c6fec0052be23dcb4e236}} 
+\index{Bomb@{Bomb}!BombState@{BombState}}
+\index{BombState@{BombState}!Bomb@{Bomb}}
+\doxysubsubsection{\texorpdfstring{BombState}{BombState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classBomb_a3fb0af58477c6fec0052be23dcb4e236}{Bomb\+::\+Bomb\+State}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Énumération des états possibles de la bombe. 
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Active@{Active}!Bomb@{Bomb}}\index{Bomb@{Bomb}!Active@{Active}}}\mbox{\Hypertarget{classBomb_a3fb0af58477c6fec0052be23dcb4e236a4d3d769b812b6faa6b76e1a8abaece2d}\label{classBomb_a3fb0af58477c6fec0052be23dcb4e236a4d3d769b812b6faa6b76e1a8abaece2d}} 
+Active&La bombe est active \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Inactive@{Inactive}!Bomb@{Bomb}}\index{Bomb@{Bomb}!Inactive@{Inactive}}}\mbox{\Hypertarget{classBomb_a3fb0af58477c6fec0052be23dcb4e236a3cab03c00dbd11bc3569afa0748013f0}\label{classBomb_a3fb0af58477c6fec0052be23dcb4e236a3cab03c00dbd11bc3569afa0748013f0}} 
+Inactive&La bombe est inactive \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classBomb_a318b2684bf1c574999874a943478b264}\label{classBomb_a318b2684bf1c574999874a943478b264}} 
+\index{Bomb@{Bomb}!Bomb@{Bomb}}
+\index{Bomb@{Bomb}!Bomb@{Bomb}}
+\doxysubsubsection{\texorpdfstring{Bomb()}{Bomb()}}
+{\footnotesize\ttfamily Bomb\+::\+Bomb (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Construit un nouvel objet Bombe. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em x} & La coordonnée x de la bombe. \\
+\hline
+{\em y} & La coordonnée y de la bombe. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBomb_acbb47327cfb2fa429887774ef3597965}\label{classBomb_acbb47327cfb2fa429887774ef3597965}} 
+\index{Bomb@{Bomb}!````~Bomb@{$\sim$Bomb}}
+\index{````~Bomb@{$\sim$Bomb}!Bomb@{Bomb}}
+\doxysubsubsection{\texorpdfstring{$\sim$Bomb()}{~Bomb()}}
+{\footnotesize\ttfamily Bomb\+::$\sim$\+Bomb (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Détruit l\textquotesingle{}objet Bombe. 
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classBomb_a61a189de4457776fb7ae5257e69b3495}\label{classBomb_a61a189de4457776fb7ae5257e69b3495}} 
+\index{Bomb@{Bomb}!getCurrentFrame@{getCurrentFrame}}
+\index{getCurrentFrame@{getCurrentFrame}!Bomb@{Bomb}}
+\doxysubsubsection{\texorpdfstring{getCurrentFrame()}{getCurrentFrame()}}
+{\footnotesize\ttfamily int Bomb\+::get\+Current\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Récupère le numéro de l\textquotesingle{}image actuelle. 
+
+\begin{DoxyReturn}{Renvoie}
+Le numéro de l\textquotesingle{}image actuelle. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBomb_a8e1b1ac6c7ec69afc5f28c224fa98270}\label{classBomb_a8e1b1ac6c7ec69afc5f28c224fa98270}} 
+\index{Bomb@{Bomb}!getState@{getState}}
+\index{getState@{getState}!Bomb@{Bomb}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBomb_a3fb0af58477c6fec0052be23dcb4e236}{Bomb\+::\+Bomb\+State}} Bomb\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Récupère l\textquotesingle{}état de la bombe. 
+
+\begin{DoxyReturn}{Renvoie}
+L\textquotesingle{}état de la bombe. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBomb_a9783cf547a5ef5cf224b964ed30e8008}\label{classBomb_a9783cf547a5ef5cf224b964ed30e8008}} 
+\index{Bomb@{Bomb}!getX@{getX}}
+\index{getX@{getX}!Bomb@{Bomb}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily int Bomb\+::getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Récupère la coordonnée x de la bombe. 
+
+\begin{DoxyReturn}{Renvoie}
+La coordonnée x de la bombe. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBomb_ab1d447bb08a6fd78f79caba03308be19}\label{classBomb_ab1d447bb08a6fd78f79caba03308be19}} 
+\index{Bomb@{Bomb}!getY@{getY}}
+\index{getY@{getY}!Bomb@{Bomb}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily int Bomb\+::getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Récupère la coordonnée y de la bombe. 
+
+\begin{DoxyReturn}{Renvoie}
+La coordonnée y de la bombe. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBomb_a780fc6b4666be7f9034c9a751e9d070b}\label{classBomb_a780fc6b4666be7f9034c9a751e9d070b}} 
+\index{Bomb@{Bomb}!reset@{reset}}
+\index{reset@{reset}!Bomb@{Bomb}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Bomb\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Réinitialise l\textquotesingle{}objet bombe. 
+
+\mbox{\Hypertarget{classBomb_a9c8e19a4cbfcc2601c9de7164045089b}\label{classBomb_a9c8e19a4cbfcc2601c9de7164045089b}} 
+\index{Bomb@{Bomb}!setState@{setState}}
+\index{setState@{setState}!Bomb@{Bomb}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily void Bomb\+::set\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBomb_a3fb0af58477c6fec0052be23dcb4e236}{Bomb\+State}}}]{new\+State }\end{DoxyParamCaption})}
+
+
+
+Modifie l\textquotesingle{}état de la bombe. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em new\+State} & Le nouvel état. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBomb_a98a0282a6c695f0fc6a0a05683084bd9}\label{classBomb_a98a0282a6c695f0fc6a0a05683084bd9}} 
+\index{Bomb@{Bomb}!setX@{setX}}
+\index{setX@{setX}!Bomb@{Bomb}}
+\doxysubsubsection{\texorpdfstring{setX()}{setX()}}
+{\footnotesize\ttfamily void Bomb\+::setX (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Modifie la coordonnée x de la bombe. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em x} & La nouvelle coordonnée x. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBomb_aea71ea33e134e588cbd0a67b7f4932c5}\label{classBomb_aea71ea33e134e588cbd0a67b7f4932c5}} 
+\index{Bomb@{Bomb}!setY@{setY}}
+\index{setY@{setY}!Bomb@{Bomb}}
+\doxysubsubsection{\texorpdfstring{setY()}{setY()}}
+{\footnotesize\ttfamily void Bomb\+::setY (\begin{DoxyParamCaption}\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Modifie la coordonnée y de la bombe. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em y} & La nouvelle coordonnée y. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBomb_a5b6ada759b550fd4687b232e10dc9b31}\label{classBomb_a5b6ada759b550fd4687b232e10dc9b31}} 
+\index{Bomb@{Bomb}!update@{update}}
+\index{update@{update}!Bomb@{Bomb}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Bomb\+::update (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{current\+Time }\end{DoxyParamCaption})}
+
+
+
+Met à jour l\textquotesingle{}objet bombe. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em current\+Time} & Le temps actuel. \\
+\hline
+\end{DoxyParams}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/core/\mbox{\hyperlink{Bomb_8h}{Bomb.\+h}}\item 
+src/core/\mbox{\hyperlink{Bomb_8cpp}{Bomb.\+cpp}}\end{DoxyCompactItemize}

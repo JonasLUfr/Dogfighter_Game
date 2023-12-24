@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DogFigther:  Fichier source de src/core/Enhance.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">DogFigther
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Enhance.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Enhance_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="classEnhance.html">    3</a></span>&#160;<span class="keyword">class </span><a class="code" href="classEnhance.html">Enhance</a> {</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <a class="code" href="classEnhance.html#ac22cbe167e6de1ba724c2ad54dc6eafa">Enhance</a>();</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="comment">// 获取武器等级</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classEnhance.html#a8118ec8644f529c1fbfa276d1add303e">getWeaponLevel</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="comment">// 使用积分升级武器</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classEnhance.html#a5daabce7770f07509cb6e7f00c2d83e0">upgradeWeapon</a>(<span class="keywordtype">int</span> points);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="comment">// 获取武器弹道</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classEnhance.html#afe34603d413c3cc779402eabf5696b3a">getWeaponTrajectory</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">// 获取武器发射速度</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classEnhance.html#a3472846b9fe579da5732ff1e85225389">getWeaponFireRate</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">int</span> weaponLevel;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">int</span> weaponTrajectory;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">float</span> weaponFireRate;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">// 更新武器属性</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> updateWeaponAttributes();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
+<div class="ttc" id="aclassEnhance_html"><div class="ttname"><a href="classEnhance.html">Enhance</a></div><div class="ttdef"><b>Definition:</b> Enhance.h:3</div></div>
+<div class="ttc" id="aclassEnhance_html_a3472846b9fe579da5732ff1e85225389"><div class="ttname"><a href="classEnhance.html#a3472846b9fe579da5732ff1e85225389">Enhance::getWeaponFireRate</a></div><div class="ttdeci">float getWeaponFireRate() const</div><div class="ttdef"><b>Definition:</b> Enhance.cpp:27</div></div>
+<div class="ttc" id="aclassEnhance_html_a5daabce7770f07509cb6e7f00c2d83e0"><div class="ttname"><a href="classEnhance.html#a5daabce7770f07509cb6e7f00c2d83e0">Enhance::upgradeWeapon</a></div><div class="ttdeci">bool upgradeWeapon(int points)</div><div class="ttdef"><b>Definition:</b> Enhance.cpp:11</div></div>
+<div class="ttc" id="aclassEnhance_html_a8118ec8644f529c1fbfa276d1add303e"><div class="ttname"><a href="classEnhance.html#a8118ec8644f529c1fbfa276d1add303e">Enhance::getWeaponLevel</a></div><div class="ttdeci">int getWeaponLevel() const</div><div class="ttdef"><b>Definition:</b> Enhance.cpp:7</div></div>
+<div class="ttc" id="aclassEnhance_html_ac22cbe167e6de1ba724c2ad54dc6eafa"><div class="ttname"><a href="classEnhance.html#ac22cbe167e6de1ba724c2ad54dc6eafa">Enhance::Enhance</a></div><div class="ttdeci">Enhance()</div><div class="ttdef"><b>Definition:</b> Enhance.cpp:3</div></div>
+<div class="ttc" id="aclassEnhance_html_afe34603d413c3cc779402eabf5696b3a"><div class="ttname"><a href="classEnhance.html#afe34603d413c3cc779402eabf5696b3a">Enhance::getWeaponTrajectory</a></div><div class="ttdeci">int getWeaponTrajectory() const</div><div class="ttdef"><b>Definition:</b> Enhance.cpp:23</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

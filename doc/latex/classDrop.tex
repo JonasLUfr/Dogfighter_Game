@@ -1,0 +1,261 @@
+\hypertarget{classDrop}{}\doxysection{Référence de la classe Drop}
+\label{classDrop}\index{Drop@{Drop}}
+
+
+Classe représentant un objet qui tombe.  
+
+
+
+
+{\ttfamily \#include $<$Drop.\+h$>$}
+
+
+
+Graphe de collaboration de Drop\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classDrop__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{classDrop_a2de083545776187b1125c73c1aa736e9}{Drop\+Type}} \{ \mbox{\hyperlink{classDrop_a2de083545776187b1125c73c1aa736e9a3c0ee4bacc905ad4abb857127975acfc}{Bonus}}
+, \mbox{\hyperlink{classDrop_a2de083545776187b1125c73c1aa736e9ae397fdb463f1d62721c0a5aa6038efa1}{Speed\+Boost}}
+, \mbox{\hyperlink{classDrop_a2de083545776187b1125c73c1aa736e9a7cb970657cbafdbd953e5759134f0742}{Fire\+Rate\+Boost}}
+ \}
+\begin{DoxyCompactList}\small\item\em Énumération des différents types de bonus. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDrop_a894bcbc6ec1803adb3ae24a7491a6da6}{Drop}} (int x, int y, int speed, \mbox{\hyperlink{classDrop_a2de083545776187b1125c73c1aa736e9}{Drop\+Type}} \mbox{\hyperlink{classDrop_a18cca2b8ce3582335106e5564a88e28f}{type}})
+\begin{DoxyCompactList}\small\item\em Construit un nouvel objet qui tombe. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDrop_a899cba0709cf1d3ca420529e1c4bcc99}{Drop}} ()=default
+\begin{DoxyCompactList}\small\item\em Construit un nouvel objet qui tombe. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classDrop_ae8decf3a99f7ee66d6f8fb8d5353072a}{getX}} () const
+\begin{DoxyCompactList}\small\item\em Récupère la coordonnée x de l\textquotesingle{}objet. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classDrop_a3c686835155d00b0d3a6084097af2fff}{getY}} () const
+\begin{DoxyCompactList}\small\item\em Récupère la coordonnée y de l\textquotesingle{}objet. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDrop_a79d21a3ccaa0e9d57b6c109b023ce4ee}{setX}} (int setx)
+\begin{DoxyCompactList}\small\item\em Modifie la coordonnée x de l\textquotesingle{}objet. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDrop_a02052e6ee5e7288156f34ca017b262d8}{setY}} (int sety)
+\begin{DoxyCompactList}\small\item\em Modifie la coordonnée y de l\textquotesingle{}objet. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDrop_a2de083545776187b1125c73c1aa736e9}{Drop\+Type}} \mbox{\hyperlink{classDrop_a67d3152c6a479cd7fb3d90094074d1c3}{get\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Récupère le type de l\textquotesingle{}objet qui tombe. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDrop_a0cd1814a9dac0c37a9bbdc9789c7e342}{is\+Active}} () const
+\begin{DoxyCompactList}\small\item\em Indique si l\textquotesingle{}objet est actif. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDrop_a31fff427714fc2c4b8b8ec4733a9a568}{set\+Active}} (bool active)
+\begin{DoxyCompactList}\small\item\em Modifie l\textquotesingle{}état actif de l\textquotesingle{}objet. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDrop_a420739c7ba3bf7ba825ffabc38e7d946}{update}} ()
+\begin{DoxyCompactList}\small\item\em Met à jour l\textquotesingle{}objet. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structRect_1_1My__Rect}{Rect\+::\+My\+\_\+\+Rect}} \mbox{\hyperlink{classDrop_ad02482b38f905b4ff1298e3f0c10bf02}{get\+Collision\+Rect}} () const
+\begin{DoxyCompactList}\small\item\em Récupère le rectangle de collision de l\textquotesingle{}objet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDrop_a2de083545776187b1125c73c1aa736e9}{Drop\+Type}} \mbox{\hyperlink{classDrop_a18cca2b8ce3582335106e5564a88e28f}{type}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Classe représentant un objet qui tombe. 
+
+\doxysubsection{Documentation des énumérations membres}
+\mbox{\Hypertarget{classDrop_a2de083545776187b1125c73c1aa736e9}\label{classDrop_a2de083545776187b1125c73c1aa736e9}} 
+\index{Drop@{Drop}!DropType@{DropType}}
+\index{DropType@{DropType}!Drop@{Drop}}
+\doxysubsubsection{\texorpdfstring{DropType}{DropType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classDrop_a2de083545776187b1125c73c1aa736e9}{Drop\+::\+Drop\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Énumération des différents types de bonus. 
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Bonus@{Bonus}!Drop@{Drop}}\index{Drop@{Drop}!Bonus@{Bonus}}}\mbox{\Hypertarget{classDrop_a2de083545776187b1125c73c1aa736e9a3c0ee4bacc905ad4abb857127975acfc}\label{classDrop_a2de083545776187b1125c73c1aa736e9a3c0ee4bacc905ad4abb857127975acfc}} 
+Bonus&Objet avec un effet positif. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SpeedBoost@{SpeedBoost}!Drop@{Drop}}\index{Drop@{Drop}!SpeedBoost@{SpeedBoost}}}\mbox{\Hypertarget{classDrop_a2de083545776187b1125c73c1aa736e9ae397fdb463f1d62721c0a5aa6038efa1}\label{classDrop_a2de083545776187b1125c73c1aa736e9ae397fdb463f1d62721c0a5aa6038efa1}} 
+Speed\+Boost&Augmentation de la vitesse. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FireRateBoost@{FireRateBoost}!Drop@{Drop}}\index{Drop@{Drop}!FireRateBoost@{FireRateBoost}}}\mbox{\Hypertarget{classDrop_a2de083545776187b1125c73c1aa736e9a7cb970657cbafdbd953e5759134f0742}\label{classDrop_a2de083545776187b1125c73c1aa736e9a7cb970657cbafdbd953e5759134f0742}} 
+Fire\+Rate\+Boost&Augmentation de la cadence de tir. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classDrop_a894bcbc6ec1803adb3ae24a7491a6da6}\label{classDrop_a894bcbc6ec1803adb3ae24a7491a6da6}} 
+\index{Drop@{Drop}!Drop@{Drop}}
+\index{Drop@{Drop}!Drop@{Drop}}
+\doxysubsubsection{\texorpdfstring{Drop()}{Drop()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Drop\+::\+Drop (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{speed,  }\item[{\mbox{\hyperlink{classDrop_a2de083545776187b1125c73c1aa736e9}{Drop\+Type}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Construit un nouvel objet qui tombe. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em x} & La coordonnée x de l\textquotesingle{}objet. \\
+\hline
+{\em y} & La coordonnée y de l\textquotesingle{}objet. \\
+\hline
+{\em speed} & La vitesse de l\textquotesingle{}objet. \\
+\hline
+{\em type} & Le type de l\textquotesingle{}objet qui tombe. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDrop_a899cba0709cf1d3ca420529e1c4bcc99}\label{classDrop_a899cba0709cf1d3ca420529e1c4bcc99}} 
+\index{Drop@{Drop}!Drop@{Drop}}
+\index{Drop@{Drop}!Drop@{Drop}}
+\doxysubsubsection{\texorpdfstring{Drop()}{Drop()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Drop\+::\+Drop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Construit un nouvel objet qui tombe. 
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classDrop_ad02482b38f905b4ff1298e3f0c10bf02}\label{classDrop_ad02482b38f905b4ff1298e3f0c10bf02}} 
+\index{Drop@{Drop}!getCollisionRect@{getCollisionRect}}
+\index{getCollisionRect@{getCollisionRect}!Drop@{Drop}}
+\doxysubsubsection{\texorpdfstring{getCollisionRect()}{getCollisionRect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structRect_1_1My__Rect}{Rect\+::\+My\+\_\+\+Rect}} Drop\+::get\+Collision\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Récupère le rectangle de collision de l\textquotesingle{}objet. 
+
+\begin{DoxyReturn}{Renvoie}
+Le rectangle de collision de l\textquotesingle{}objet. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDrop_a67d3152c6a479cd7fb3d90094074d1c3}\label{classDrop_a67d3152c6a479cd7fb3d90094074d1c3}} 
+\index{Drop@{Drop}!getType@{getType}}
+\index{getType@{getType}!Drop@{Drop}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDrop_a2de083545776187b1125c73c1aa736e9}{Drop\+::\+Drop\+Type}} Drop\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Récupère le type de l\textquotesingle{}objet qui tombe. 
+
+\begin{DoxyReturn}{Renvoie}
+Le type de l\textquotesingle{}objet qui tombe. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDrop_ae8decf3a99f7ee66d6f8fb8d5353072a}\label{classDrop_ae8decf3a99f7ee66d6f8fb8d5353072a}} 
+\index{Drop@{Drop}!getX@{getX}}
+\index{getX@{getX}!Drop@{Drop}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily int Drop\+::getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Récupère la coordonnée x de l\textquotesingle{}objet. 
+
+\begin{DoxyReturn}{Renvoie}
+La coordonnée x de l\textquotesingle{}objet. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDrop_a3c686835155d00b0d3a6084097af2fff}\label{classDrop_a3c686835155d00b0d3a6084097af2fff}} 
+\index{Drop@{Drop}!getY@{getY}}
+\index{getY@{getY}!Drop@{Drop}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily int Drop\+::getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Récupère la coordonnée y de l\textquotesingle{}objet. 
+
+\begin{DoxyReturn}{Renvoie}
+La coordonnée y de l\textquotesingle{}objet. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDrop_a0cd1814a9dac0c37a9bbdc9789c7e342}\label{classDrop_a0cd1814a9dac0c37a9bbdc9789c7e342}} 
+\index{Drop@{Drop}!isActive@{isActive}}
+\index{isActive@{isActive}!Drop@{Drop}}
+\doxysubsubsection{\texorpdfstring{isActive()}{isActive()}}
+{\footnotesize\ttfamily bool Drop\+::is\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Indique si l\textquotesingle{}objet est actif. 
+
+\begin{DoxyReturn}{Renvoie}
+true si l\textquotesingle{}objet est actif, false sinon. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDrop_a31fff427714fc2c4b8b8ec4733a9a568}\label{classDrop_a31fff427714fc2c4b8b8ec4733a9a568}} 
+\index{Drop@{Drop}!setActive@{setActive}}
+\index{setActive@{setActive}!Drop@{Drop}}
+\doxysubsubsection{\texorpdfstring{setActive()}{setActive()}}
+{\footnotesize\ttfamily void Drop\+::set\+Active (\begin{DoxyParamCaption}\item[{bool}]{active }\end{DoxyParamCaption})}
+
+
+
+Modifie l\textquotesingle{}état actif de l\textquotesingle{}objet. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em active} & Le nouvel état. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDrop_a79d21a3ccaa0e9d57b6c109b023ce4ee}\label{classDrop_a79d21a3ccaa0e9d57b6c109b023ce4ee}} 
+\index{Drop@{Drop}!setX@{setX}}
+\index{setX@{setX}!Drop@{Drop}}
+\doxysubsubsection{\texorpdfstring{setX()}{setX()}}
+{\footnotesize\ttfamily void Drop\+::setX (\begin{DoxyParamCaption}\item[{int}]{setx }\end{DoxyParamCaption})}
+
+
+
+Modifie la coordonnée x de l\textquotesingle{}objet. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em setx} & La nouvelle coordonnée x. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDrop_a02052e6ee5e7288156f34ca017b262d8}\label{classDrop_a02052e6ee5e7288156f34ca017b262d8}} 
+\index{Drop@{Drop}!setY@{setY}}
+\index{setY@{setY}!Drop@{Drop}}
+\doxysubsubsection{\texorpdfstring{setY()}{setY()}}
+{\footnotesize\ttfamily void Drop\+::setY (\begin{DoxyParamCaption}\item[{int}]{sety }\end{DoxyParamCaption})}
+
+
+
+Modifie la coordonnée y de l\textquotesingle{}objet. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em sety} & La nouvelle coordonnée y. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDrop_a420739c7ba3bf7ba825ffabc38e7d946}\label{classDrop_a420739c7ba3bf7ba825ffabc38e7d946}} 
+\index{Drop@{Drop}!update@{update}}
+\index{update@{update}!Drop@{Drop}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Drop\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Met à jour l\textquotesingle{}objet. 
+
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{classDrop_a18cca2b8ce3582335106e5564a88e28f}\label{classDrop_a18cca2b8ce3582335106e5564a88e28f}} 
+\index{Drop@{Drop}!type@{type}}
+\index{type@{type}!Drop@{Drop}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDrop_a2de083545776187b1125c73c1aa736e9}{Drop\+Type}} Drop\+::type}
+
+Le type de l\textquotesingle{}objet qui tombe. 
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/core/\mbox{\hyperlink{Drop_8h}{Drop.\+h}}\item 
+src/core/\mbox{\hyperlink{Drop_8cpp}{Drop.\+cpp}}\end{DoxyCompactItemize}

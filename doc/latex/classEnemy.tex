@@ -1,0 +1,286 @@
+\hypertarget{classEnemy}{}\doxysection{Référence de la classe Enemy}
+\label{classEnemy}\index{Enemy@{Enemy}}
+
+
+Classe représentant un ennemi.  
+
+
+
+
+{\ttfamily \#include $<$Enemy.\+h$>$}
+
+
+
+Graphe de collaboration de Enemy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{classEnemy__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{classEnemy_a14bead85804fe8c4cfd27ea20122594d}{Enemy\+State}} \{ \mbox{\hyperlink{classEnemy_a14bead85804fe8c4cfd27ea20122594da4d3d769b812b6faa6b76e1a8abaece2d}{Active}}
+, \mbox{\hyperlink{classEnemy_a14bead85804fe8c4cfd27ea20122594da3cab03c00dbd11bc3569afa0748013f0}{Inactive}}
+ \}
+\begin{DoxyCompactList}\small\item\em Énumération des états possibles de l\textquotesingle{}ennemi. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEnemy_a2496281ed49f2d1a4852d34191bcfcdd}{Enemy}} (int x, int y, int interval, int speed)
+\begin{DoxyCompactList}\small\item\em Construit un nouvel ennemi. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEnemy_a94f30d348b6d2840fd71675472ba38dd}{Enemy}} ()
+\begin{DoxyCompactList}\small\item\em Construit un nouvel ennemi. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classEnemy_a1536187429da4464004b93e19770502f}{getX}} () const
+\begin{DoxyCompactList}\small\item\em Récupère la coordonnée x de l\textquotesingle{}ennemi. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classEnemy_ac9cdab9c1102747c78baf9a4a30c6b01}{getY}} () const
+\begin{DoxyCompactList}\small\item\em Récupère la coordonnée y de l\textquotesingle{}ennemi. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEnemy_a6a6cf8e42d1553f8d1331887d70127cb}{setX}} (int x)
+\begin{DoxyCompactList}\small\item\em Modifie la coordonnée x de l\textquotesingle{}ennemi. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEnemy_aaadfef27ce8caba1799c5ce833407afc}{setY}} (int y)
+\begin{DoxyCompactList}\small\item\em Modifie la coordonnée y de l\textquotesingle{}ennemi. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEnemy_a14bead85804fe8c4cfd27ea20122594d}{Enemy\+State}} \mbox{\hyperlink{classEnemy_af89829a2ed3d51a440973f7fbce17336}{get\+State}} () const
+\begin{DoxyCompactList}\small\item\em Récupère l\textquotesingle{}état de l\textquotesingle{}ennemi. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEnemy_aa7438a15391497bdeeae36dc0f3c136c}{set\+State}} (\mbox{\hyperlink{classEnemy_a14bead85804fe8c4cfd27ea20122594d}{Enemy\+State}} new\+State)
+\begin{DoxyCompactList}\small\item\em Modifie l\textquotesingle{}état de l\textquotesingle{}ennemi. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classEnemy_a365b8519f5e28b2277ddd7e3ebd3192d}{get\+Interval}} () const
+\begin{DoxyCompactList}\small\item\em Récupère l\textquotesingle{}intervalle de temps entre chaque tir de l\textquotesingle{}ennemi. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classEnemy_ac1cc1be96a8fa6e280836afa7d6b24dd}{get\+Speed}} () const
+\begin{DoxyCompactList}\small\item\em Récupère la vitesse de déplacement de l\textquotesingle{}ennemi. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEnemy_a8c747108172064c9c5691b622f11afa9}{set\+Speed}} (int set\+Speed)
+\begin{DoxyCompactList}\small\item\em Modifie la vitesse de déplacement de l\textquotesingle{}ennemi. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEnemy_ad55ee71b5a8c23fbd00b3c368b90cc64}{update}} ()
+\begin{DoxyCompactList}\small\item\em Met à jour l\textquotesingle{}ennemi. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEnemy_a0755a2799e2c7d10a242c13513321e3e}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Réinitialise l\textquotesingle{}ennemi. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structRect_1_1My__Rect}{Rect\+::\+My\+\_\+\+Rect}} \mbox{\hyperlink{classEnemy_a1be34c62c22e3931d4b5ae5939dff989}{get\+Collision\+Rect}} () const
+\begin{DoxyCompactList}\small\item\em Récupère le rectangle de collision de l\textquotesingle{}ennemi. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Classe représentant un ennemi. 
+
+\doxysubsection{Documentation des énumérations membres}
+\mbox{\Hypertarget{classEnemy_a14bead85804fe8c4cfd27ea20122594d}\label{classEnemy_a14bead85804fe8c4cfd27ea20122594d}} 
+\index{Enemy@{Enemy}!EnemyState@{EnemyState}}
+\index{EnemyState@{EnemyState}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{EnemyState}{EnemyState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classEnemy_a14bead85804fe8c4cfd27ea20122594d}{Enemy\+::\+Enemy\+State}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Énumération des états possibles de l\textquotesingle{}ennemi. 
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Active@{Active}!Enemy@{Enemy}}\index{Enemy@{Enemy}!Active@{Active}}}\mbox{\Hypertarget{classEnemy_a14bead85804fe8c4cfd27ea20122594da4d3d769b812b6faa6b76e1a8abaece2d}\label{classEnemy_a14bead85804fe8c4cfd27ea20122594da4d3d769b812b6faa6b76e1a8abaece2d}} 
+Active&L\textquotesingle{}ennemi est actif \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Inactive@{Inactive}!Enemy@{Enemy}}\index{Enemy@{Enemy}!Inactive@{Inactive}}}\mbox{\Hypertarget{classEnemy_a14bead85804fe8c4cfd27ea20122594da3cab03c00dbd11bc3569afa0748013f0}\label{classEnemy_a14bead85804fe8c4cfd27ea20122594da3cab03c00dbd11bc3569afa0748013f0}} 
+Inactive&L\textquotesingle{}ennemi est inactif \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classEnemy_a2496281ed49f2d1a4852d34191bcfcdd}\label{classEnemy_a2496281ed49f2d1a4852d34191bcfcdd}} 
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{Enemy()}{Enemy()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Enemy\+::\+Enemy (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{interval,  }\item[{int}]{speed }\end{DoxyParamCaption})}
+
+
+
+Construit un nouvel ennemi. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em x} & La coordonnée x de l\textquotesingle{}ennemi. \\
+\hline
+{\em y} & La coordonnée y de l\textquotesingle{}ennemi. \\
+\hline
+{\em interval} & L\textquotesingle{}intervalle de temps entre chaque tir de l\textquotesingle{}ennemi. \\
+\hline
+{\em speed} & La vitesse de déplacement de l\textquotesingle{}ennemi. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEnemy_a94f30d348b6d2840fd71675472ba38dd}\label{classEnemy_a94f30d348b6d2840fd71675472ba38dd}} 
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{Enemy()}{Enemy()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Enemy\+::\+Enemy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construit un nouvel ennemi. 
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classEnemy_a1be34c62c22e3931d4b5ae5939dff989}\label{classEnemy_a1be34c62c22e3931d4b5ae5939dff989}} 
+\index{Enemy@{Enemy}!getCollisionRect@{getCollisionRect}}
+\index{getCollisionRect@{getCollisionRect}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getCollisionRect()}{getCollisionRect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structRect_1_1My__Rect}{Rect\+::\+My\+\_\+\+Rect}} Enemy\+::get\+Collision\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Récupère le rectangle de collision de l\textquotesingle{}ennemi. 
+
+\begin{DoxyReturn}{Renvoie}
+Le rectangle de collision de l\textquotesingle{}ennemi. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEnemy_a365b8519f5e28b2277ddd7e3ebd3192d}\label{classEnemy_a365b8519f5e28b2277ddd7e3ebd3192d}} 
+\index{Enemy@{Enemy}!getInterval@{getInterval}}
+\index{getInterval@{getInterval}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getInterval()}{getInterval()}}
+{\footnotesize\ttfamily int Enemy\+::get\+Interval (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Récupère l\textquotesingle{}intervalle de temps entre chaque tir de l\textquotesingle{}ennemi. 
+
+\begin{DoxyReturn}{Renvoie}
+L\textquotesingle{}intervalle de temps. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEnemy_ac1cc1be96a8fa6e280836afa7d6b24dd}\label{classEnemy_ac1cc1be96a8fa6e280836afa7d6b24dd}} 
+\index{Enemy@{Enemy}!getSpeed@{getSpeed}}
+\index{getSpeed@{getSpeed}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getSpeed()}{getSpeed()}}
+{\footnotesize\ttfamily int Enemy\+::get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Récupère la vitesse de déplacement de l\textquotesingle{}ennemi. 
+
+\begin{DoxyReturn}{Renvoie}
+La vitesse de déplacement de l\textquotesingle{}ennemi. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEnemy_af89829a2ed3d51a440973f7fbce17336}\label{classEnemy_af89829a2ed3d51a440973f7fbce17336}} 
+\index{Enemy@{Enemy}!getState@{getState}}
+\index{getState@{getState}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEnemy_a14bead85804fe8c4cfd27ea20122594d}{Enemy\+::\+Enemy\+State}} Enemy\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Récupère l\textquotesingle{}état de l\textquotesingle{}ennemi. 
+
+\begin{DoxyReturn}{Renvoie}
+L\textquotesingle{}état de l\textquotesingle{}ennemi. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEnemy_a1536187429da4464004b93e19770502f}\label{classEnemy_a1536187429da4464004b93e19770502f}} 
+\index{Enemy@{Enemy}!getX@{getX}}
+\index{getX@{getX}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily int Enemy\+::getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Récupère la coordonnée x de l\textquotesingle{}ennemi. 
+
+\begin{DoxyReturn}{Renvoie}
+La coordonnée x de l\textquotesingle{}ennemi. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEnemy_ac9cdab9c1102747c78baf9a4a30c6b01}\label{classEnemy_ac9cdab9c1102747c78baf9a4a30c6b01}} 
+\index{Enemy@{Enemy}!getY@{getY}}
+\index{getY@{getY}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily int Enemy\+::getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Récupère la coordonnée y de l\textquotesingle{}ennemi. 
+
+\begin{DoxyReturn}{Renvoie}
+La coordonnée y de l\textquotesingle{}ennemi. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEnemy_a0755a2799e2c7d10a242c13513321e3e}\label{classEnemy_a0755a2799e2c7d10a242c13513321e3e}} 
+\index{Enemy@{Enemy}!reset@{reset}}
+\index{reset@{reset}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Enemy\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Réinitialise l\textquotesingle{}ennemi. 
+
+\mbox{\Hypertarget{classEnemy_a8c747108172064c9c5691b622f11afa9}\label{classEnemy_a8c747108172064c9c5691b622f11afa9}} 
+\index{Enemy@{Enemy}!setSpeed@{setSpeed}}
+\index{setSpeed@{setSpeed}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{setSpeed()}{setSpeed()}}
+{\footnotesize\ttfamily void Enemy\+::set\+Speed (\begin{DoxyParamCaption}\item[{int}]{set\+Speed }\end{DoxyParamCaption})}
+
+
+
+Modifie la vitesse de déplacement de l\textquotesingle{}ennemi. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em set\+Speed} & La nouvelle vitesse. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEnemy_aa7438a15391497bdeeae36dc0f3c136c}\label{classEnemy_aa7438a15391497bdeeae36dc0f3c136c}} 
+\index{Enemy@{Enemy}!setState@{setState}}
+\index{setState@{setState}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily void Enemy\+::set\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEnemy_a14bead85804fe8c4cfd27ea20122594d}{Enemy\+State}}}]{new\+State }\end{DoxyParamCaption})}
+
+
+
+Modifie l\textquotesingle{}état de l\textquotesingle{}ennemi. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em new\+State} & Le nouvel état. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEnemy_a6a6cf8e42d1553f8d1331887d70127cb}\label{classEnemy_a6a6cf8e42d1553f8d1331887d70127cb}} 
+\index{Enemy@{Enemy}!setX@{setX}}
+\index{setX@{setX}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{setX()}{setX()}}
+{\footnotesize\ttfamily void Enemy\+::setX (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Modifie la coordonnée x de l\textquotesingle{}ennemi. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em x} & La nouvelle coordonnée x. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEnemy_aaadfef27ce8caba1799c5ce833407afc}\label{classEnemy_aaadfef27ce8caba1799c5ce833407afc}} 
+\index{Enemy@{Enemy}!setY@{setY}}
+\index{setY@{setY}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{setY()}{setY()}}
+{\footnotesize\ttfamily void Enemy\+::setY (\begin{DoxyParamCaption}\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Modifie la coordonnée y de l\textquotesingle{}ennemi. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em y} & La nouvelle coordonnée y. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEnemy_ad55ee71b5a8c23fbd00b3c368b90cc64}\label{classEnemy_ad55ee71b5a8c23fbd00b3c368b90cc64}} 
+\index{Enemy@{Enemy}!update@{update}}
+\index{update@{update}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Enemy\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Met à jour l\textquotesingle{}ennemi. 
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/core/\mbox{\hyperlink{Enemy_8h}{Enemy.\+h}}\item 
+src/core/\mbox{\hyperlink{Enemy_8cpp}{Enemy.\+cpp}}\end{DoxyCompactItemize}

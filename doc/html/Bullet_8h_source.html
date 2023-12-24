@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DogFigther:  Fichier source de src/core/Bullet.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">DogFigther
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Bullet.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Bullet_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef BULLET_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define BULLET_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Collision_8h.html">Collision.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classBullet.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="classBullet.html">Bullet</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classBullet.html#a74e59768613e272c1094ff0d2b3de3d4">   20</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="classBullet.html#a74e59768613e272c1094ff0d2b3de3d4">BulletTrajectory</a> {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="classBullet.html#a74e59768613e272c1094ff0d2b3de3d4a45b8e35ca0d193d01df2cf1858e27e55">Weapon1</a>, </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="classBullet.html#a74e59768613e272c1094ff0d2b3de3d4a2905fb91ecc7d7758ecfd869b369428d">Weapon2</a>, </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="classBullet.html#a74e59768613e272c1094ff0d2b3de3d4a3e0d5c63a23464e75ff485bbf6fa34ce">Weapon3</a>, </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="classBullet.html#a74e59768613e272c1094ff0d2b3de3d4a7d5056fa0b2b23a2b7dca8780ab71e46">Weapon4</a>, </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="classBullet.html#a74e59768613e272c1094ff0d2b3de3d4a35cf73f976488a496d9e1ec837b50270">Weapon5</a>  </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    };</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classBullet.html#acd7befc0bc18907cc1d871d37bbdddeb">Bullet</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> speed, <a class="code" href="classBullet.html#a74e59768613e272c1094ff0d2b3de3d4">BulletTrajectory</a> trajectory);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classBullet.html#acd7befc0bc18907cc1d871d37bbdddeb">   40</a></span>&#160;    <a class="code" href="classBullet.html#acd7befc0bc18907cc1d871d37bbdddeb">Bullet</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classBullet.html#a40a57c759baa47b6e1bf4ecd0d4a8a53">   45</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="classBullet.html#a40a57c759baa47b6e1bf4ecd0d4a8a53">BulletState</a> {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="classBullet.html#a40a57c759baa47b6e1bf4ecd0d4a8a53a4d3d769b812b6faa6b76e1a8abaece2d">Active</a>,     </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="classBullet.html#a40a57c759baa47b6e1bf4ecd0d4a8a53a3cab03c00dbd11bc3569afa0748013f0">Inactive</a>    </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    };</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classBullet.html#a4e15a108efbeb6105b764d8c9d95c45f">setX</a>(<span class="keywordtype">int</span> x);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classBullet.html#a949b2a8455aa466c9a83087125de3381">setY</a>(<span class="keywordtype">int</span> y);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="classBullet.html#a40a57c759baa47b6e1bf4ecd0d4a8a53">BulletState</a> <a class="code" href="classBullet.html#a2fa75627c15001ff5813b1e219609d42">getState</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classBullet.html#a39d75a3c51d4f6621f3fb3746552b51e">setState</a>(<a class="code" href="classBullet.html#a40a57c759baa47b6e1bf4ecd0d4a8a53">BulletState</a> newState);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classBullet.html#abe5e0b0862207f4a716d7d7d40ccb305">getX</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classBullet.html#aa186dfa46c7d3003bfa8d701a93434ea">getY</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classBullet.html#abc8b6b4542e1c8ee844d5351cffd4635">getSpeed</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classBullet.html#aa9ae43c52b4b5afbd14dca98c6655c03">setSpeed</a>(<span class="keywordtype">int</span> speed);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classBullet.html#af2e8a6860232266f180efbdb2a68f8c9">reset</a>();</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classBullet.html#a8dc55689316ad486a844735e290a7e7b">getDamage</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classBullet.html#a376864897be4e74782295ef91c6a177b">setDamage</a>(<span class="keywordtype">int</span> newDamage);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classBullet.html#aef1a79edd1be3fa9e14474d86aa8f9ee">getFireInterval</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classBullet.html#a4fafd1068c648ed1a3ad7caf9e2428c8">setFireInterval</a>(<span class="keywordtype">int</span> newFireInterval);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classBullet.html#aeaf23a65e0268f030126ec6ec93e5bf7">setTrajectory</a>(<a class="code" href="classBullet.html#a74e59768613e272c1094ff0d2b3de3d4">BulletTrajectory</a> newTrajectory);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classBullet.html#a32f4a0611fe2dd245fee955d14ca1f68">update</a>();</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classBullet.html#afca197d72e9d9814d57f7d39f989a8c6">setSpeedX</a>(<span class="keywordtype">float</span> speedX);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classBullet.html#a3c65d291d10bb42b3650f0a9c80ac75a">setSpeedY</a>(<span class="keywordtype">float</span> speedY);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <a class="code" href="structRect_1_1My__Rect.html">Rect::My_Rect</a> <a class="code" href="classBullet.html#ab52fe81b9d99d4b6c2f0b9b09a94b6da">getCollisionRect</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordtype">int</span> x; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordtype">int</span> y; </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <a class="code" href="classBullet.html#a74e59768613e272c1094ff0d2b3de3d4">BulletTrajectory</a> trajectory; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">float</span> speedX; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordtype">float</span> speedY; </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordtype">int</span> bulletWidth; </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordtype">int</span> bulletHeight; </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordtype">int</span> speed; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <a class="code" href="classBullet.html#a40a57c759baa47b6e1bf4ecd0d4a8a53">BulletState</a> state; </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordtype">int</span> damage; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordtype">int</span> fireInterval; </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    };</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="preprocessor">    #endif </span><span class="comment">// BULLET_H</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="ttc" id="aCollision_8h_html"><div class="ttname"><a href="Collision_8h.html">Collision.h</a></div><div class="ttdoc">Définition de la classe Rect pour la détection de collisions.</div></div>
+<div class="ttc" id="aclassBullet_html"><div class="ttname"><a href="classBullet.html">Bullet</a></div><div class="ttdoc">Classe représentant une balle.</div><div class="ttdef"><b>Definition:</b> Bullet.h:15</div></div>
+<div class="ttc" id="aclassBullet_html_a2fa75627c15001ff5813b1e219609d42"><div class="ttname"><a href="classBullet.html#a2fa75627c15001ff5813b1e219609d42">Bullet::getState</a></div><div class="ttdeci">BulletState getState() const</div><div class="ttdoc">Récupère l'état de la balle.</div><div class="ttdef"><b>Definition:</b> Bullet.cpp:34</div></div>
+<div class="ttc" id="aclassBullet_html_a32f4a0611fe2dd245fee955d14ca1f68"><div class="ttname"><a href="classBullet.html#a32f4a0611fe2dd245fee955d14ca1f68">Bullet::update</a></div><div class="ttdeci">void update()</div><div class="ttdoc">Met à jour l'objet balle.</div><div class="ttdef"><b>Definition:</b> Bullet.cpp:14</div></div>
+<div class="ttc" id="aclassBullet_html_a376864897be4e74782295ef91c6a177b"><div class="ttname"><a href="classBullet.html#a376864897be4e74782295ef91c6a177b">Bullet::setDamage</a></div><div class="ttdeci">void setDamage(int newDamage)</div><div class="ttdoc">Modifie les dégâts de la balle.</div><div class="ttdef"><b>Definition:</b> Bullet.cpp:74</div></div>
+<div class="ttc" id="aclassBullet_html_a39d75a3c51d4f6621f3fb3746552b51e"><div class="ttname"><a href="classBullet.html#a39d75a3c51d4f6621f3fb3746552b51e">Bullet::setState</a></div><div class="ttdeci">void setState(BulletState newState)</div><div class="ttdoc">Modifie l'état de la balle.</div><div class="ttdef"><b>Definition:</b> Bullet.cpp:38</div></div>
+<div class="ttc" id="aclassBullet_html_a3c65d291d10bb42b3650f0a9c80ac75a"><div class="ttname"><a href="classBullet.html#a3c65d291d10bb42b3650f0a9c80ac75a">Bullet::setSpeedY</a></div><div class="ttdeci">void setSpeedY(float speedY)</div><div class="ttdoc">Modifie la vitesse verticale de la balle.</div><div class="ttdef"><b>Definition:</b> Bullet.cpp:62</div></div>
+<div class="ttc" id="aclassBullet_html_a40a57c759baa47b6e1bf4ecd0d4a8a53"><div class="ttname"><a href="classBullet.html#a40a57c759baa47b6e1bf4ecd0d4a8a53">Bullet::BulletState</a></div><div class="ttdeci">BulletState</div><div class="ttdoc">Énumération des états possibles des balles.</div><div class="ttdef"><b>Definition:</b> Bullet.h:45</div></div>
+<div class="ttc" id="aclassBullet_html_a40a57c759baa47b6e1bf4ecd0d4a8a53a3cab03c00dbd11bc3569afa0748013f0"><div class="ttname"><a href="classBullet.html#a40a57c759baa47b6e1bf4ecd0d4a8a53a3cab03c00dbd11bc3569afa0748013f0">Bullet::BulletState::Inactive</a></div><div class="ttdeci">@ Inactive</div></div>
+<div class="ttc" id="aclassBullet_html_a40a57c759baa47b6e1bf4ecd0d4a8a53a4d3d769b812b6faa6b76e1a8abaece2d"><div class="ttname"><a href="classBullet.html#a40a57c759baa47b6e1bf4ecd0d4a8a53a4d3d769b812b6faa6b76e1a8abaece2d">Bullet::BulletState::Active</a></div><div class="ttdeci">@ Active</div></div>
+<div class="ttc" id="aclassBullet_html_a4e15a108efbeb6105b764d8c9d95c45f"><div class="ttname"><a href="classBullet.html#a4e15a108efbeb6105b764d8c9d95c45f">Bullet::setX</a></div><div class="ttdeci">void setX(int x)</div><div class="ttdoc">Modifie la coordonnée x de la balle.</div><div class="ttdef"><b>Definition:</b> Bullet.cpp:26</div></div>
+<div class="ttc" id="aclassBullet_html_a4fafd1068c648ed1a3ad7caf9e2428c8"><div class="ttname"><a href="classBullet.html#a4fafd1068c648ed1a3ad7caf9e2428c8">Bullet::setFireInterval</a></div><div class="ttdeci">void setFireInterval(int newFireInterval)</div><div class="ttdoc">Modifie l'intervalle de génération de la balle.</div><div class="ttdef"><b>Definition:</b> Bullet.cpp:82</div></div>
+<div class="ttc" id="aclassBullet_html_a74e59768613e272c1094ff0d2b3de3d4"><div class="ttname"><a href="classBullet.html#a74e59768613e272c1094ff0d2b3de3d4">Bullet::BulletTrajectory</a></div><div class="ttdeci">BulletTrajectory</div><div class="ttdoc">Énumération des différentes trajectoires de balles.</div><div class="ttdef"><b>Definition:</b> Bullet.h:20</div></div>
+<div class="ttc" id="aclassBullet_html_a74e59768613e272c1094ff0d2b3de3d4a2905fb91ecc7d7758ecfd869b369428d"><div class="ttname"><a href="classBullet.html#a74e59768613e272c1094ff0d2b3de3d4a2905fb91ecc7d7758ecfd869b369428d">Bullet::BulletTrajectory::Weapon2</a></div><div class="ttdeci">@ Weapon2</div></div>
+<div class="ttc" id="aclassBullet_html_a74e59768613e272c1094ff0d2b3de3d4a35cf73f976488a496d9e1ec837b50270"><div class="ttname"><a href="classBullet.html#a74e59768613e272c1094ff0d2b3de3d4a35cf73f976488a496d9e1ec837b50270">Bullet::BulletTrajectory::Weapon5</a></div><div class="ttdeci">@ Weapon5</div></div>
+<div class="ttc" id="aclassBullet_html_a74e59768613e272c1094ff0d2b3de3d4a3e0d5c63a23464e75ff485bbf6fa34ce"><div class="ttname"><a href="classBullet.html#a74e59768613e272c1094ff0d2b3de3d4a3e0d5c63a23464e75ff485bbf6fa34ce">Bullet::BulletTrajectory::Weapon3</a></div><div class="ttdeci">@ Weapon3</div></div>
+<div class="ttc" id="aclassBullet_html_a74e59768613e272c1094ff0d2b3de3d4a45b8e35ca0d193d01df2cf1858e27e55"><div class="ttname"><a href="classBullet.html#a74e59768613e272c1094ff0d2b3de3d4a45b8e35ca0d193d01df2cf1858e27e55">Bullet::BulletTrajectory::Weapon1</a></div><div class="ttdeci">@ Weapon1</div></div>
+<div class="ttc" id="aclassBullet_html_a74e59768613e272c1094ff0d2b3de3d4a7d5056fa0b2b23a2b7dca8780ab71e46"><div class="ttname"><a href="classBullet.html#a74e59768613e272c1094ff0d2b3de3d4a7d5056fa0b2b23a2b7dca8780ab71e46">Bullet::BulletTrajectory::Weapon4</a></div><div class="ttdeci">@ Weapon4</div></div>
+<div class="ttc" id="aclassBullet_html_a8dc55689316ad486a844735e290a7e7b"><div class="ttname"><a href="classBullet.html#a8dc55689316ad486a844735e290a7e7b">Bullet::getDamage</a></div><div class="ttdeci">int getDamage() const</div><div class="ttdoc">Récupère les dégâts de la balle.</div><div class="ttdef"><b>Definition:</b> Bullet.cpp:70</div></div>
+<div class="ttc" id="aclassBullet_html_a949b2a8455aa466c9a83087125de3381"><div class="ttname"><a href="classBullet.html#a949b2a8455aa466c9a83087125de3381">Bullet::setY</a></div><div class="ttdeci">void setY(int y)</div><div class="ttdoc">Modifie la coordonnée y de la balle.</div><div class="ttdef"><b>Definition:</b> Bullet.cpp:30</div></div>
+<div class="ttc" id="aclassBullet_html_aa186dfa46c7d3003bfa8d701a93434ea"><div class="ttname"><a href="classBullet.html#aa186dfa46c7d3003bfa8d701a93434ea">Bullet::getY</a></div><div class="ttdeci">int getY() const</div><div class="ttdoc">Récupère la coordonnée y de la balle.</div><div class="ttdef"><b>Definition:</b> Bullet.cpp:46</div></div>
+<div class="ttc" id="aclassBullet_html_aa9ae43c52b4b5afbd14dca98c6655c03"><div class="ttname"><a href="classBullet.html#aa9ae43c52b4b5afbd14dca98c6655c03">Bullet::setSpeed</a></div><div class="ttdeci">void setSpeed(int speed)</div><div class="ttdoc">Modifie la vitesse de la balle.</div><div class="ttdef"><b>Definition:</b> Bullet.cpp:54</div></div>
+<div class="ttc" id="aclassBullet_html_ab52fe81b9d99d4b6c2f0b9b09a94b6da"><div class="ttname"><a href="classBullet.html#ab52fe81b9d99d4b6c2f0b9b09a94b6da">Bullet::getCollisionRect</a></div><div class="ttdeci">Rect::My_Rect getCollisionRect() const</div><div class="ttdoc">Récupère le rectangle de collision de la balle.</div><div class="ttdef"><b>Definition:</b> Bullet.cpp:90</div></div>
+<div class="ttc" id="aclassBullet_html_abc8b6b4542e1c8ee844d5351cffd4635"><div class="ttname"><a href="classBullet.html#abc8b6b4542e1c8ee844d5351cffd4635">Bullet::getSpeed</a></div><div class="ttdeci">int getSpeed() const</div><div class="ttdoc">Récupère la vitesse de la balle.</div><div class="ttdef"><b>Definition:</b> Bullet.cpp:50</div></div>
+<div class="ttc" id="aclassBullet_html_abe5e0b0862207f4a716d7d7d40ccb305"><div class="ttname"><a href="classBullet.html#abe5e0b0862207f4a716d7d7d40ccb305">Bullet::getX</a></div><div class="ttdeci">int getX() const</div><div class="ttdoc">Récupère la coordonnée x de la balle.</div><div class="ttdef"><b>Definition:</b> Bullet.cpp:42</div></div>
+<div class="ttc" id="aclassBullet_html_acd7befc0bc18907cc1d871d37bbdddeb"><div class="ttname"><a href="classBullet.html#acd7befc0bc18907cc1d871d37bbdddeb">Bullet::Bullet</a></div><div class="ttdeci">Bullet()</div><div class="ttdoc">Construit une nouvelle balle.</div></div>
+<div class="ttc" id="aclassBullet_html_aeaf23a65e0268f030126ec6ec93e5bf7"><div class="ttname"><a href="classBullet.html#aeaf23a65e0268f030126ec6ec93e5bf7">Bullet::setTrajectory</a></div><div class="ttdeci">void setTrajectory(BulletTrajectory newTrajectory)</div><div class="ttdoc">Modifie la trajectoire de la balle.</div><div class="ttdef"><b>Definition:</b> Bullet.cpp:86</div></div>
+<div class="ttc" id="aclassBullet_html_aef1a79edd1be3fa9e14474d86aa8f9ee"><div class="ttname"><a href="classBullet.html#aef1a79edd1be3fa9e14474d86aa8f9ee">Bullet::getFireInterval</a></div><div class="ttdeci">int getFireInterval() const</div><div class="ttdoc">Récupère l'intervalle de génération de la balle.</div><div class="ttdef"><b>Definition:</b> Bullet.cpp:78</div></div>
+<div class="ttc" id="aclassBullet_html_af2e8a6860232266f180efbdb2a68f8c9"><div class="ttname"><a href="classBullet.html#af2e8a6860232266f180efbdb2a68f8c9">Bullet::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdoc">Réinitialise l'objet balle.</div><div class="ttdef"><b>Definition:</b> Bullet.cpp:66</div></div>
+<div class="ttc" id="aclassBullet_html_afca197d72e9d9814d57f7d39f989a8c6"><div class="ttname"><a href="classBullet.html#afca197d72e9d9814d57f7d39f989a8c6">Bullet::setSpeedX</a></div><div class="ttdeci">void setSpeedX(float speedX)</div><div class="ttdoc">Modifie la vitesse horizontale de la balle.</div><div class="ttdef"><b>Definition:</b> Bullet.cpp:58</div></div>
+<div class="ttc" id="astructRect_1_1My__Rect_html"><div class="ttname"><a href="structRect_1_1My__Rect.html">Rect::My_Rect</a></div><div class="ttdoc">Structure représentant un rectangle.</div><div class="ttdef"><b>Definition:</b> Collision.h:18</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DogFigther:  Fichier source de src/core/Map.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">DogFigther
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Map.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Map_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef MAP_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define MAP_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Bomb_8h.html">Bomb.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Bullet_8h.html">Bullet.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Enemy_8h.html">Enemy.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Player_8h.html">Player.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classMap.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classMap.html">Map</a> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classMap.html#a0f5ad0fd4563497b4214038cbca8b582">Map</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMap.html#a17b31177fb0571425a760163b2fa476a">mapPosition</a>(<span class="keywordtype">int</span> scroll_speed);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classMap.html#ab3181204ba96eb15b96ee1ced85e198e">getWidth</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classMap.html#a67113f1ffac80d9a20b15fa18a58edc2">getHeight</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classMap.html#a09f2adb3980ef909abaca0e0727255bb">getMap1PosY</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classMap.html#a6b2e96946bbd4924d04d376ef32b1264">getMap2PosY</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">int</span> width_;                 </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">int</span> height_;                </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">int</span> map1_posY;              </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">int</span> map2_posY;              </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// MAP_H</span></div>
+<div class="ttc" id="aBomb_8h_html"><div class="ttname"><a href="Bomb_8h.html">Bomb.h</a></div><div class="ttdoc">Définition de la classe Bomb représentant un objet bombe.</div></div>
+<div class="ttc" id="aBullet_8h_html"><div class="ttname"><a href="Bullet_8h.html">Bullet.h</a></div><div class="ttdoc">Définition de la classe Bullet représentant une balle.</div></div>
+<div class="ttc" id="aEnemy_8h_html"><div class="ttname"><a href="Enemy_8h.html">Enemy.h</a></div><div class="ttdoc">Définition de la classe Enemy représentant un ennemi.</div></div>
+<div class="ttc" id="aPlayer_8h_html"><div class="ttname"><a href="Player_8h.html">Player.h</a></div><div class="ttdoc">Fichier d'en-tête pour la classe Player.</div></div>
+<div class="ttc" id="aclassMap_html"><div class="ttname"><a href="classMap.html">Map</a></div><div class="ttdoc">Classe représentant la carte du jeu.</div><div class="ttdef"><b>Definition:</b> Map.h:19</div></div>
+<div class="ttc" id="aclassMap_html_a09f2adb3980ef909abaca0e0727255bb"><div class="ttname"><a href="classMap.html#a09f2adb3980ef909abaca0e0727255bb">Map::getMap1PosY</a></div><div class="ttdeci">int getMap1PosY() const</div><div class="ttdoc">Obtenir la position de la carte1.</div><div class="ttdef"><b>Definition:</b> Map.cpp:32</div></div>
+<div class="ttc" id="aclassMap_html_a0f5ad0fd4563497b4214038cbca8b582"><div class="ttname"><a href="classMap.html#a0f5ad0fd4563497b4214038cbca8b582">Map::Map</a></div><div class="ttdeci">Map()</div><div class="ttdoc">Constructeur d'un nouvel objet Map.</div><div class="ttdef"><b>Definition:</b> Map.cpp:7</div></div>
+<div class="ttc" id="aclassMap_html_a17b31177fb0571425a760163b2fa476a"><div class="ttname"><a href="classMap.html#a17b31177fb0571425a760163b2fa476a">Map::mapPosition</a></div><div class="ttdeci">void mapPosition(int scroll_speed)</div><div class="ttdoc">Mettre à jour la position de la carte.</div><div class="ttdef"><b>Definition:</b> Map.cpp:11</div></div>
+<div class="ttc" id="aclassMap_html_a67113f1ffac80d9a20b15fa18a58edc2"><div class="ttname"><a href="classMap.html#a67113f1ffac80d9a20b15fa18a58edc2">Map::getHeight</a></div><div class="ttdeci">int getHeight() const</div><div class="ttdoc">Obtenir la hauteur de la carte.</div><div class="ttdef"><b>Definition:</b> Map.cpp:27</div></div>
+<div class="ttc" id="aclassMap_html_a6b2e96946bbd4924d04d376ef32b1264"><div class="ttname"><a href="classMap.html#a6b2e96946bbd4924d04d376ef32b1264">Map::getMap2PosY</a></div><div class="ttdeci">int getMap2PosY() const</div><div class="ttdoc">Obtenir la position de la carte2.</div><div class="ttdef"><b>Definition:</b> Map.cpp:36</div></div>
+<div class="ttc" id="aclassMap_html_ab3181204ba96eb15b96ee1ced85e198e"><div class="ttname"><a href="classMap.html#ab3181204ba96eb15b96ee1ced85e198e">Map::getWidth</a></div><div class="ttdeci">int getWidth() const</div><div class="ttdoc">Obtenir la largeur de la carte.</div><div class="ttdef"><b>Definition:</b> Map.cpp:23</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

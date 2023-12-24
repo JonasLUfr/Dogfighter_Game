@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DogFigther:  Fichier source de src/core/ScoreManager.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">DogFigther
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ScoreManager.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="ScoreManager_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef SCOREMANAGER_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define SCOREMANAGER_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classScoreManager.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classScoreManager.html">ScoreManager</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">int</span> playerScore;        </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">int</span> highScore;          </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">int</span> totalScore;         </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">// Constructeurs et destructeurs</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"></span>    <a class="code" href="classScoreManager.html#a4f3866ff832127664543349da5c4fbf4">ScoreManager</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classScoreManager.html#aed0eff96b9869439fdcd129dde9afd8a">~ScoreManager</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">// Fonctions getter et setter</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"></span>    <span class="keywordtype">int</span> <a class="code" href="classScoreManager.html#a48c0a98731f5a5ff688d965ab2432ee0">getPlayerScore</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classScoreManager.html#a6c8942acf68de2c8a85e226cd1821fe3">setPlayerScore</a>(<span class="keywordtype">int</span> score);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classScoreManager.html#a44cca8af4291600cc8a18d93d30ee803">getHighScore</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classScoreManager.html#a0bfd391540e807c07d8c2771a8c29a35">setHighScore</a>(<span class="keywordtype">int</span> score);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classScoreManager.html#ad949d10478386ef42a2e4ec1c904842a">getTotalScore</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// Fonctions de chargement et de sauvegarde des scores</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classScoreManager.html#aa2af472f6d8bbb56b5bba406168d762f">loadScore</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classScoreManager.html#a90311561d54f94dc24a85a00a80a37e9">saveScore</a>();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">// Fonction de mise à jour du meilleur score</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classScoreManager.html#af7ec8f474b9c82a083770e202b494adb">updateHighScore</a>(<span class="keywordtype">int</span> score);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">// Fonction d&#39;enregistrement du score et du temps de jeu</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="classScoreManager.html#a7a7bb80cdf5b113fe0d13f330502a999">recordGame</a>(<span class="keywordtype">int</span> score, <span class="keywordtype">float</span> gameTime);   </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// SCOREMANAGER_H</span></div>
+<div class="ttc" id="aclassScoreManager_html"><div class="ttname"><a href="classScoreManager.html">ScoreManager</a></div><div class="ttdoc">Classe représentant un gestionnaire de score.</div><div class="ttdef"><b>Definition:</b> ScoreManager.h:16</div></div>
+<div class="ttc" id="aclassScoreManager_html_a0bfd391540e807c07d8c2771a8c29a35"><div class="ttname"><a href="classScoreManager.html#a0bfd391540e807c07d8c2771a8c29a35">ScoreManager::setHighScore</a></div><div class="ttdeci">void setHighScore(int score)</div><div class="ttdoc">Définit le meilleur score actuel.</div><div class="ttdef"><b>Definition:</b> ScoreManager.cpp:27</div></div>
+<div class="ttc" id="aclassScoreManager_html_a44cca8af4291600cc8a18d93d30ee803"><div class="ttname"><a href="classScoreManager.html#a44cca8af4291600cc8a18d93d30ee803">ScoreManager::getHighScore</a></div><div class="ttdeci">int getHighScore() const</div><div class="ttdoc">Obtient le meilleur score actuel.</div><div class="ttdef"><b>Definition:</b> ScoreManager.cpp:23</div></div>
+<div class="ttc" id="aclassScoreManager_html_a48c0a98731f5a5ff688d965ab2432ee0"><div class="ttname"><a href="classScoreManager.html#a48c0a98731f5a5ff688d965ab2432ee0">ScoreManager::getPlayerScore</a></div><div class="ttdeci">int getPlayerScore() const</div><div class="ttdoc">Obtient le score actuel du joueur.</div><div class="ttdef"><b>Definition:</b> ScoreManager.cpp:15</div></div>
+<div class="ttc" id="aclassScoreManager_html_a4f3866ff832127664543349da5c4fbf4"><div class="ttname"><a href="classScoreManager.html#a4f3866ff832127664543349da5c4fbf4">ScoreManager::ScoreManager</a></div><div class="ttdeci">ScoreManager()</div><div class="ttdoc">Construit un nouvel objet ScoreManager.</div><div class="ttdef"><b>Definition:</b> ScoreManager.cpp:7</div></div>
+<div class="ttc" id="aclassScoreManager_html_a6c8942acf68de2c8a85e226cd1821fe3"><div class="ttname"><a href="classScoreManager.html#a6c8942acf68de2c8a85e226cd1821fe3">ScoreManager::setPlayerScore</a></div><div class="ttdeci">void setPlayerScore(int score)</div><div class="ttdoc">Définit le score actuel du joueur.</div><div class="ttdef"><b>Definition:</b> ScoreManager.cpp:19</div></div>
+<div class="ttc" id="aclassScoreManager_html_a7a7bb80cdf5b113fe0d13f330502a999"><div class="ttname"><a href="classScoreManager.html#a7a7bb80cdf5b113fe0d13f330502a999">ScoreManager::recordGame</a></div><div class="ttdeci">void recordGame(int score, float gameTime)</div><div class="ttdoc">Enregistre le score et le temps de jeu.</div><div class="ttdef"><b>Definition:</b> ScoreManager.cpp:63</div></div>
+<div class="ttc" id="aclassScoreManager_html_a90311561d54f94dc24a85a00a80a37e9"><div class="ttname"><a href="classScoreManager.html#a90311561d54f94dc24a85a00a80a37e9">ScoreManager::saveScore</a></div><div class="ttdeci">void saveScore()</div><div class="ttdoc">Sauvegarde le score dans un fichier.</div><div class="ttdef"><b>Definition:</b> ScoreManager.cpp:45</div></div>
+<div class="ttc" id="aclassScoreManager_html_aa2af472f6d8bbb56b5bba406168d762f"><div class="ttname"><a href="classScoreManager.html#aa2af472f6d8bbb56b5bba406168d762f">ScoreManager::loadScore</a></div><div class="ttdeci">void loadScore()</div><div class="ttdoc">Charge le score depuis un fichier.</div><div class="ttdef"><b>Definition:</b> ScoreManager.cpp:31</div></div>
+<div class="ttc" id="aclassScoreManager_html_ad949d10478386ef42a2e4ec1c904842a"><div class="ttname"><a href="classScoreManager.html#ad949d10478386ef42a2e4ec1c904842a">ScoreManager::getTotalScore</a></div><div class="ttdeci">int getTotalScore()</div><div class="ttdoc">Obtient le score total.</div><div class="ttdef"><b>Definition:</b> ScoreManager.cpp:78</div></div>
+<div class="ttc" id="aclassScoreManager_html_aed0eff96b9869439fdcd129dde9afd8a"><div class="ttname"><a href="classScoreManager.html#aed0eff96b9869439fdcd129dde9afd8a">ScoreManager::~ScoreManager</a></div><div class="ttdeci">~ScoreManager()</div><div class="ttdoc">Détruit l'objet ScoreManager.</div><div class="ttdef"><b>Definition:</b> ScoreManager.cpp:11</div></div>
+<div class="ttc" id="aclassScoreManager_html_af7ec8f474b9c82a083770e202b494adb"><div class="ttname"><a href="classScoreManager.html#af7ec8f474b9c82a083770e202b494adb">ScoreManager::updateHighScore</a></div><div class="ttdeci">void updateHighScore(int score)</div><div class="ttdoc">Met à jour le meilleur score.</div><div class="ttdef"><b>Definition:</b> ScoreManager.cpp:81</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

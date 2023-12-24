@@ -1,0 +1,19 @@
+<map id="src/core/Game.h" name="src/core/Game.h">
+<area shape="rect" id="node1" title="Fichier d&#39;en&#45;tête pour la classe Game objet." alt="" coords="437,5,565,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,68,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="92,80,155,107"/>
+<area shape="rect" id="node4" href="$Player_8h.html" title="Fichier d&#39;en&#45;tête pour la classe Player." alt="" coords="207,229,282,256"/>
+<area shape="rect" id="node5" href="$Collision_8h.html" title="Définition de la classe Rect pour la détection de collisions." alt="" coords="510,304,601,331"/>
+<area shape="rect" id="node6" href="$Bullet_8h.html" title="Définition de la classe Bullet représentant une balle." alt="" coords="602,229,674,256"/>
+<area shape="rect" id="node7" href="$Enemy_8h.html" title="Définition de la classe Enemy représentant un ennemi." alt="" coords="281,155,358,181"/>
+<area shape="rect" id="node9" href="$Bomb_8h.html" title="Définition de la classe Bomb représentant un objet bombe." alt="" coords="465,155,537,181"/>
+<area shape="rect" id="node11" href="$Drop_8h.html" title="Définition de la classe Drop représentant un objet qui tombe." alt="" coords="807,229,872,256"/>
+<area shape="rect" id="node12" href="$ScoreManager_8h.html" title="Définition de la classe ScoreManager représentant un gestionnaire de score." alt="" coords="857,80,984,107"/>
+<area shape="rect" id="node15" href="$Map_8h.html" title="Définition de la classe Map." alt="" coords="391,80,453,107"/>
+<area shape="rect" id="node17" href="$Store_8h.html" title="Fichier d&#39;en&#45;tête pour la classe Store." alt="" coords="612,155,680,181"/>
+<area shape="rect" id="node8" title=" " alt="" coords="357,229,428,256"/>
+<area shape="rect" id="node10" title=" " alt="" coords="511,229,578,256"/>
+<area shape="rect" id="node13" title=" " alt="" coords="869,155,949,181"/>
+<area shape="rect" id="node14" title=" " alt="" coords="973,155,1047,181"/>
+<area shape="rect" id="node16" title=" " alt="" coords="382,155,441,181"/>
+</map>

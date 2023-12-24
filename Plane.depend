@@ -1,0 +1,166 @@
+# depslib dependency file v1.0
+1681667863 source:/home/kadaj/Doc/Plane/src/core/scene.cpp
+
+1681775194 source:/home/kadaj/Doc/Plane/src/sdl2/main.cpp
+	"mainSDL.h"
+
+1681684620 source:/home/kadaj/Doc/Plane/src/core/Player.cpp
+	"Player.h"
+	"config.h"
+
+1681684650 /home/kadaj/Doc/Plane/src/core/Player.h
+	"SDL2/SDL.h"
+
+1681678331 /home/kadaj/Doc/Plane/src/core/config.h
+
+1681783439 source:/home/kadaj/Doc/Plane/src/sdl2/mainSDL.cpp
+	"mainSDL.h"
+	<iostream>
+	<sstream>
+	<iomanip>
+
+1681783562 /home/kadaj/Doc/Plane/src/sdl2/mainSDL.h
+	<SDL2/SDL.h>
+	"../core/Map.h"
+	<SDL2/SDL_image.h>
+	<SDL2/SDL_ttf.h>
+	<vector>
+
+1681682883 source:/home/kadaj/Doc/Plane/src/core/Map.cpp
+	"Map.h"
+	"config.h"
+
+1681783549 /home/kadaj/Doc/Plane/src/core/Map.h
+	"Bomb.h"
+	"Bullet.h"
+	"Enemy.h"
+	"Player.h"
+	"config.h"
+	<string>
+
+1681781112 source:/home/kadaj/Doc/Plane/src/core/Bullet.cpp
+	"Bullet.h"
+
+1681781110 /home/kadaj/Doc/Plane/src/core/Bullet.h
+	"SDL2/SDL.h"
+
+1681695207 source:/home/kadaj/Doc/Plane/src/core/Enemy.cpp
+	"Enemy.h"
+
+1681694663 /home/kadaj/Doc/Plane/src/core/Enemy.h
+	"SDL2/SDL.h"
+	"Bullet.h"
+	"Player.h"
+	"config.h"
+
+1681697225 source:/home/kadaj/Doc/Plane/src/core/Bomb.cpp
+	"Bomb.h"
+
+1681697206 /home/kadaj/Doc/Plane/src/core/Bomb.h
+	"SDL2/SDL.h"
+
+1682940171 source:/home/jonas/Lyon1/L2S4/LIFAP4/Jeu/Jeu/src/core/Bomb.cpp
+	"Bomb.h"
+
+1682940171 /home/jonas/Lyon1/L2S4/LIFAP4/Jeu/Jeu/src/core/Bomb.h
+	"Collision.h"
+	<cstdint>
+
+1682940171 /home/jonas/Lyon1/L2S4/LIFAP4/Jeu/Jeu/src/core/Collision.h
+
+1682940171 source:/home/jonas/Lyon1/L2S4/LIFAP4/Jeu/Jeu/src/core/Bullet.cpp
+	"Bullet.h"
+
+1682940171 /home/jonas/Lyon1/L2S4/LIFAP4/Jeu/Jeu/src/core/Bullet.h
+	"Collision.h"
+
+1682940171 source:/home/jonas/Lyon1/L2S4/LIFAP4/Jeu/Jeu/src/core/Collision.cpp
+	"Collision.h"
+
+1682940171 source:/home/jonas/Lyon1/L2S4/LIFAP4/Jeu/Jeu/src/core/Drop.cpp
+	"Drop.h"
+
+1682940171 /home/jonas/Lyon1/L2S4/LIFAP4/Jeu/Jeu/src/core/Drop.h
+	"Collision.h"
+
+1682940171 source:/home/jonas/Lyon1/L2S4/LIFAP4/Jeu/Jeu/src/core/Enemy.cpp
+	"Enemy.h"
+
+1682940171 /home/jonas/Lyon1/L2S4/LIFAP4/Jeu/Jeu/src/core/Enemy.h
+	"Collision.h"
+	"Bullet.h"
+	"Player.h"
+	<stdlib.h>
+
+1682940171 /home/jonas/Lyon1/L2S4/LIFAP4/Jeu/Jeu/src/core/Player.h
+	"Collision.h"
+
+1682940171 source:/home/jonas/Lyon1/L2S4/LIFAP4/Jeu/Jeu/src/core/Enhance.cpp
+	"Enhance.h"
+
+1682940171 /home/jonas/Lyon1/L2S4/LIFAP4/Jeu/Jeu/src/core/Enhance.h
+
+1682940171 source:/home/jonas/Lyon1/L2S4/LIFAP4/Jeu/Jeu/src/core/Game.cpp
+	"Game.h"
+	<algorithm>
+
+1682940171 /home/jonas/Lyon1/L2S4/LIFAP4/Jeu/Jeu/src/core/Game.h
+	<vector>
+	<cmath>
+	"Player.h"
+	"Bullet.h"
+	"Enemy.h"
+	"Bomb.h"
+	"Drop.h"
+	"Collision.h"
+	"ScoreManager.h"
+	"Map.h"
+	"Store.h"
+
+1682940171 /home/jonas/Lyon1/L2S4/LIFAP4/Jeu/Jeu/src/core/ScoreManager.h
+	<iostream>
+	<fstream>
+
+1682940171 /home/jonas/Lyon1/L2S4/LIFAP4/Jeu/Jeu/src/core/Map.h
+	"Bomb.h"
+	"Bullet.h"
+	"Enemy.h"
+	"Player.h"
+	<string>
+
+1682940171 /home/jonas/Lyon1/L2S4/LIFAP4/Jeu/Jeu/src/core/Store.h
+	"Bullet.h"
+
+1682940171 source:/home/jonas/Lyon1/L2S4/LIFAP4/Jeu/Jeu/src/core/Map.cpp
+	"Map.h"
+
+1682940171 source:/home/jonas/Lyon1/L2S4/LIFAP4/Jeu/Jeu/src/core/Player.cpp
+	"Player.h"
+
+1682940171 source:/home/jonas/Lyon1/L2S4/LIFAP4/Jeu/Jeu/src/core/ScoreManager.cpp
+	"ScoreManager.h"
+
+1682940171 source:/home/jonas/Lyon1/L2S4/LIFAP4/Jeu/Jeu/src/sdl2/main.cpp
+	<iostream>
+	"mainSDL.h"
+
+1682940171 /home/jonas/Lyon1/L2S4/LIFAP4/Jeu/Jeu/src/sdl2/mainSDL.h
+	<SDL2/SDL.h>
+	<SDL2/SDL_image.h>
+	<SDL2/SDL_ttf.h>
+	<SDL2/SDL_mixer.h>
+	<iostream>
+	<vector>
+	<string>
+	<cmath>
+	"../core/Game.h"
+	"../core/Collision.h"
+
+1682940171 source:/home/jonas/Lyon1/L2S4/LIFAP4/Jeu/Jeu/src/sdl2/mainSDL.cpp
+	"mainSDL.h"
+	<iostream>
+	<sstream>
+	<iomanip>
+
+1682929273 source:/home/jonas/Lyon1/L2S4/LIFAP4/Jeu/Jeu/src/core/scene.cpp
+

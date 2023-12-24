@@ -1,0 +1,40 @@
+Score: 1000, Time: 14.679s
+Total: 1000
+Score: 8000, Time: 43.938s
+Total: 8000
+Score: 6000, Time: 15.685s
+Total: 6000
+Score: 7000, Time: 19.227s
+Total: 13000
+Score: 11008, Time: 25.451s
+Total: 24008
+Score: 30008, Time: 41.022s
+Total: 54016
+Score: 33018, Time: 44.442s
+Total: 87034
+Score: 37018, Time: 47.729s
+Total: 124052
+Score: 43000, Time: 32.73s
+Total: 43000
+Score: 57010, Time: 42.462s
+Total: 100010
+Score: 61010, Time: 136.515s
+Total: 161020
+Score: 29000, Time: 22.324s
+Total: 29000
+Score: 6000, Time: 14.351s
+Total: 6000
+Score: 8000, Time: 11.365s
+Total: 8000
+Score: 0, Time: 11.128s
+Total: 0
+Score: 9000, Time: 18.279s
+Total: 9000
+Score: 11000, Time: 21.468s
+Total: 20000
+Score: 28000, Time: 33.78s
+Total: 48000
+Score: 32000, Time: 37.085s
+Total: 80000
+Score: 22000, Time: 28.886s
+Total: 22000

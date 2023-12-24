@@ -1,0 +1,833 @@
+\hypertarget{classGame}{}\doxysection{Référence de la classe Game}
+\label{classGame}\index{Game@{Game}}
+
+
+Classe principale du jeu, gère l\textquotesingle{}état du jeu, les objets du jeu et les entrées utilisateur.  
+
+
+
+
+{\ttfamily \#include $<$Game.\+h$>$}
+
+
+
+Graphe de collaboration de Game\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classGame__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{classGame_a7f57a7a8408e554d0a72882c287e1d04}{Game\+State}} \{ \newline
+\mbox{\hyperlink{classGame_a7f57a7a8408e554d0a72882c287e1d04aad1111b48f98329333237912fc3b371b}{Main\+Menu}}
+, \mbox{\hyperlink{classGame_a7f57a7a8408e554d0a72882c287e1d04aa0db49ba470c1c9ae2128c3470339153}{Level}}
+, \mbox{\hyperlink{classGame_a7f57a7a8408e554d0a72882c287e1d04a5120982d10a4c4867992eda0ee03a969}{Control\+Menu}}
+, \mbox{\hyperlink{classGame_a7f57a7a8408e554d0a72882c287e1d04aa31ef6b3c465c9f44be0a4f02b5fbb06}{Mouse\+Control}}
+, \newline
+\mbox{\hyperlink{classGame_a7f57a7a8408e554d0a72882c287e1d04a5c337937a2aa5c63a63f651b8524c353}{Keyboard\+Control}}
+, \mbox{\hyperlink{classGame_a7f57a7a8408e554d0a72882c287e1d04a5bda814c4aedb126839228f1a3d92f09}{Running}}
+, \mbox{\hyperlink{classGame_a7f57a7a8408e554d0a72882c287e1d04a105b296a83f9c105355403f3332af50f}{Pause}}
+, \mbox{\hyperlink{classGame_a7f57a7a8408e554d0a72882c287e1d04afdb0c388de01d545017cdf9ccf00eb72}{Store}}
+, \newline
+\mbox{\hyperlink{classGame_a7f57a7a8408e554d0a72882c287e1d04a8f347bc7cebca9fa6d97e70c6bc29eb3}{Game\+Over}}
+ \}
+\begin{DoxyCompactList}\small\item\em Énumération des différents états du jeu. \end{DoxyCompactList}\item 
+enum class \mbox{\hyperlink{classGame_ad3923ada8ea2ea23e6300e1485bcfbd6}{Control\+Type}} \{ \mbox{\hyperlink{classGame_ad3923ada8ea2ea23e6300e1485bcfbd6a6ce4d85a628a88bbdb3ac24a8e5a9c2e}{Keyboard}}
+, \mbox{\hyperlink{classGame_ad3923ada8ea2ea23e6300e1485bcfbd6af2a47c6809d88e175dade0ef7b16aa13}{Mouse}}
+ \}
+\begin{DoxyCompactList}\small\item\em Énumération des différents types de contrôles. \end{DoxyCompactList}\item 
+enum class \mbox{\hyperlink{classGame_a9aa73faf99baf9bb03d53d6c8785d107}{Level\+Selection}} \{ \mbox{\hyperlink{classGame_a9aa73faf99baf9bb03d53d6c8785d107a7f943921724d63dc0ac9c6febf99fa88}{Easy}}
+, \mbox{\hyperlink{classGame_a9aa73faf99baf9bb03d53d6c8785d107a960b44c579bc2f6818d2daaf9e4c16f0}{Normal}}
+, \mbox{\hyperlink{classGame_a9aa73faf99baf9bb03d53d6c8785d107a3656183169810334a96b91129dc9d881}{Hard}}
+ \}
+\begin{DoxyCompactList}\small\item\em Énumération des différents niveaux de difficulté. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGame_a7f57a7a8408e554d0a72882c287e1d04}{Game\+State}} \mbox{\hyperlink{classGame_adbbfae184c044c2d544b382704b2bacd}{get\+Current\+State}} () const
+\begin{DoxyCompactList}\small\item\em Obtenir l\textquotesingle{}état actuel du jeu. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classGame_a9c58145fa4675144606bace61dd4f833}{has\+State\+Changed}} () const
+\begin{DoxyCompactList}\small\item\em Vérifie si l\textquotesingle{}état du jeu a changé. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_a5941b0d0312d4117e1538b7b5cd337dc}{set\+Current\+State}} (\mbox{\hyperlink{classGame_a7f57a7a8408e554d0a72882c287e1d04}{Game\+State}} state)
+\begin{DoxyCompactList}\small\item\em Définir l\textquotesingle{}état actuel du jeu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGame_ad59df6562a58a614fda24622d3715b65}{Game}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut de la classe \mbox{\hyperlink{classGame}{Game}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGame_abe25bb6f99131d5115f307cf0327da95}{Game}} (int window\+Width, int window\+Height)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \mbox{\hyperlink{classGame}{Game}} avec les dimensions de la fenêtre. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_af72a610256e06768a90e8c5fee06ce8a}{menu\+Input}} (const char input)
+\begin{DoxyCompactList}\small\item\em Traite les entrées utilisateur dans le menu principal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_adc3523934c40e09601fbff2fb516e388}{running\+Input}} (const char input)
+\begin{DoxyCompactList}\small\item\em Traite les entrées utilisateur dans l\textquotesingle{}état de jeu en cours. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_afeed841998b4e33b38bca52f224fc02b}{control\+Input}} (const char input)
+\begin{DoxyCompactList}\small\item\em Traite les entrées utilisateur dans le menu de contrôle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_aac660a50f76ec69c2425106cacda5f34}{level\+Input}} (const char input)
+\begin{DoxyCompactList}\small\item\em Traite les entrées utilisateur dans le menu de sélection de niveau. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_a1cb5649ab0767ff9eef7ee7440f18328}{store\+Input}} (const char input)
+\begin{DoxyCompactList}\small\item\em Traite les entrées utilisateur dans le menu du magasin. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_a79df6376b332d63c9eca0dcee30305c3}{update}} ()
+\begin{DoxyCompactList}\small\item\em Met à jour l\textquotesingle{}état du jeu et les objets du jeu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_a5d802d875fcc798661b3a38c2dc21bb4}{reset\+Game\+Objects}} ()
+\begin{DoxyCompactList}\small\item\em Réinitialise les objets du jeu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_a1888041ac8d15adc6aeab61c5d9f53e0}{save\+Score}} ()
+\begin{DoxyCompactList}\small\item\em Enregistre le score du joueur. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classGame_a244e237939a292959327d37bc82978cb}{get\+Player\+Score}} () const
+\begin{DoxyCompactList}\small\item\em Récupère le score actuel du joueur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_afe944bbcac70655eb71e4c9701991da1}{set\+Player\+Score}} (int score)
+\begin{DoxyCompactList}\small\item\em Définit le score du joueur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_a042f79c6a3aeffafd6bbca2bb31ae891}{save}} ()
+\begin{DoxyCompactList}\small\item\em Enregistre le score du joueur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_a80ba0cfd8db13f2e642fa7390da80ffe}{record\+Game}} (int player\+Score, float game\+Time)
+\begin{DoxyCompactList}\small\item\em Enregistre une partie de jeu avec le score et le temps de jeu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_a31f465db3ff4353579b2b9ff9c57f1b2}{set\+Bomb\+Sound}} (bool value)
+\begin{DoxyCompactList}\small\item\em Définit si le son de la bombe doit être joué. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classGame_a2a53ed3382a2cf3e3c66f060ce61d912}{get\+Bomb\+Sound}} () const
+\begin{DoxyCompactList}\small\item\em Récupère l\textquotesingle{}état du son de la bombe (joué ou non). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGame_ad3923ada8ea2ea23e6300e1485bcfbd6}{Control\+Type}} \mbox{\hyperlink{classGame_a7fe4eb06f64a6330eeb4cd657324fcbe}{get\+Control\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Récupère le type de contrôle actuel (clavier ou souris). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_a8b4a9f5610f7fd3042c345a7583faadc}{set\+Control\+Type}} (\mbox{\hyperlink{classGame_ad3923ada8ea2ea23e6300e1485bcfbd6}{Control\+Type}} control\+Type)
+\begin{DoxyCompactList}\small\item\em Définit le type de contrôle à utiliser (clavier ou souris). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGame_a9aa73faf99baf9bb03d53d6c8785d107}{Level\+Selection}} \mbox{\hyperlink{classGame_ab752bd0b990d13f2f17f439b627991bf}{get\+Current\+Level}} () const
+\begin{DoxyCompactList}\small\item\em Récupère le niveau actuel (facile, normal ou difficile). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_acfe95aecfa9a75780152d0d463a0c3b3}{set\+Current\+Level}} (\mbox{\hyperlink{classGame_a9aa73faf99baf9bb03d53d6c8785d107}{Level\+Selection}} level)
+\begin{DoxyCompactList}\small\item\em Définit le niveau actuel (facile, normal ou difficile). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_ac499e95ed73c534b7482c85a2c3ea117}{fire\+Bullet}} (\mbox{\hyperlink{classBullet_a74e59768613e272c1094ff0d2b3de3d4}{Bullet\+::\+Bullet\+Trajectory}} trajectory)
+\begin{DoxyCompactList}\small\item\em Tire une balle avec une trajectoire donnée. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_aaa28efbc178b756dc9c5cd725cb277ec}{fire\+Single\+Bullet}} (\mbox{\hyperlink{classBullet_a74e59768613e272c1094ff0d2b3de3d4}{Bullet\+::\+Bullet\+Trajectory}} trajectory)
+\begin{DoxyCompactList}\small\item\em Tire une seule balle avec une trajectoire donnée. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_a855cf78d3dec934c888253fa23c7ffbe}{fire\+Multiple\+Bullets}} (\mbox{\hyperlink{classBullet_a74e59768613e272c1094ff0d2b3de3d4}{Bullet\+::\+Bullet\+Trajectory}} trajectory, int bullet\+Count)
+\begin{DoxyCompactList}\small\item\em Tire plusieurs balles avec une trajectoire donnée. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classGame_a885ff05f7b84479a0e521e2e27880693}{get\+My\+Timer}} () const
+\begin{DoxyCompactList}\small\item\em Récupère le timer actuel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_aedc3c4bc82512f49583d1077d7e8f28c}{update\+My\+Timer}} (uint32\+\_\+t delta\+Time)
+\begin{DoxyCompactList}\small\item\em Met à jour le timer avec un delta de temps. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{Player}} \& \mbox{\hyperlink{classGame_a618cd24f8a672720ed085f41cf90af6f}{get\+Player}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classBullet}{Bullet}} $>$ \& \mbox{\hyperlink{classGame_a23d3ed25f5b052d51530a048fe1a5e37}{get\+Bullets}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classEnemy}{Enemy}} $>$ \& \mbox{\hyperlink{classGame_a3ae751c1997b0bc239a02abbfc5f1722}{get\+Enemies}} ()
+\item 
+\mbox{\hyperlink{classMap}{Map}} \& \mbox{\hyperlink{classGame_a40f8924b8ca9553cb1bf1848ba899763}{get\+Map}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classBomb}{Bomb}} $>$ \& \mbox{\hyperlink{classGame_a7c4142f8835b26aae9ac1fc6526a5759}{get\+Bombs}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classDrop}{Drop}} $>$ \& \mbox{\hyperlink{classGame_a6ab9a32fbddc4d757a7aaba4efa5b0b4}{get\+Drops}} ()
+\item 
+\mbox{\hyperlink{classScoreManager}{Score\+Manager}} \& \mbox{\hyperlink{classGame_a1557c637b249398094d51ce2ff020b9c}{get\+Score\+Manager}} ()
+\item 
+\mbox{\hyperlink{classBullet_a74e59768613e272c1094ff0d2b3de3d4}{Bullet\+::\+Bullet\+Trajectory}} \mbox{\hyperlink{classGame_ab06fffb8b5c361018b7df849928c0f11}{get\+Trajectory}} () const
+\item 
+\mbox{\hyperlink{classStore_ab33bb3829205915b763973387a721eb7}{Store\+::\+Purchase\+State}} \mbox{\hyperlink{classGame_ab433d1c8de53bedf34595eadead4e7f6}{get\+Purchase\+State}} () const
+\item 
+double \mbox{\hyperlink{classGame_ac24a11b15b4ce4293e2464e08f79ae78}{get\+Fire\+Interval}} () const
+\item 
+void \mbox{\hyperlink{classGame_afb5311bf0f5c02da15622197f68c2f55}{set\+Fire\+Interval}} (double new\+Fire\+Interval)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classDrop_a2de083545776187b1125c73c1aa736e9}{Drop\+::\+Drop\+Type}} $>$ \& \mbox{\hyperlink{classGame_ac343e0af11b4b707456b7439a23cafb4}{get\+Drop\+Type}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGame_a7f57a7a8408e554d0a72882c287e1d04}{Game\+State}} \mbox{\hyperlink{classGame_a0d9568c1b133d9052d439ed39571d575}{current\+State}}
+\item 
+int \mbox{\hyperlink{classGame_ab83828671aa0402e3adc930acd39cb9c}{menu\+Selection}}
+\item 
+int \mbox{\hyperlink{classGame_a59857c6de4417e1422a52addfab07a97}{options\+Menu\+Selection}}
+\item 
+int \mbox{\hyperlink{classGame_a6e38634125453a42ca921a552e30205c}{control\+Selection}}
+\item 
+int \mbox{\hyperlink{classGame_a61dd66ef744405d42a2ab62e85724223}{control\+Menu\+Selection}}
+\item 
+int \mbox{\hyperlink{classGame_ab05b831e42a889f8a143e16f367512a5}{level\+Menu\+Selection}}
+\item 
+int \mbox{\hyperlink{classGame_af1c39b5045ea46f70cce20a2a375d8d4}{store\+Menu\+Selection}}
+\item 
+int \mbox{\hyperlink{classGame_a32c594a6a0dec825c79fdf32616f0970}{magazine\+Size}} = 100
+\item 
+\mbox{\hyperlink{classGame_a7f57a7a8408e554d0a72882c287e1d04}{Game\+State}} \mbox{\hyperlink{classGame_a1d1130c07feb6642e084cc5a603b69c4}{previous\+State}}
+\item 
+bool \mbox{\hyperlink{classGame_a53f49cbb4292160206abda906179bc9d}{play\+Sound}} = false
+\item 
+bool \mbox{\hyperlink{classGame_aa253b2d65ab71e9408c992a169cb3064}{use\+Mouse\+Control}}
+\item 
+\mbox{\hyperlink{classGame_ad3923ada8ea2ea23e6300e1485bcfbd6}{Control\+Type}} \mbox{\hyperlink{classGame_a1d1efbe9e2e1504c0bc3519a721e36aa}{current\+Control\+Type}} = \mbox{\hyperlink{classGame_ad3923ada8ea2ea23e6300e1485bcfbd6a6ce4d85a628a88bbdb3ac24a8e5a9c2e}{Control\+Type\+::\+Keyboard}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classGame_abe87e5f1da46d44d2fe209f5797c53d5}{last\+Enemy\+Spawn\+Time}}
+\item 
+int \mbox{\hyperlink{classGame_ac042de2abec986ecbf68140887877fb8}{enemy\+Spawn\+Interval}}
+\item 
+int \mbox{\hyperlink{classGame_a942987456ccccb31fd2b9c846bbf3a30}{max\+Enemy\+Count}}
+\item 
+\mbox{\hyperlink{classGame_a9aa73faf99baf9bb03d53d6c8785d107}{Level\+Selection}} \mbox{\hyperlink{classGame_a1683eb2e8a0b5f35765667ba75de1219}{current\+Level}} = \mbox{\hyperlink{classGame_a9aa73faf99baf9bb03d53d6c8785d107a960b44c579bc2f6818d2daaf9e4c16f0}{Level\+Selection\+::\+Normal}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Classe principale du jeu, gère l\textquotesingle{}état du jeu, les objets du jeu et les entrées utilisateur. 
+
+\doxysubsection{Documentation des énumérations membres}
+\mbox{\Hypertarget{classGame_ad3923ada8ea2ea23e6300e1485bcfbd6}\label{classGame_ad3923ada8ea2ea23e6300e1485bcfbd6}} 
+\index{Game@{Game}!ControlType@{ControlType}}
+\index{ControlType@{ControlType}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{ControlType}{ControlType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classGame_ad3923ada8ea2ea23e6300e1485bcfbd6}{Game\+::\+Control\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Énumération des différents types de contrôles. 
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Keyboard@{Keyboard}!Game@{Game}}\index{Game@{Game}!Keyboard@{Keyboard}}}\mbox{\Hypertarget{classGame_ad3923ada8ea2ea23e6300e1485bcfbd6a6ce4d85a628a88bbdb3ac24a8e5a9c2e}\label{classGame_ad3923ada8ea2ea23e6300e1485bcfbd6a6ce4d85a628a88bbdb3ac24a8e5a9c2e}} 
+Keyboard&Contrôle au clavier. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Mouse@{Mouse}!Game@{Game}}\index{Game@{Game}!Mouse@{Mouse}}}\mbox{\Hypertarget{classGame_ad3923ada8ea2ea23e6300e1485bcfbd6af2a47c6809d88e175dade0ef7b16aa13}\label{classGame_ad3923ada8ea2ea23e6300e1485bcfbd6af2a47c6809d88e175dade0ef7b16aa13}} 
+Mouse&Contrôle à la souris. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{classGame_a7f57a7a8408e554d0a72882c287e1d04}\label{classGame_a7f57a7a8408e554d0a72882c287e1d04}} 
+\index{Game@{Game}!GameState@{GameState}}
+\index{GameState@{GameState}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{GameState}{GameState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classGame_a7f57a7a8408e554d0a72882c287e1d04}{Game\+::\+Game\+State}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Énumération des différents états du jeu. 
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MainMenu@{MainMenu}!Game@{Game}}\index{Game@{Game}!MainMenu@{MainMenu}}}\mbox{\Hypertarget{classGame_a7f57a7a8408e554d0a72882c287e1d04aad1111b48f98329333237912fc3b371b}\label{classGame_a7f57a7a8408e554d0a72882c287e1d04aad1111b48f98329333237912fc3b371b}} 
+Main\+Menu&Menu principal. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Level@{Level}!Game@{Game}}\index{Game@{Game}!Level@{Level}}}\mbox{\Hypertarget{classGame_a7f57a7a8408e554d0a72882c287e1d04aa0db49ba470c1c9ae2128c3470339153}\label{classGame_a7f57a7a8408e554d0a72882c287e1d04aa0db49ba470c1c9ae2128c3470339153}} 
+Level&Sélection du niveau. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ControlMenu@{ControlMenu}!Game@{Game}}\index{Game@{Game}!ControlMenu@{ControlMenu}}}\mbox{\Hypertarget{classGame_a7f57a7a8408e554d0a72882c287e1d04a5120982d10a4c4867992eda0ee03a969}\label{classGame_a7f57a7a8408e554d0a72882c287e1d04a5120982d10a4c4867992eda0ee03a969}} 
+Control\+Menu&Menu de sélection des contrôles. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MouseControl@{MouseControl}!Game@{Game}}\index{Game@{Game}!MouseControl@{MouseControl}}}\mbox{\Hypertarget{classGame_a7f57a7a8408e554d0a72882c287e1d04aa31ef6b3c465c9f44be0a4f02b5fbb06}\label{classGame_a7f57a7a8408e554d0a72882c287e1d04aa31ef6b3c465c9f44be0a4f02b5fbb06}} 
+Mouse\+Control&Contrôle à la souris. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KeyboardControl@{KeyboardControl}!Game@{Game}}\index{Game@{Game}!KeyboardControl@{KeyboardControl}}}\mbox{\Hypertarget{classGame_a7f57a7a8408e554d0a72882c287e1d04a5c337937a2aa5c63a63f651b8524c353}\label{classGame_a7f57a7a8408e554d0a72882c287e1d04a5c337937a2aa5c63a63f651b8524c353}} 
+Keyboard\+Control&Contrôle au clavier. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Running@{Running}!Game@{Game}}\index{Game@{Game}!Running@{Running}}}\mbox{\Hypertarget{classGame_a7f57a7a8408e554d0a72882c287e1d04a5bda814c4aedb126839228f1a3d92f09}\label{classGame_a7f57a7a8408e554d0a72882c287e1d04a5bda814c4aedb126839228f1a3d92f09}} 
+Running&Jeu en cours. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Pause@{Pause}!Game@{Game}}\index{Game@{Game}!Pause@{Pause}}}\mbox{\Hypertarget{classGame_a7f57a7a8408e554d0a72882c287e1d04a105b296a83f9c105355403f3332af50f}\label{classGame_a7f57a7a8408e554d0a72882c287e1d04a105b296a83f9c105355403f3332af50f}} 
+Pause&Jeu en pause. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Store@{Store}!Game@{Game}}\index{Game@{Game}!Store@{Store}}}\mbox{\Hypertarget{classGame_a7f57a7a8408e554d0a72882c287e1d04afdb0c388de01d545017cdf9ccf00eb72}\label{classGame_a7f57a7a8408e554d0a72882c287e1d04afdb0c388de01d545017cdf9ccf00eb72}} 
+Store&Magasin. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GameOver@{GameOver}!Game@{Game}}\index{Game@{Game}!GameOver@{GameOver}}}\mbox{\Hypertarget{classGame_a7f57a7a8408e554d0a72882c287e1d04a8f347bc7cebca9fa6d97e70c6bc29eb3}\label{classGame_a7f57a7a8408e554d0a72882c287e1d04a8f347bc7cebca9fa6d97e70c6bc29eb3}} 
+Game\+Over&Fin du jeu. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{classGame_a9aa73faf99baf9bb03d53d6c8785d107}\label{classGame_a9aa73faf99baf9bb03d53d6c8785d107}} 
+\index{Game@{Game}!LevelSelection@{LevelSelection}}
+\index{LevelSelection@{LevelSelection}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{LevelSelection}{LevelSelection}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classGame_a9aa73faf99baf9bb03d53d6c8785d107}{Game\+::\+Level\+Selection}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Énumération des différents niveaux de difficulté. 
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Easy@{Easy}!Game@{Game}}\index{Game@{Game}!Easy@{Easy}}}\mbox{\Hypertarget{classGame_a9aa73faf99baf9bb03d53d6c8785d107a7f943921724d63dc0ac9c6febf99fa88}\label{classGame_a9aa73faf99baf9bb03d53d6c8785d107a7f943921724d63dc0ac9c6febf99fa88}} 
+Easy&Niveau facile. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Normal@{Normal}!Game@{Game}}\index{Game@{Game}!Normal@{Normal}}}\mbox{\Hypertarget{classGame_a9aa73faf99baf9bb03d53d6c8785d107a960b44c579bc2f6818d2daaf9e4c16f0}\label{classGame_a9aa73faf99baf9bb03d53d6c8785d107a960b44c579bc2f6818d2daaf9e4c16f0}} 
+Normal&Niveau normal. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Hard@{Hard}!Game@{Game}}\index{Game@{Game}!Hard@{Hard}}}\mbox{\Hypertarget{classGame_a9aa73faf99baf9bb03d53d6c8785d107a3656183169810334a96b91129dc9d881}\label{classGame_a9aa73faf99baf9bb03d53d6c8785d107a3656183169810334a96b91129dc9d881}} 
+Hard&Niveau difficile. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classGame_ad59df6562a58a614fda24622d3715b65}\label{classGame_ad59df6562a58a614fda24622d3715b65}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur par défaut de la classe \mbox{\hyperlink{classGame}{Game}}. 
+
+\mbox{\Hypertarget{classGame_abe25bb6f99131d5115f307cf0327da95}\label{classGame_abe25bb6f99131d5115f307cf0327da95}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}\item[{int}]{window\+Width,  }\item[{int}]{window\+Height }\end{DoxyParamCaption})}
+
+
+
+Constructeur de la classe \mbox{\hyperlink{classGame}{Game}} avec les dimensions de la fenêtre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window\+Width} & Largeur de la fenêtre de jeu. \\
+\hline
+{\em window\+Height} & Hauteur de la fenêtre de jeu. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classGame_afeed841998b4e33b38bca52f224fc02b}\label{classGame_afeed841998b4e33b38bca52f224fc02b}} 
+\index{Game@{Game}!controlInput@{controlInput}}
+\index{controlInput@{controlInput}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{controlInput()}{controlInput()}}
+{\footnotesize\ttfamily void Game\+::control\+Input (\begin{DoxyParamCaption}\item[{const char}]{input }\end{DoxyParamCaption})}
+
+
+
+Traite les entrées utilisateur dans le menu de contrôle. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em input} & Caractère d\textquotesingle{}entrée utilisateur. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_ac499e95ed73c534b7482c85a2c3ea117}\label{classGame_ac499e95ed73c534b7482c85a2c3ea117}} 
+\index{Game@{Game}!fireBullet@{fireBullet}}
+\index{fireBullet@{fireBullet}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{fireBullet()}{fireBullet()}}
+{\footnotesize\ttfamily void Game\+::fire\+Bullet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBullet_a74e59768613e272c1094ff0d2b3de3d4}{Bullet\+::\+Bullet\+Trajectory}}}]{trajectory }\end{DoxyParamCaption})}
+
+
+
+Tire une balle avec une trajectoire donnée. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em trajectory} & La trajectoire de la balle. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_a855cf78d3dec934c888253fa23c7ffbe}\label{classGame_a855cf78d3dec934c888253fa23c7ffbe}} 
+\index{Game@{Game}!fireMultipleBullets@{fireMultipleBullets}}
+\index{fireMultipleBullets@{fireMultipleBullets}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{fireMultipleBullets()}{fireMultipleBullets()}}
+{\footnotesize\ttfamily void Game\+::fire\+Multiple\+Bullets (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBullet_a74e59768613e272c1094ff0d2b3de3d4}{Bullet\+::\+Bullet\+Trajectory}}}]{trajectory,  }\item[{int}]{bullet\+Count }\end{DoxyParamCaption})}
+
+
+
+Tire plusieurs balles avec une trajectoire donnée. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em trajectory} & La trajectoire des balles. \\
+\hline
+{\em bullet\+Count} & Le nombre de balles à tirer. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_aaa28efbc178b756dc9c5cd725cb277ec}\label{classGame_aaa28efbc178b756dc9c5cd725cb277ec}} 
+\index{Game@{Game}!fireSingleBullet@{fireSingleBullet}}
+\index{fireSingleBullet@{fireSingleBullet}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{fireSingleBullet()}{fireSingleBullet()}}
+{\footnotesize\ttfamily void Game\+::fire\+Single\+Bullet (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBullet_a74e59768613e272c1094ff0d2b3de3d4}{Bullet\+::\+Bullet\+Trajectory}}}]{trajectory }\end{DoxyParamCaption})}
+
+
+
+Tire une seule balle avec une trajectoire donnée. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em trajectory} & La trajectoire de la balle. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_a7c4142f8835b26aae9ac1fc6526a5759}\label{classGame_a7c4142f8835b26aae9ac1fc6526a5759}} 
+\index{Game@{Game}!getBombs@{getBombs}}
+\index{getBombs@{getBombs}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getBombs()}{getBombs()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classBomb}{Bomb}}$>$\& Game\+::get\+Bombs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGame_a2a53ed3382a2cf3e3c66f060ce61d912}\label{classGame_a2a53ed3382a2cf3e3c66f060ce61d912}} 
+\index{Game@{Game}!getBombSound@{getBombSound}}
+\index{getBombSound@{getBombSound}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getBombSound()}{getBombSound()}}
+{\footnotesize\ttfamily bool Game\+::get\+Bomb\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Récupère l\textquotesingle{}état du son de la bombe (joué ou non). 
+
+\begin{DoxyReturn}{Renvoie}
+Vrai si le son de la bombe est joué, faux sinon. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGame_a23d3ed25f5b052d51530a048fe1a5e37}\label{classGame_a23d3ed25f5b052d51530a048fe1a5e37}} 
+\index{Game@{Game}!getBullets@{getBullets}}
+\index{getBullets@{getBullets}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getBullets()}{getBullets()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classBullet}{Bullet}}$>$\& Game\+::get\+Bullets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGame_a7fe4eb06f64a6330eeb4cd657324fcbe}\label{classGame_a7fe4eb06f64a6330eeb4cd657324fcbe}} 
+\index{Game@{Game}!getControlType@{getControlType}}
+\index{getControlType@{getControlType}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getControlType()}{getControlType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGame_ad3923ada8ea2ea23e6300e1485bcfbd6}{Control\+Type}} Game\+::get\+Control\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Récupère le type de contrôle actuel (clavier ou souris). 
+
+\begin{DoxyReturn}{Renvoie}
+Le type de contrôle actuel. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGame_ab752bd0b990d13f2f17f439b627991bf}\label{classGame_ab752bd0b990d13f2f17f439b627991bf}} 
+\index{Game@{Game}!getCurrentLevel@{getCurrentLevel}}
+\index{getCurrentLevel@{getCurrentLevel}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getCurrentLevel()}{getCurrentLevel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGame_a9aa73faf99baf9bb03d53d6c8785d107}{Level\+Selection}} Game\+::get\+Current\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Récupère le niveau actuel (facile, normal ou difficile). 
+
+\begin{DoxyReturn}{Renvoie}
+Le niveau actuel. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGame_adbbfae184c044c2d544b382704b2bacd}\label{classGame_adbbfae184c044c2d544b382704b2bacd}} 
+\index{Game@{Game}!getCurrentState@{getCurrentState}}
+\index{getCurrentState@{getCurrentState}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getCurrentState()}{getCurrentState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGame_a7f57a7a8408e554d0a72882c287e1d04}{Game\+State}} Game\+::get\+Current\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtenir l\textquotesingle{}état actuel du jeu. 
+
+\begin{DoxyReturn}{Renvoie}
+L\textquotesingle{}état actuel du jeu. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGame_a6ab9a32fbddc4d757a7aaba4efa5b0b4}\label{classGame_a6ab9a32fbddc4d757a7aaba4efa5b0b4}} 
+\index{Game@{Game}!getDrops@{getDrops}}
+\index{getDrops@{getDrops}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getDrops()}{getDrops()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classDrop}{Drop}}$>$\& Game\+::get\+Drops (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGame_ac343e0af11b4b707456b7439a23cafb4}\label{classGame_ac343e0af11b4b707456b7439a23cafb4}} 
+\index{Game@{Game}!getDropType@{getDropType}}
+\index{getDropType@{getDropType}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getDropType()}{getDropType()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classDrop_a2de083545776187b1125c73c1aa736e9}{Drop\+::\+Drop\+Type}}$>$\& Game\+::get\+Drop\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classGame_a3ae751c1997b0bc239a02abbfc5f1722}\label{classGame_a3ae751c1997b0bc239a02abbfc5f1722}} 
+\index{Game@{Game}!getEnemies@{getEnemies}}
+\index{getEnemies@{getEnemies}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getEnemies()}{getEnemies()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classEnemy}{Enemy}}$>$\& Game\+::get\+Enemies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGame_ac24a11b15b4ce4293e2464e08f79ae78}\label{classGame_ac24a11b15b4ce4293e2464e08f79ae78}} 
+\index{Game@{Game}!getFireInterval@{getFireInterval}}
+\index{getFireInterval@{getFireInterval}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getFireInterval()}{getFireInterval()}}
+{\footnotesize\ttfamily double Game\+::get\+Fire\+Interval (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classGame_a40f8924b8ca9553cb1bf1848ba899763}\label{classGame_a40f8924b8ca9553cb1bf1848ba899763}} 
+\index{Game@{Game}!getMap@{getMap}}
+\index{getMap@{getMap}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getMap()}{getMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMap}{Map}}\& Game\+::get\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGame_a885ff05f7b84479a0e521e2e27880693}\label{classGame_a885ff05f7b84479a0e521e2e27880693}} 
+\index{Game@{Game}!getMyTimer@{getMyTimer}}
+\index{getMyTimer@{getMyTimer}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getMyTimer()}{getMyTimer()}}
+{\footnotesize\ttfamily uint32\+\_\+t Game\+::get\+My\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Récupère le timer actuel. 
+
+\begin{DoxyReturn}{Renvoie}
+Le timer actuel. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGame_a618cd24f8a672720ed085f41cf90af6f}\label{classGame_a618cd24f8a672720ed085f41cf90af6f}} 
+\index{Game@{Game}!getPlayer@{getPlayer}}
+\index{getPlayer@{getPlayer}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getPlayer()}{getPlayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{Player}}\& Game\+::get\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGame_a244e237939a292959327d37bc82978cb}\label{classGame_a244e237939a292959327d37bc82978cb}} 
+\index{Game@{Game}!getPlayerScore@{getPlayerScore}}
+\index{getPlayerScore@{getPlayerScore}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getPlayerScore()}{getPlayerScore()}}
+{\footnotesize\ttfamily int Game\+::get\+Player\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Récupère le score actuel du joueur. 
+
+\begin{DoxyReturn}{Renvoie}
+Le score actuel du joueur. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGame_ab433d1c8de53bedf34595eadead4e7f6}\label{classGame_ab433d1c8de53bedf34595eadead4e7f6}} 
+\index{Game@{Game}!getPurchaseState@{getPurchaseState}}
+\index{getPurchaseState@{getPurchaseState}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getPurchaseState()}{getPurchaseState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStore_ab33bb3829205915b763973387a721eb7}{Store\+::\+Purchase\+State}} Game\+::get\+Purchase\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGame_a1557c637b249398094d51ce2ff020b9c}\label{classGame_a1557c637b249398094d51ce2ff020b9c}} 
+\index{Game@{Game}!getScoreManager@{getScoreManager}}
+\index{getScoreManager@{getScoreManager}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getScoreManager()}{getScoreManager()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classScoreManager}{Score\+Manager}}\& Game\+::get\+Score\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGame_ab06fffb8b5c361018b7df849928c0f11}\label{classGame_ab06fffb8b5c361018b7df849928c0f11}} 
+\index{Game@{Game}!getTrajectory@{getTrajectory}}
+\index{getTrajectory@{getTrajectory}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getTrajectory()}{getTrajectory()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBullet_a74e59768613e272c1094ff0d2b3de3d4}{Bullet\+::\+Bullet\+Trajectory}} Game\+::get\+Trajectory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classGame_a9c58145fa4675144606bace61dd4f833}\label{classGame_a9c58145fa4675144606bace61dd4f833}} 
+\index{Game@{Game}!hasStateChanged@{hasStateChanged}}
+\index{hasStateChanged@{hasStateChanged}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{hasStateChanged()}{hasStateChanged()}}
+{\footnotesize\ttfamily bool Game\+::has\+State\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Vérifie si l\textquotesingle{}état du jeu a changé. 
+
+\begin{DoxyReturn}{Renvoie}
+True si l\textquotesingle{}état du jeu a changé, False sinon. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGame_aac660a50f76ec69c2425106cacda5f34}\label{classGame_aac660a50f76ec69c2425106cacda5f34}} 
+\index{Game@{Game}!levelInput@{levelInput}}
+\index{levelInput@{levelInput}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{levelInput()}{levelInput()}}
+{\footnotesize\ttfamily void Game\+::level\+Input (\begin{DoxyParamCaption}\item[{const char}]{input }\end{DoxyParamCaption})}
+
+
+
+Traite les entrées utilisateur dans le menu de sélection de niveau. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em input} & Caractère d\textquotesingle{}entrée utilisateur. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_af72a610256e06768a90e8c5fee06ce8a}\label{classGame_af72a610256e06768a90e8c5fee06ce8a}} 
+\index{Game@{Game}!menuInput@{menuInput}}
+\index{menuInput@{menuInput}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{menuInput()}{menuInput()}}
+{\footnotesize\ttfamily void Game\+::menu\+Input (\begin{DoxyParamCaption}\item[{const char}]{input }\end{DoxyParamCaption})}
+
+
+
+Traite les entrées utilisateur dans le menu principal. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em input} & Caractère d\textquotesingle{}entrée utilisateur. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_a80ba0cfd8db13f2e642fa7390da80ffe}\label{classGame_a80ba0cfd8db13f2e642fa7390da80ffe}} 
+\index{Game@{Game}!recordGame@{recordGame}}
+\index{recordGame@{recordGame}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{recordGame()}{recordGame()}}
+{\footnotesize\ttfamily void Game\+::record\+Game (\begin{DoxyParamCaption}\item[{int}]{player\+Score,  }\item[{float}]{game\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Enregistre une partie de jeu avec le score et le temps de jeu. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em player\+Score} & Score du joueur à enregistrer. \\
+\hline
+{\em game\+Time} & Temps de jeu à enregistrer. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_a5d802d875fcc798661b3a38c2dc21bb4}\label{classGame_a5d802d875fcc798661b3a38c2dc21bb4}} 
+\index{Game@{Game}!resetGameObjects@{resetGameObjects}}
+\index{resetGameObjects@{resetGameObjects}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{resetGameObjects()}{resetGameObjects()}}
+{\footnotesize\ttfamily void Game\+::reset\+Game\+Objects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Réinitialise les objets du jeu. 
+
+\mbox{\Hypertarget{classGame_adc3523934c40e09601fbff2fb516e388}\label{classGame_adc3523934c40e09601fbff2fb516e388}} 
+\index{Game@{Game}!runningInput@{runningInput}}
+\index{runningInput@{runningInput}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{runningInput()}{runningInput()}}
+{\footnotesize\ttfamily void Game\+::running\+Input (\begin{DoxyParamCaption}\item[{const char}]{input }\end{DoxyParamCaption})}
+
+
+
+Traite les entrées utilisateur dans l\textquotesingle{}état de jeu en cours. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em input} & Caractère d\textquotesingle{}entrée utilisateur. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_a042f79c6a3aeffafd6bbca2bb31ae891}\label{classGame_a042f79c6a3aeffafd6bbca2bb31ae891}} 
+\index{Game@{Game}!save@{save}}
+\index{save@{save}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void Game\+::save (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Enregistre le score du joueur. 
+
+\mbox{\Hypertarget{classGame_a1888041ac8d15adc6aeab61c5d9f53e0}\label{classGame_a1888041ac8d15adc6aeab61c5d9f53e0}} 
+\index{Game@{Game}!saveScore@{saveScore}}
+\index{saveScore@{saveScore}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{saveScore()}{saveScore()}}
+{\footnotesize\ttfamily void Game\+::save\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Enregistre le score du joueur. 
+
+\mbox{\Hypertarget{classGame_a31f465db3ff4353579b2b9ff9c57f1b2}\label{classGame_a31f465db3ff4353579b2b9ff9c57f1b2}} 
+\index{Game@{Game}!setBombSound@{setBombSound}}
+\index{setBombSound@{setBombSound}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{setBombSound()}{setBombSound()}}
+{\footnotesize\ttfamily void Game\+::set\+Bomb\+Sound (\begin{DoxyParamCaption}\item[{bool}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Définit si le son de la bombe doit être joué. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em value} & Vrai pour jouer le son, faux sinon. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_a8b4a9f5610f7fd3042c345a7583faadc}\label{classGame_a8b4a9f5610f7fd3042c345a7583faadc}} 
+\index{Game@{Game}!setControlType@{setControlType}}
+\index{setControlType@{setControlType}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{setControlType()}{setControlType()}}
+{\footnotesize\ttfamily void Game\+::set\+Control\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGame_ad3923ada8ea2ea23e6300e1485bcfbd6}{Control\+Type}}}]{control\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Définit le type de contrôle à utiliser (clavier ou souris). 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em control\+Type} & Le type de contrôle à utiliser. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_acfe95aecfa9a75780152d0d463a0c3b3}\label{classGame_acfe95aecfa9a75780152d0d463a0c3b3}} 
+\index{Game@{Game}!setCurrentLevel@{setCurrentLevel}}
+\index{setCurrentLevel@{setCurrentLevel}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{setCurrentLevel()}{setCurrentLevel()}}
+{\footnotesize\ttfamily void Game\+::set\+Current\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGame_a9aa73faf99baf9bb03d53d6c8785d107}{Level\+Selection}}}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Définit le niveau actuel (facile, normal ou difficile). 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em level} & Le niveau à définir. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_a5941b0d0312d4117e1538b7b5cd337dc}\label{classGame_a5941b0d0312d4117e1538b7b5cd337dc}} 
+\index{Game@{Game}!setCurrentState@{setCurrentState}}
+\index{setCurrentState@{setCurrentState}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{setCurrentState()}{setCurrentState()}}
+{\footnotesize\ttfamily void Game\+::set\+Current\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGame_a7f57a7a8408e554d0a72882c287e1d04}{Game\+State}}}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Définir l\textquotesingle{}état actuel du jeu. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em state} & Le nouvel état du jeu. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_afb5311bf0f5c02da15622197f68c2f55}\label{classGame_afb5311bf0f5c02da15622197f68c2f55}} 
+\index{Game@{Game}!setFireInterval@{setFireInterval}}
+\index{setFireInterval@{setFireInterval}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{setFireInterval()}{setFireInterval()}}
+{\footnotesize\ttfamily void Game\+::set\+Fire\+Interval (\begin{DoxyParamCaption}\item[{double}]{new\+Fire\+Interval }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classGame_afe944bbcac70655eb71e4c9701991da1}\label{classGame_afe944bbcac70655eb71e4c9701991da1}} 
+\index{Game@{Game}!setPlayerScore@{setPlayerScore}}
+\index{setPlayerScore@{setPlayerScore}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{setPlayerScore()}{setPlayerScore()}}
+{\footnotesize\ttfamily void Game\+::set\+Player\+Score (\begin{DoxyParamCaption}\item[{int}]{score }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Définit le score du joueur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em score} & Le nouveau score du joueur. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_a1cb5649ab0767ff9eef7ee7440f18328}\label{classGame_a1cb5649ab0767ff9eef7ee7440f18328}} 
+\index{Game@{Game}!storeInput@{storeInput}}
+\index{storeInput@{storeInput}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{storeInput()}{storeInput()}}
+{\footnotesize\ttfamily void Game\+::store\+Input (\begin{DoxyParamCaption}\item[{const char}]{input }\end{DoxyParamCaption})}
+
+
+
+Traite les entrées utilisateur dans le menu du magasin. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em input} & Caractère d\textquotesingle{}entrée utilisateur. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGame_a79df6376b332d63c9eca0dcee30305c3}\label{classGame_a79df6376b332d63c9eca0dcee30305c3}} 
+\index{Game@{Game}!update@{update}}
+\index{update@{update}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Game\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Met à jour l\textquotesingle{}état du jeu et les objets du jeu. 
+
+\mbox{\Hypertarget{classGame_aedc3c4bc82512f49583d1077d7e8f28c}\label{classGame_aedc3c4bc82512f49583d1077d7e8f28c}} 
+\index{Game@{Game}!updateMyTimer@{updateMyTimer}}
+\index{updateMyTimer@{updateMyTimer}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{updateMyTimer()}{updateMyTimer()}}
+{\footnotesize\ttfamily void Game\+::update\+My\+Timer (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+Met à jour le timer avec un delta de temps. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em delta\+Time} & Le delta de temps à ajouter au timer. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{classGame_a61dd66ef744405d42a2ab62e85724223}\label{classGame_a61dd66ef744405d42a2ab62e85724223}} 
+\index{Game@{Game}!controlMenuSelection@{controlMenuSelection}}
+\index{controlMenuSelection@{controlMenuSelection}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{controlMenuSelection}{controlMenuSelection}}
+{\footnotesize\ttfamily int Game\+::control\+Menu\+Selection}
+
+La sélection de menu de contrôle actuelle. \mbox{\Hypertarget{classGame_a6e38634125453a42ca921a552e30205c}\label{classGame_a6e38634125453a42ca921a552e30205c}} 
+\index{Game@{Game}!controlSelection@{controlSelection}}
+\index{controlSelection@{controlSelection}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{controlSelection}{controlSelection}}
+{\footnotesize\ttfamily int Game\+::control\+Selection}
+
+La sélection de contrôle actuelle. \mbox{\Hypertarget{classGame_a1d1efbe9e2e1504c0bc3519a721e36aa}\label{classGame_a1d1efbe9e2e1504c0bc3519a721e36aa}} 
+\index{Game@{Game}!currentControlType@{currentControlType}}
+\index{currentControlType@{currentControlType}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{currentControlType}{currentControlType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGame_ad3923ada8ea2ea23e6300e1485bcfbd6}{Control\+Type}} Game\+::current\+Control\+Type = \mbox{\hyperlink{classGame_ad3923ada8ea2ea23e6300e1485bcfbd6a6ce4d85a628a88bbdb3ac24a8e5a9c2e}{Control\+Type\+::\+Keyboard}}}
+
+\mbox{\Hypertarget{classGame_a1683eb2e8a0b5f35765667ba75de1219}\label{classGame_a1683eb2e8a0b5f35765667ba75de1219}} 
+\index{Game@{Game}!currentLevel@{currentLevel}}
+\index{currentLevel@{currentLevel}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{currentLevel}{currentLevel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGame_a9aa73faf99baf9bb03d53d6c8785d107}{Level\+Selection}} Game\+::current\+Level = \mbox{\hyperlink{classGame_a9aa73faf99baf9bb03d53d6c8785d107a960b44c579bc2f6818d2daaf9e4c16f0}{Level\+Selection\+::\+Normal}}}
+
+\mbox{\Hypertarget{classGame_a0d9568c1b133d9052d439ed39571d575}\label{classGame_a0d9568c1b133d9052d439ed39571d575}} 
+\index{Game@{Game}!currentState@{currentState}}
+\index{currentState@{currentState}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{currentState}{currentState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGame_a7f57a7a8408e554d0a72882c287e1d04}{Game\+State}} Game\+::current\+State}
+
+L\textquotesingle{}état actuel du jeu. \mbox{\Hypertarget{classGame_ac042de2abec986ecbf68140887877fb8}\label{classGame_ac042de2abec986ecbf68140887877fb8}} 
+\index{Game@{Game}!enemySpawnInterval@{enemySpawnInterval}}
+\index{enemySpawnInterval@{enemySpawnInterval}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{enemySpawnInterval}{enemySpawnInterval}}
+{\footnotesize\ttfamily int Game\+::enemy\+Spawn\+Interval}
+
+\mbox{\Hypertarget{classGame_abe87e5f1da46d44d2fe209f5797c53d5}\label{classGame_abe87e5f1da46d44d2fe209f5797c53d5}} 
+\index{Game@{Game}!lastEnemySpawnTime@{lastEnemySpawnTime}}
+\index{lastEnemySpawnTime@{lastEnemySpawnTime}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{lastEnemySpawnTime}{lastEnemySpawnTime}}
+{\footnotesize\ttfamily uint32\+\_\+t Game\+::last\+Enemy\+Spawn\+Time}
+
+\mbox{\Hypertarget{classGame_ab05b831e42a889f8a143e16f367512a5}\label{classGame_ab05b831e42a889f8a143e16f367512a5}} 
+\index{Game@{Game}!levelMenuSelection@{levelMenuSelection}}
+\index{levelMenuSelection@{levelMenuSelection}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{levelMenuSelection}{levelMenuSelection}}
+{\footnotesize\ttfamily int Game\+::level\+Menu\+Selection}
+
+La sélection de menu de niveau actuelle. \mbox{\Hypertarget{classGame_a32c594a6a0dec825c79fdf32616f0970}\label{classGame_a32c594a6a0dec825c79fdf32616f0970}} 
+\index{Game@{Game}!magazineSize@{magazineSize}}
+\index{magazineSize@{magazineSize}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{magazineSize}{magazineSize}}
+{\footnotesize\ttfamily int Game\+::magazine\+Size = 100}
+
+La taille initiale du chargeur. \mbox{\Hypertarget{classGame_a942987456ccccb31fd2b9c846bbf3a30}\label{classGame_a942987456ccccb31fd2b9c846bbf3a30}} 
+\index{Game@{Game}!maxEnemyCount@{maxEnemyCount}}
+\index{maxEnemyCount@{maxEnemyCount}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{maxEnemyCount}{maxEnemyCount}}
+{\footnotesize\ttfamily int Game\+::max\+Enemy\+Count}
+
+\mbox{\Hypertarget{classGame_ab83828671aa0402e3adc930acd39cb9c}\label{classGame_ab83828671aa0402e3adc930acd39cb9c}} 
+\index{Game@{Game}!menuSelection@{menuSelection}}
+\index{menuSelection@{menuSelection}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{menuSelection}{menuSelection}}
+{\footnotesize\ttfamily int Game\+::menu\+Selection}
+
+La sélection de menu actuelle. \mbox{\Hypertarget{classGame_a59857c6de4417e1422a52addfab07a97}\label{classGame_a59857c6de4417e1422a52addfab07a97}} 
+\index{Game@{Game}!optionsMenuSelection@{optionsMenuSelection}}
+\index{optionsMenuSelection@{optionsMenuSelection}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{optionsMenuSelection}{optionsMenuSelection}}
+{\footnotesize\ttfamily int Game\+::options\+Menu\+Selection}
+
+La sélection de menu des options actuelle. \mbox{\Hypertarget{classGame_a53f49cbb4292160206abda906179bc9d}\label{classGame_a53f49cbb4292160206abda906179bc9d}} 
+\index{Game@{Game}!playSound@{playSound}}
+\index{playSound@{playSound}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{playSound}{playSound}}
+{\footnotesize\ttfamily bool Game\+::play\+Sound = false}
+
+\mbox{\Hypertarget{classGame_a1d1130c07feb6642e084cc5a603b69c4}\label{classGame_a1d1130c07feb6642e084cc5a603b69c4}} 
+\index{Game@{Game}!previousState@{previousState}}
+\index{previousState@{previousState}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{previousState}{previousState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGame_a7f57a7a8408e554d0a72882c287e1d04}{Game\+State}} Game\+::previous\+State}
+
+L\textquotesingle{}état précédent du jeu. \mbox{\Hypertarget{classGame_af1c39b5045ea46f70cce20a2a375d8d4}\label{classGame_af1c39b5045ea46f70cce20a2a375d8d4}} 
+\index{Game@{Game}!storeMenuSelection@{storeMenuSelection}}
+\index{storeMenuSelection@{storeMenuSelection}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{storeMenuSelection}{storeMenuSelection}}
+{\footnotesize\ttfamily int Game\+::store\+Menu\+Selection}
+
+La sélection de menu de magasin actuelle. \mbox{\Hypertarget{classGame_aa253b2d65ab71e9408c992a169cb3064}\label{classGame_aa253b2d65ab71e9408c992a169cb3064}} 
+\index{Game@{Game}!useMouseControl@{useMouseControl}}
+\index{useMouseControl@{useMouseControl}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{useMouseControl}{useMouseControl}}
+{\footnotesize\ttfamily bool Game\+::use\+Mouse\+Control}
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/core/\mbox{\hyperlink{Game_8h}{Game.\+h}}\item 
+src/core/\mbox{\hyperlink{Game_8cpp}{Game.\+cpp}}\end{DoxyCompactItemize}

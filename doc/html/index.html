@@ -1,0 +1,612 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DogFigther: Jeu-Vidéo-DogFighter</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">DogFigther
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">Jeu-Vidéo-DogFighter </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1><a class="anchor" id="intro"></a>
+Introduction</h1>
+<p>DogFighter est un jeu-vidéo developpé en c++ en utilisant la SDL/SDL2. Ce projet de developpement à été réalisé dans le cadre de l'UE LIFAP4 <br  />
+ Voir la page du cours : <a href="https://perso.liris.cnrs.fr/alexandre.meyer/public_html/www/doku.php?id=lifap4">https://perso.liris.cnrs.fr/alexandre.meyer/public_html/www/doku.php?id=lifap4</a></p>
+<p>Ce dossier contient un makefile permettant d'executer le code du jeu-vidéo.<br  />
+ le Dossier src contient les sous-dossiers /core /sdl2 et /txt qui contiennent les modules spécifiques du jeu. (fichiers .h et .cpp) <br  />
+</p>
+<p>Le jeu-vidéo est jouable en version console(version texte) sans interface graphique et en version graphique avec la SDL.</p>
+<p>Il peut se compiler sous Linux/ MacOS et Windows (avec WSL notamment) , avec la commande make depuis le dossier source.</p>
+<h2><a class="anchor" id="autotoc_md0"></a>
+Code et l'organisation des fichiers</h2>
+<p>Le code est divisé en plusieurs modules répartis entre le coeur (fichiers dans le dossiers /src/core) qui constitue le noyau du programme et entre les modes d'interfaces (fichiers dans le sous-dossier /src/txt) pour la version console(texte) et l'interface graphique (fichiers dans le sous-dossier src/sdl2) pour la version en SDL. </p>
+<h2><a class="anchor" id="autotoc_md1"></a>
+PROJET DogFIghter pour l'UE LIFAP4</h2>
+<p>Auteur :<br  />
+ Zhenshan LI <code>zhenshan.li@etu.univ-lyon1.fr</code> <code>p2018814</code><br  />
+ Runnian LU <code>runnian.lu@etu.univ-lyon1.fr</code> <code>p2209010</code><br  />
+ La page de Git: <a href="https://forge.univ-lyon1.fr/p2209010/lifapa_tp">https://forge.univ-lyon1.fr/p2209010/lifapa_tp</a></p>
+<h1><a class="anchor" id="compil"></a>
+Compilation</h1>
+<p>L'organistion des fichiers est la suivante.</p>
+<ul>
+<li><b>bin</b> : Contient les fichiers executable créees avec la commande make depuis le dossier racine , pour éxecuter un fichier il faut executer la commande ./Debug/nom_executable , exemple : ./Debug/Plane</li>
+<li><b>bin/Debug</b> : Contient les fichiers exécutables du Makefile</li>
+<li><b>data</b> : Contient les fichiers images,audio et fonts du jeu</li>
+<li><b>doc</b> : Contient le fichier .doxy permettant d'éditer et générer la documentation doxygen.</li>
+<li><b>doc/html/index.html</b> : La page internet de la documentation généré par doxygen.</li>
+<li><b>obj</b> : répertoire comportant les fichiers objets créés lors de la compilation.</li>
+<li><b>src</b> : Contient les sous-dossiers /core /sdl2 et /txt</li>
+<li><b>src/core</b> : Contient les fichiers source .cpp et .h qui constitue les modules principaux du jeu , les modules noyau.</li>
+<li><b>src/sdl2</b> : Contient les fichiers source .cpp et .h qui constitue de les modules principaux pour la version graphique SDL du jeu.</li>
+<li><b>src/txt</b> : Contient les fichiers source .cpp et .h qui constitue les modules principaux pour la version txt du jeu.</li>
+</ul>
+<p>Pour la documentation du code, voir la rubrique "documentation du code" plus bas.</p>
+<h2><a class="anchor" id="autotoc_md2"></a>
+Pour compiler</h2>
+<h3><a class="anchor" id="autotoc_md3"></a>
+Sous Linux</h3>
+<p>Si vous êtes sous Linux, assurez-vous d'avoir SDL/SDL2 installé sur votre machine.</p><ul>
+<li>Ouvrez un terminal et exécutez simplement la commande : <code>sudo apt install libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev libsdl2-mixer-dev imagemagick</code></li>
+<li>Puis, depuis le dossier racine du jeu, exécutez, depuis votre terminal, la commande : <code>make</code></li>
+<li>Une fois la compilation terminée, exécutez la commande <code>./bin/Debug/Plane</code> pour lancer du jeu</li>
+</ul>
+<p>Si la commande d'installation de la SDL/SDL2 ne fonctionne pas, référez-vous à la commande spécifique pour installer SDL/SDL2 selon votre distribution Linux.</p>
+<h3><a class="anchor" id="autotoc_md4"></a>
+Sous macOS</h3>
+<p>Pour compiler sous macOS, assurez-vous d'avoir SDL/SDL2 installé sur votre machine.</p><ul>
+<li>Installez Homebrew si ce n'est pas déjà fait : <code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></li>
+<li>Installez les bibliothèques SDL2 : <code>brew install sdl2 sdl2_image sdl2_ttf sdl2_mixer</code></li>
+<li>Puis, depuis le dossier racine du jeu, exécutez la commande : <code>make</code></li>
+<li>Une fois la compilation terminée, exécutez la commande <code>./bin/Debug/Plane</code> pour lancer du jeu</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md5"></a>
+Sous Windows avec Visual Studio</h3>
+<p>Pour compiler sous Windows avec Visual Studio, assurez-vous d'avoir SDL/SDL2 installé sur votre machine.</p><ul>
+<li>Téléchargez les bibliothèques SDL2 (<a href="https://www.libsdl.org/download-2.0.php">https://www.libsdl.org/download-2.0.php</a>) et décompressez-les</li>
+<li>Créez un nouveau projet Visual Studio C++ et ajoutez les fichiers sources du jeu</li>
+<li>Configurez les propriétés du projet pour inclure les répertoires d'en-tête et les bibliothèques de SDL2</li>
+<li>Compilez le projet et exécutez le jeu depuis Visual Studio</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md6"></a>
+Sous Windows avec Code::Blocks</h3>
+<p>Pour compiler sous Windows avec Code::Blocks, assurez-vous d'avoir SDL/SDL2 installé sur votre machine.</p><ul>
+<li>Téléchargez les bibliothèques SDL2 (<a href="https://www.libsdl.org/download-2.0.php">https://www.libsdl.org/download-2.0.php</a>) et décompressez-les</li>
+<li>Créez un nouveau projet Code::Blocks C++ et ajoutez les fichiers sources du jeu</li>
+<li>Configurez les propriétés du projet pour inclure les répertoires d'en-tête et les bibliothèques de SDL2</li>
+<li>Compilez le projet (F9) et exécutez le jeu depuis Code::Blocks</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md7"></a>
+Préambule : si vous voulez un Linux sous Windows, vous pouvez installer WSL !</h3>
+<p>Voir la page de l'UE : <a href="https://perso.liris.cnrs.fr/alexandre.meyer/public_html/www/doku.php?id=lifap4#wsl_pour_faire_tourner_un_linux_ultra_leger_sous_windows">https://perso.liris.cnrs.fr/alexandre.meyer/public_html/www/doku.php?id=lifap4#wsl_pour_faire_tourner_un_linux_ultra_leger_sous_windows</a></p>
+<p>C'est léger, pratique, rapide et suffisant pour de nombreuses applications. Windows/WSL est exactement comme une machine Linux avec des drivers minimalistes, donc la gestion de certains périphériques commes la carte son ou l'accélération 3D peut ne pas marcher mais pour ce cours ca peut être suffisant. Il faut parcontre que vous ayez installé XMing pour pouvoir ouvrir des fenêtres comme expliqué sur la page du cours. Valgrind marche aussi !</p>
+<h3><a class="anchor" id="autotoc_md8"></a>
+Pour installer SDL2</h3>
+<p>Afin d'installer SDL2 sous Linux ou avec WSL/Windows, veuillez suivre les instructions ci-dessous avec soin :<br  />
+ <code>sudo apt install libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev libsdl2-mixer-dev imagemagick</code></p>
+<p>Veuillez noter que cette commande peut varier en fonction de votre distribution Linux. Consultez la documentation de votre distribution pour connaître la commande appropriée.</p>
+<h3><a class="anchor" id="autotoc_md9"></a>
+Compilation en ligne de commande après l'installation de SDL2 et WSL (si nécessaire)</h3>
+<p>Une fois SDL2 et WSL (le cas échéant) correctement installés, veillez à effectuer la compilation en ligne de commande avec prudence :</p>
+<ul>
+<li>Depuis le répertoire racine du module image, exécutez attentivement la commande <code>make</code>.</li>
+<li>Si la compilation ne s'effectue pas comme prévu, vérifiez minutieusement que les chemins d'inclusion spécifiés dans le fichier Makefile à la racine du projet correspondent à votre installation de SDL2 (par défaut <code>/usr/include</code>).</li>
+<li>Adaptez les chemins d'inclusion si nécessaire, en fonction de votre configuration et de l'emplacement de l'installation SDL2.</li>
+</ul>
+<h1><a class="anchor" id="doc"></a>
+Documentation</h1>
+<p>Une documentation détaillée générée grâce à Doxygen est disponible dans le répertoire <code>doc</code>. <br  />
+</p>
+<p>Le programme contient 11 classes principales, classées par nom de fichier, et utilise plusieurs librairies.<br  />
+</p>
+<p>Les classes principales sont :</p><ul>
+<li><code><a class="el" href="classBomb.html" title="Classe représentant un objet bombe.">Bomb</a></code></li>
+<li><code><a class="el" href="classBullet.html" title="Classe représentant une balle.">Bullet</a></code></li>
+<li><code>Collision</code></li>
+<li><code><a class="el" href="classDrop.html" title="Classe représentant un objet qui tombe.">Drop</a></code></li>
+<li><code><a class="el" href="classEnemy.html" title="Classe représentant un ennemi.">Enemy</a></code></li>
+<li><code><a class="el" href="classMap.html" title="Classe représentant la carte du jeu.">Map</a></code></li>
+<li><code><a class="el" href="classPlayer.html" title="Une classe représentant le joueur du jeu.">Player</a></code></li>
+<li><code><a class="el" href="classScoreManager.html" title="Classe représentant un gestionnaire de score.">ScoreManager</a></code></li>
+<li><code><a class="el" href="classStore.html" title="La classe Store représente un magasin de jeu.">Store</a></code></li>
+<li><code><a class="el" href="classGame.html" title="Classe principale du jeu, gère l&#39;état du jeu, les objets du jeu et les entrées utilisateur.">Game</a></code></li>
+<li><code><a class="el" href="classsdlGame.html" title="Classe pour gérer le jeu SDL.">sdlGame</a></code></li>
+</ul>
+<p>Le programme utilise principalement les bibliothèques suivantes :</p>
+<h3><a class="anchor" id="autotoc_md10"></a>
+Bibliothèques C++ :</h3>
+<ul>
+<li><code>include &lt;vector&gt;</code></li>
+<li><code>include &lt;cmath&gt;</code></li>
+<li><code>include &lt;stdlib.h&gt;</code></li>
+</ul>
+<h3><a class="anchor" id="autotoc_md11"></a>
+Bibliothèques SDL :</h3>
+<ul>
+<li><code>include &lt;SDL2/SDL.h&gt;</code></li>
+<li><code>include &lt;SDL2/SDL_image.h&gt;</code></li>
+<li><code>include &lt;SDL2/SDL_ttf.h&gt;</code></li>
+<li><p class="startli"><code>include &lt;SDL2/SDL_mixer.h&gt;</code></p>
+<p class="startli"><br  />
+</p>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md12"></a>
+Classe Bomb</h3>
+<p>La classe <a class="el" href="classBomb.html" title="Classe représentant un objet bombe.">Bomb</a> représente une bombe dans le jeu. Elle gère les différents états d'une bombe, ainsi que sa position et sa mise à jour.<br  />
+</p>
+<h4><a class="anchor" id="autotoc_md13"></a>
+Types publics:</h4>
+<p><code>enum class BombState { Active, Inactive };</code></p>
+<h4><a class="anchor" id="autotoc_md14"></a>
+Fonctions membres publiques:</h4>
+<ul>
+<li><code><a class="el" href="classBomb.html" title="Classe représentant un objet bombe.">Bomb(int x, int y)</a></code>: Construit un nouvel objet Bombe.</li>
+<li><code>~Bomb()</code>: Détruit l'objet Bombe.</li>
+<li><code>BombState getState() const</code>: Récupère l'état de la bombe.</li>
+<li><code>void setState(BombState newState)</code>: Modifie l'état de la bombe.</li>
+<li><code>int getX() const</code>: Récupère la coordonnée x de la bombe.</li>
+<li><code>int getY() const</code>: Récupère la coordonnée y de la bombe.</li>
+<li><code>void setX(int x)</code>: Modifie la coordonnée x de la bombe.</li>
+<li><code>void setY(int y)</code>: Modifie la coordonnée y de la bombe.</li>
+<li><code>void reset()</code>: Réinitialise l'objet bombe.</li>
+<li><code>void update(uint32_t currentTime)</code>: Met à jour l'objet bombe.</li>
+<li><code>int getCurrentFrame() const</code>: Récupère le numéro de l'image actuelle.</li>
+</ul>
+<h4><a class="anchor" id="autotoc_md15"></a>
+Attributs privés:</h4>
+<ul>
+<li><code>int x</code></li>
+<li><code>int y</code></li>
+<li><code>int currentFrame</code></li>
+<li><code>int maxFrames</code></li>
+<li><code>BombState state</code></li>
+<li><code>uint32_t lastFrameTime</code></li>
+<li><code>const uint32_t frameDuration = 60</code> </li>
+</ul>
+<h3><a class="anchor" id="autotoc_md16"></a>
+Classe Bullet</h3>
+<p>La classe <a class="el" href="classBullet.html" title="Classe représentant une balle.">Bullet</a> représente une balle dans le jeu. Elle gère les différents états, trajectoires, vitesses et dégâts d'une balle, ainsi que sa position et sa mise à jour.</p>
+<h4><a class="anchor" id="autotoc_md17"></a>
+Types publics:</h4>
+<p><code>enum class BulletTrajectory { Weapon1, Weapon2, Weapon3, Weapon4, Weapon5 };</code> <code>enum class BulletState { Active, Inactive };</code></p>
+<h4><a class="anchor" id="autotoc_md18"></a>
+Fonctions membres publiques:</h4>
+<ul>
+<li><code><a class="el" href="classBullet.html" title="Classe représentant une balle.">Bullet(int x, int y, int speed, BulletTrajectory trajectory)</a></code>: Construit une nouvelle balle.</li>
+<li><code><a class="el" href="classBullet.html" title="Classe représentant une balle.">Bullet()</a></code>: Construit une nouvelle balle.</li>
+<li><code>void setX(int x)</code>: Modifie la coordonnée x de la balle.</li>
+<li><code>void setY(int y)</code>: Modifie la coordonnée y de la balle.</li>
+<li><code>BulletState getState() const</code>: Récupère l'état de la balle.</li>
+<li><code>void setState(BulletState newState)</code>: Modifie l'état de la balle.</li>
+<li><code>int getX() const</code>: Récupère la coordonnée x de la balle.</li>
+<li><code>int getY() const</code>: Récupère la coordonnée y de la balle.</li>
+<li><code>int getSpeed() const</code>: Récupère la vitesse de la balle.</li>
+<li><code>void setSpeed(int speed)</code>: Modifie la vitesse de la balle.</li>
+<li><code>void reset()</code>: Réinitialise l'objet balle.</li>
+<li><code>int getDamage() const</code>: Récupère les dégâts de la balle.</li>
+<li><code>void setDamage(int newDamage)</code>: Modifie les dégâts de la balle.</li>
+<li><code>int getFireInterval() const</code>: Récupère l'intervalle de génération de la balle.</li>
+<li><code>void setFireInterval(int newFireInterval)</code>: Modifie l'intervalle de génération de la balle.</li>
+<li><code>void setTrajectory(BulletTrajectory newTrajectory)</code>: Modifie la trajectoire de la balle.</li>
+<li><code>void update()</code>: Met à jour l'objet balle.</li>
+<li><code>void setSpeedX(float speedX)</code>: Modifie la vitesse horizontale de la balle.</li>
+<li><code>void setSpeedY(float speedY)</code>: Modifie la vitesse verticale de la balle.</li>
+<li><code><a class="el" href="structRect_1_1My__Rect.html" title="Structure représentant un rectangle.">Rect::My_Rect</a> getCollisionRect() const</code>: Récupère le rectangle de collision de la balle.</li>
+</ul>
+<h4><a class="anchor" id="autotoc_md19"></a>
+Attributs privés:</h4>
+<ul>
+<li><code>int x</code></li>
+</ul>
+<p><code>int y</code></p><ul>
+<li><code>BulletTrajectory trajectory</code></li>
+<li><code>float speedX</code></li>
+<li><code>float speedY</code></li>
+<li><code>int bulletWidth</code></li>
+<li><code>int bulletHeight</code></li>
+<li><code>int speed</code></li>
+<li><code>BulletState state</code></li>
+<li><code>int damage</code></li>
+<li><code>int fireInterval</code></li>
+</ul>
+<h3><a class="anchor" id="autotoc_md20"></a>
+Classe Drop</h3>
+<p>La classe <a class="el" href="classDrop.html" title="Classe représentant un objet qui tombe.">Drop</a> représente un objet qui tombe dans le jeu, tel qu'un bonus ou un boost de vitesse. Elle gère les différents types de bonus, leurs coordonnées, leur état actif et leur mise à jour.</p>
+<h4><a class="anchor" id="autotoc_md21"></a>
+Types publics:</h4>
+<p><code>enum class DropType { Bonus, SpeedBoost, FireRateBoost };</code></p>
+<h4><a class="anchor" id="autotoc_md22"></a>
+Fonctions membres publiques:</h4>
+<ul>
+<li><code><a class="el" href="classDrop.html" title="Classe représentant un objet qui tombe.">Drop(int x, int y, int speed, DropType type)</a></code>: Construit un nouvel objet qui tombe.</li>
+<li><code><a class="el" href="classDrop.html" title="Classe représentant un objet qui tombe.">Drop()</a> = default</code>: Construit un nouvel objet qui tombe.</li>
+<li><code>int getX() const</code>: Récupère la coordonnée x de l'objet.</li>
+<li><code>int getY() const</code>: Récupère la coordonnée y de l'objet.</li>
+<li><code>void setX(int setx)</code>: Modifie la coordonnée x de l'objet.</li>
+<li><code>void setY(int sety)</code>: Modifie la coordonnée y de l'objet.</li>
+<li><code>DropType getType() const</code>: Récupère le type de l'objet qui tombe.</li>
+<li><code>bool isActive() const</code>: Indique si l'objet est actif.</li>
+<li><code>void setActive(bool active)</code>: Modifie l'état actif de l'objet.</li>
+<li><code>void update()</code>: Met à jour l'objet.</li>
+<li><code><a class="el" href="structRect_1_1My__Rect.html" title="Structure représentant un rectangle.">Rect::My_Rect</a> getCollisionRect() const</code>: Récupère le rectangle de collision de l'objet.</li>
+</ul>
+<h4><a class="anchor" id="autotoc_md23"></a>
+Attributs publics:</h4>
+<ul>
+<li><code>DropType type</code></li>
+</ul>
+<h4><a class="anchor" id="autotoc_md24"></a>
+Attributs privés:</h4>
+<ul>
+<li><code>int x</code></li>
+<li><code>int y</code></li>
+<li><code>int speed</code></li>
+<li><code>bool active</code></li>
+<li><code>int width_</code></li>
+<li><code>int height_</code></li>
+</ul>
+<h3><a class="anchor" id="autotoc_md25"></a>
+Classe Enemy</h3>
+<p>La classe <a class="el" href="classEnemy.html" title="Classe représentant un ennemi.">Enemy</a> représente un ennemi dans le jeu. Elle gère les coordonnées, l'état, la vitesse de déplacement et les intervalles de temps entre chaque tir de l'ennemi.</p>
+<h4><a class="anchor" id="autotoc_md26"></a>
+Types publics:</h4>
+<p><code>enum class EnemyState { Active, Inactive };</code></p>
+<h4><a class="anchor" id="autotoc_md27"></a>
+Fonctions membres publiques:</h4>
+<ul>
+<li><code><a class="el" href="classEnemy.html" title="Classe représentant un ennemi.">Enemy(int x, int y, int interval, int speed)</a></code>: Construit un nouvel ennemi.</li>
+<li><code><a class="el" href="classEnemy.html" title="Classe représentant un ennemi.">Enemy()</a></code>: Construit un nouvel ennemi.</li>
+<li><code>int getX() const</code>: Récupère la coordonnée x de l'ennemi.</li>
+<li><code>int getY() const</code>: Récupère la coordonnée y de l'ennemi.</li>
+<li><code>void setX(int x)</code>: Modifie la coordonnée x de l'ennemi.</li>
+<li><code>void setY(int y)</code>: Modifie la coordonnée y de l'ennemi.</li>
+<li><code>EnemyState getState() const</code>: Récupère l'état de l'ennemi.</li>
+<li><code>void setState(EnemyState newState)</code>: Modifie l'état de l'ennemi.</li>
+<li><code>int getInterval() const</code>: Récupère l'intervalle de temps entre chaque tir de l'ennemi.</li>
+<li><code>int getSpeed() const</code>: Récupère la vitesse de déplacement de l'ennemi.</li>
+<li><code>void setSpeed(int setSpeed)</code>: Modifie la vitesse de déplacement de l'ennemi.</li>
+<li><code>void update()</code>: Met à jour l'ennemi.</li>
+<li><code>void reset()</code>: Réinitialise l'ennemi.</li>
+<li><code><a class="el" href="structRect_1_1My__Rect.html" title="Structure représentant un rectangle.">Rect::My_Rect</a> getCollisionRect() const</code>: Récupère le rectangle de collision de l'ennemi.</li>
+</ul>
+<h4><a class="anchor" id="autotoc_md28"></a>
+Attributs privés:</h4>
+<ul>
+<li><code>int x</code></li>
+<li><code>int y</code></li>
+<li><code>int interval</code></li>
+<li><code>int speed</code></li>
+<li><code>int enemyWidth</code></li>
+<li><code>int enemyHeight</code></li>
+<li><code>EnemyState state</code></li>
+</ul>
+<h3><a class="anchor" id="autotoc_md29"></a>
+Classe Map</h3>
+<p>La classe <a class="el" href="classMap.html" title="Classe représentant la carte du jeu.">Map</a> gère la carte et la position de la carte dans le jeu.</p>
+<h4><a class="anchor" id="autotoc_md30"></a>
+Fonctions membres publiques:</h4>
+<ul>
+<li><code><a class="el" href="classMap.html" title="Classe représentant la carte du jeu.">Map()</a></code>: Constructeur d'un nouvel objet <a class="el" href="classMap.html" title="Classe représentant la carte du jeu.">Map</a>.</li>
+<li><code>void mapPosition(int scroll_speed)</code>: Mettre à jour la position de la carte.</li>
+<li><code>int getWidth() const</code>: Obtenir la largeur de la carte.</li>
+<li><code>int getHeight() const</code>: Obtenir la hauteur de la carte.</li>
+<li><code>int getMap1PosY() const</code>: Obtenir la position de la carte1.</li>
+<li><code>int getMap2PosY() const</code>: Obtenir la position de la carte2.</li>
+</ul>
+<h4><a class="anchor" id="autotoc_md31"></a>
+Attributs privés:</h4>
+<ul>
+<li><code>int width_</code></li>
+<li><code>int height_</code></li>
+<li><code>int map1_posY</code></li>
+<li><code>int map2_posY</code></li>
+</ul>
+<h3><a class="anchor" id="autotoc_md32"></a>
+Classe Player</h3>
+<p>La classe <a class="el" href="classPlayer.html" title="Une classe représentant le joueur du jeu.">Player</a> représente un joueur dans le jeu et gère ses coordonnées, sa vitesse et sa santé.</p>
+<h4><a class="anchor" id="autotoc_md33"></a>
+Fonctions membres publiques:</h4>
+<ul>
+<li><code><a class="el" href="classPlayer.html" title="Une classe représentant le joueur du jeu.">Player(int windowWidth, int windowHeight)</a></code>: Construit un nouvel objet <a class="el" href="classPlayer.html" title="Une classe représentant le joueur du jeu.">Player</a>.</li>
+<li><code>void moveLeft()</code>: Déplacer le joueur vers la gauche.</li>
+<li><code>void moveRight()</code>: Déplacer le joueur vers la droite.</li>
+<li><code>void moveUp()</code>: Déplacer le joueur vers le haut.</li>
+<li><code>void moveDown()</code>: Déplacer le joueur vers le bas.</li>
+<li><code>int getSpeed() const</code>: Obtient la vitesse du joueur.</li>
+<li><code>void setSpeed(int newSpeed)</code>: Définit la vitesse du joueur.</li>
+<li><code>int getX() const</code>: Obtient la coordonnée x du joueur.</li>
+<li><code>int getY() const</code>: Obtient la coordonnée y du joueur.</li>
+<li><code>void setX(int x)</code>: Définit la coordonnée x du joueur.</li>
+<li><code>void setY(int y)</code>: Définit la coordonnée y du joueur.</li>
+<li><code>void reset()</code>: Réinitialise la position du joueur au centre de la fenêtre.</li>
+<li><code><a class="el" href="structRect_1_1My__Rect.html" title="Structure représentant un rectangle.">Rect::My_Rect</a> getCollisionRect() const</code>: Obtient le rectangle de collision du joueur.</li>
+<li><code>int getHealth() const</code>: Obtient la santé du joueur.</li>
+<li><code>void setHealth(int newHealth)</code>: Définit la santé du joueur.</li>
+</ul>
+<h4><a class="anchor" id="autotoc_md34"></a>
+Attributs privés:</h4>
+<ul>
+<li><code>int x</code></li>
+<li><code>int y</code></li>
+<li><code>int speed</code></li>
+<li><code>int windowWidth</code></li>
+<li><code>int windowHeight</code></li>
+<li><code>int playerWidth</code></li>
+<li><code>int playerHeight</code></li>
+</ul>
+<h3><a class="anchor" id="autotoc_md35"></a>
+Classe Rect</h3>
+<p>La classe <a class="el" href="classRect.html" title="Classe pour la détection de collisions avec des rectangles.">Rect</a> est utilisée pour la détection de collisions avec des rectangles.</p>
+<h4><a class="anchor" id="autotoc_md36"></a>
+Fonctions membres publiques statiques:</h4>
+<ul>
+<li><code>static bool hasIntersection(const My_Rect *A, const My_Rect *B)</code>: Vérifie si deux rectangles ont une intersection.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md37"></a>
+Classe ScoreManager</h3>
+<p>La classe <a class="el" href="classScoreManager.html" title="Classe représentant un gestionnaire de score.">ScoreManager</a> gère le score du joueur, le meilleur score et le score total.</p>
+<h4><a class="anchor" id="autotoc_md38"></a>
+Fonctions membres publiques:</h4>
+<ul>
+<li><code><a class="el" href="classScoreManager.html" title="Classe représentant un gestionnaire de score.">ScoreManager()</a></code>: Construit un nouvel objet <a class="el" href="classScoreManager.html" title="Classe représentant un gestionnaire de score.">ScoreManager</a>.</li>
+<li><code>~ScoreManager()</code>: Détruit l'objet <a class="el" href="classScoreManager.html" title="Classe représentant un gestionnaire de score.">ScoreManager</a>.</li>
+<li><code>int getPlayerScore() const</code>: Obtient le score actuel du joueur.</li>
+<li><code>void setPlayerScore(int score)</code>: Définit le score actuel du joueur.</li>
+<li><code>int getHighScore() const</code>: Obtient le meilleur score actuel.</li>
+<li><code>void setHighScore(int score)</code>: Définit le meilleur score actuel.</li>
+<li><code>int getTotalScore()</code>: Obtient le score total.</li>
+<li><code>void loadScore()</code>: Charge le score depuis un fichier.</li>
+<li><code>void saveScore()</code>: Sauvegarde le score dans un fichier.</li>
+<li><code>void updateHighScore(int score)</code>: Met à jour le meilleur score.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md39"></a>
+Classe Store</h3>
+<p>La classe <a class="el" href="classStore.html" title="La classe Store représente un magasin de jeu.">Store</a> représente un magasin dans le jeu. Elle permet de gérer le score du joueur et les achats d'articles.</p>
+<h4><a class="anchor" id="autotoc_md40"></a>
+Types publics:</h4>
+<p><code>enum class PurchaseState { Success, Failure, UnPurchase, IsPurchased }</code><br  />
+</p><ul>
+<li>L'énumération PurchaseState définit l'état d'achat des articles du magasin.</li>
+</ul>
+<h4><a class="anchor" id="autotoc_md41"></a>
+Fonctions membres publiques:</h4>
+<ul>
+<li><code><a class="el" href="classStore.html" title="La classe Store représente un magasin de jeu.">Store(int initialScore)</a></code>: Constructeur de la classe <a class="el" href="classStore.html" title="La classe Store représente un magasin de jeu.">Store</a>.</li>
+<li><code>void setPlayerScore(int newScore)</code>: Définit le score du joueur.</li>
+<li><code>int getPlayerScore() const</code>: Renvoie le score actuel du joueur.</li>
+</ul>
+<h4><a class="anchor" id="autotoc_md42"></a>
+Attributs privés:</h4>
+<ul>
+<li><code>int playerScore</code></li>
+</ul>
+<h3><a class="anchor" id="autotoc_md43"></a>
+Classe Game</h3>
+<p>La classe <a class="el" href="classGame.html" title="Classe principale du jeu, gère l&#39;état du jeu, les objets du jeu et les entrées utilisateur.">Game</a> est la classe principale du jeu qui gère l'état du jeu, les objets du jeu et les entrées utilisateur.</p>
+<h4><a class="anchor" id="autotoc_md44"></a>
+Types publics:</h4>
+<ul>
+<li><code>enum class GameState { MainMenu, Level, ControlMenu, MouseControl, KeyboardControl, Running, Pause, <a class="el" href="classStore.html" title="La classe Store représente un magasin de jeu.">Store</a>, GameOver }</code></li>
+<li>Énumération des différents états du jeu.</li>
+<li><code>enum class ControlType { Keyboard, Mouse }</code></li>
+<li>Énumération des différents types de contrôles.</li>
+<li><code>enum class LevelSelection { Easy, Normal, Hard }</code></li>
+<li>Énumération des différents niveaux de difficulté.</li>
+</ul>
+<h4><a class="anchor" id="autotoc_md45"></a>
+Fonctions membres publiques:</h4>
+<ul>
+<li><code>GameState getCurrentState() const</code>: Obtenir l'état actuel du jeu.</li>
+<li><code>bool hasStateChanged() const</code>: Vérifie si l'état du jeu a changé.</li>
+<li><code>void setCurrentState(GameState state)</code>: Définir l'état actuel du jeu.</li>
+<li><code><a class="el" href="classGame.html" title="Classe principale du jeu, gère l&#39;état du jeu, les objets du jeu et les entrées utilisateur.">Game()</a></code>: Constructeur par défaut de la classe <a class="el" href="classGame.html" title="Classe principale du jeu, gère l&#39;état du jeu, les objets du jeu et les entrées utilisateur.">Game</a>.</li>
+<li><code><a class="el" href="classGame.html" title="Classe principale du jeu, gère l&#39;état du jeu, les objets du jeu et les entrées utilisateur.">Game(int windowWidth, int windowHeight)</a></code>: Constructeur de la classe <a class="el" href="classGame.html" title="Classe principale du jeu, gère l&#39;état du jeu, les objets du jeu et les entrées utilisateur.">Game</a> avec les dimensions de la fenêtre.</li>
+<li><code>void menuInput(const char input)</code>: Traite les entrées utilisateur dans le menu principal.</li>
+<li><code>void runningInput(const char input)</code>: Traite les entrées utilisateur dans l'état de jeu en cours.</li>
+<li><code>void controlInput(const char input)</code>: Traite les entrées utilisateur dans le menu de contrôle.</li>
+<li><code>void levelInput(const char input)</code>: Traite les entrées utilisateur dans le menu de sélection de niveau.</li>
+<li><code>void storeInput(const char input)</code>: Traite les entrées utilisateur dans le menu du magasin.</li>
+<li><code>void update()</code>: Met à jour l'état du jeu et les objets du jeu.</li>
+<li><code>void resetGameObjects()</code>: Réinitialise les objets du jeu.</li>
+<li><code>void saveScore()</code>: Enregistre le score du joueur.</li>
+<li><code>int getPlayerScore() const</code>: Récupère le score actuel du joueur.</li>
+<li><code>void setPlayerScore(int score)</code>: Définit le score du joueur.</li>
+<li><code>void save()</code>: Enregistre le score du joueur.</li>
+<li><code>void recordGame(int playerScore, float gameTime)</code>: Enregistre une partie de jeu avec le score et le temps de jeu.</li>
+<li><code>void setBombSound(bool value)</code>: Définit si le son de la bombe doit être joué.</li>
+<li><code>bool getBombSound() const</code>: Récupère l'état du son de la bombe (joué ou non).</li>
+<li><code>ControlType getControlType() const</code>: Récupère le type de contrôle actuel (clavier ou souris).</li>
+<li><code>void setControlType(ControlType controlType)</code>: Définit le type de contrôle à utiliser (clavier ou souris).</li>
+<li><code>LevelSelection getCurrentLevel() const</code>: Récupère le niveau actuel (facile, normal ou difficile).</li>
+<li><code>void setCurrentLevel(LevelSelection level)</code>: Définit le niveau actuel (facile, normal ou difficile).</li>
+<li><code>void fireBullet(Bullet::BulletTrajectory trajectory)</code>: Tire une balle avec une trajectoire donnée.</li>
+<li><code>void fireSingleBullet(Bullet::BulletTrajectory trajectory)</code>: Tire une seule balle avec une trajectoire donnée.</li>
+<li><code>void fireMultipleBullets(Bullet::BulletTrajectory trajectory, int bulletCount)</code>: Tire plusieurs balles avec une trajectoire donnée.</li>
+<li><code>uint32_t getMyTimer() const</code>: Récupère le timer actuel.</li>
+<li><code>void updateMyTimer(uint32_t deltaTime)</code>: Met à jour le timer avec un delta de temps.</li>
+<li><code><a class="el" href="classPlayer.html" title="Une classe représentant le joueur du jeu.">Player</a>&amp; getPlayer()</code>: Récupère l'objet joueur.</li>
+<li><code>std::vector&lt;<a class="el" href="classBullet.html" title="Classe représentant une balle.">Bullet</a>&gt;&amp; getBullets()</code>: Récupère la liste des balles.</li>
+<li><code>std::vector&lt;<a class="el" href="classEnemy.html" title="Classe représentant un ennemi.">Enemy</a>&gt;&amp; getEnemies()</code>: Récupère la liste des ennemis.</li>
+<li><code><a class="el" href="classMap.html" title="Classe représentant la carte du jeu.">Map</a>&amp; getMap()</code>: Récupère l'objet carte.</li>
+<li><code>std::vector&lt;<a class="el" href="classBomb.html" title="Classe représentant un objet bombe.">Bomb</a>&gt;&amp; getBombs()</code>: Récécupère la liste des bombes.</li>
+<li><code>std::vector&lt;<a class="el" href="classDrop.html" title="Classe représentant un objet qui tombe.">Drop</a>&gt;&amp; getDrops()</code>: Récupère la liste des objets ramassables.</li>
+<li><code><a class="el" href="classScoreManager.html" title="Classe représentant un gestionnaire de score.">ScoreManager</a>&amp; getScoreManager()</code>: Récupère le gestionnaire de score.</li>
+<li><code><a class="el" href="classBullet.html#a74e59768613e272c1094ff0d2b3de3d4" title="Énumération des différentes trajectoires de balles.">Bullet::BulletTrajectory</a> getTrajectory() const</code>: Récupère la trajectoire actuelle des balles.</li>
+<li><code><a class="el" href="classStore.html#ab33bb3829205915b763973387a721eb7" title="L&#39;énumération PurchaseState définit l&#39;état d&#39;achat des articles du magasin.">Store::PurchaseState</a> getPurchaseState() const</code>: Récupère l'état d'achat actuel.</li>
+<li><code>double getFireInterval() const</code>: Récupère l'intervalle de tir actuel.</li>
+<li><code>void setFireInterval(double newFireInterval)</code>: Définit le nouvel intervalle de tir.</li>
+<li><code>std::vector&lt;<a class="el" href="classDrop.html#a2de083545776187b1125c73c1aa736e9" title="Énumération des différents types de bonus.">Drop::DropType</a>&gt;&amp; getDropType() const</code>: Récupère la liste des types d'objets ramassables.</li>
+</ul>
+<h4><a class="anchor" id="autotoc_md46"></a>
+Attributs publics:</h4>
+<ul>
+<li><code>GameState currentState</code>: L'état actuel du jeu.<br  />
+</li>
+<li><code>int menuSelection</code>: La sélection actuelle du menu principal.<br  />
+</li>
+<li><code>int optionsMenuSelection</code>: La sélection actuelle du menu des options.<br  />
+</li>
+<li><code>int controlSelection</code>: La sélection actuelle du menu de contrôle.<br  />
+</li>
+<li><code>int controlMenuSelection</code>: La sélection actuelle du menu de contrôle.<br  />
+</li>
+<li><code>int levelMenuSelection</code>: La sélection actuelle du menu de sélection de niveau.<br  />
+</li>
+<li><code>int storeMenuSelection</code>: La sélection actuelle du menu du magasin.<br  />
+</li>
+<li><code>int magazineSize = 100</code>: La taille du chargeur de l'arme.<br  />
+</li>
+<li><code>GameState previousState</code>: L'état précédent du jeu.<br  />
+</li>
+<li><code>bool playSound = false</code>: Indique si le son doit être joué ou non.<br  />
+</li>
+<li><code>bool useMouseControl</code>: Indique si les contrôles de la souris sont utilisés.<br  />
+</li>
+<li><code>ControlType currentControlType = ControlType::Keyboard</code>: Le type de contrôle actuel (clavier ou souris).<br  />
+</li>
+<li><code>uint32_t lastEnemySpawnTime</code>: Le dernier moment où un ennemi a été généré.<br  />
+</li>
+<li><code>int enemySpawnInterval</code>: L'intervalle de génération des ennemis.<br  />
+</li>
+<li><code>int maxEnemyCount</code>: Le nombre maximal d'ennemis.<br  />
+</li>
+<li><code>LevelSelection currentLevel = LevelSelection::Normal</code>: Le niveau de difficulté actuel.<br  />
+</li>
+</ul>
+<h4><a class="anchor" id="autotoc_md47"></a>
+Fonctions membres privées:</h4>
+<ul>
+<li><code>void checkCollisions()</code>: Vérifie les collisions entre les objets du jeu.</li>
+<li><code><a class="el" href="classStore.html#ab33bb3829205915b763973387a721eb7" title="L&#39;énumération PurchaseState définit l&#39;état d&#39;achat des articles du magasin.">Store::PurchaseState</a> purchaseWeapon(Bullet::BulletTrajectory weapon, int cost, ScoreManager &amp;scoreManager)</code>: Fonction pour l'achat d'armes dans le jeu.</li>
+</ul>
+<h4><a class="anchor" id="autotoc_md48"></a>
+Attributs privés:</h4>
+<ul>
+<li><code>uint32_t myTimer = 0</code>: Le timer actuel du jeu.</li>
+<li><code><a class="el" href="classMap.html" title="Classe représentant la carte du jeu.">Map</a> m_map</code>: La carte du jeu.</li>
+<li><code>int scroll_speed</code>: La vitesse de défilement de la carte.</li>
+<li><code><a class="el" href="classPlayer.html" title="Une classe représentant le joueur du jeu.">Player</a> player</code>: L'objet joueur.</li>
+<li><code>std::vector&lt;<a class="el" href="classBullet.html" title="Classe représentant une balle.">Bullet</a>&gt; bullets</code>: La liste des balles.</li>
+<li><code>std::vector&lt;<a class="el" href="classEnemy.html" title="Classe représentant un ennemi.">Enemy</a>&gt; enemies</code>: La liste des ennemis.</li>
+<li><code>std::vector&lt;<a class="el" href="classBomb.html" title="Classe représentant un objet bombe.">Bomb</a>&gt; bombs</code>: La liste des bombes.</li>
+<li><code>std::vector&lt;<a class="el" href="classDrop.html" title="Classe représentant un objet qui tombe.">Drop</a>&gt; drops</code>: La liste des objets ramassables.</li>
+<li><code><a class="el" href="classScoreManager.html" title="Classe représentant un gestionnaire de score.">ScoreManager</a> scoreManager</code>: Le gestionnaire de score.</li>
+<li><code><a class="el" href="classStore.html" title="La classe Store représente un magasin de jeu.">Store</a> store</code>: Le magasin du jeu.</li>
+<li><code>int weaponPrices[5]</code>: Les prix des armes.</li>
+<li><code><a class="el" href="classBullet.html#a74e59768613e272c1094ff0d2b3de3d4" title="Énumération des différentes trajectoires de balles.">Bullet::BulletTrajectory</a> currentTrajectory</code>: La trajectoire actuelle des balles.</li>
+<li><code>bool autoFire = false</code>: Indique si le tir automatique est activé.</li>
+<li><code><a class="el" href="classStore.html#ab33bb3829205915b763973387a721eb7" title="L&#39;énumération PurchaseState définit l&#39;état d&#39;achat des articles du magasin.">Store::PurchaseState</a> currentPurchaseState</code>: L'état d'achat actuel.</li>
+<li><code>uint32_t lastFireTime</code>: Le dernier moment où une balle a été tirée.</li>
+<li><code>int fireInterval = 700</code>: L'intervalle de tir.</li>
+<li><code>uint32_t lastDropSpawnTime</code>: Le dernier moment où un objet ramassable a été généré.</li>
+<li><code>const int dropSpawnInterval = 3000</code>: L'intervalle de génération des objets ramassables.</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md49"></a>
+Classe sdlGame</h3>
+<p>La classe <a class="el" href="classsdlGame.html" title="Classe pour gérer le jeu SDL.">sdlGame</a> gère l'initialisation, le rendu et la gestion des événements du jeu.</p>
+<h4><a class="anchor" id="autotoc_md50"></a>
+Fonctions membres publiques :</h4>
+<ul>
+<li><code><a class="el" href="classsdlGame.html" title="Classe pour gérer le jeu SDL.">sdlGame()</a></code> : Construit un nouvel objet <a class="el" href="classsdlGame.html" title="Classe pour gérer le jeu SDL.">sdlGame</a>.</li>
+<li><code><a class="el" href="classsdlGame.html" title="Classe pour gérer le jeu SDL.">sdlGame(const std::string &amp;title, int width, int height)</a></code> : Construit un nouvel objet <a class="el" href="classsdlGame.html" title="Classe pour gérer le jeu SDL.">sdlGame</a> avec un titre, une largeur et une hauteur spécifiques.</li>
+<li><code>~sdlGame()</code> : Détruit l'objet <a class="el" href="classsdlGame.html" title="Classe pour gérer le jeu SDL.">sdlGame</a>.</li>
+<li><code>bool initSDL()</code> : Initialise SDL.</li>
+<li><code>void cleanUpSDL()</code> : Nettoie SDL.</li>
+<li><code>void run()</code> : Exécute la boucle principale du jeu.</li>
+<li><code>void updateMusic()</code> : Met à jour la musique du jeu.</li>
+<li><code>void render()</code> : Rendu total.</li>
+<li><code>void renderMainMenu()</code> : Gestion du rendu de menu principale.</li>
+<li><code>void renderTexture(SDL_Texture *texture, SDL_Renderer *renderer, int x, int y)</code> : Rend la texture spécifiée à la position spécifiée.</li>
+<li><code>void renderGame()</code> : Gestion du rendu de la partie du jeu.</li>
+<li><code>void renderControlMenu()</code> : Gestion du rendu des menus du mode de contrôle.</li>
+<li><code>void renderPausedScreen()</code> : Gestion du rendu de l'écran en pause.</li>
+<li><code>void renderPausedScore()</code> : Gestion de scores lorsque le rendu est en pause.</li>
+<li><code>void renderScore()</code> : Gestion de rendu du score.</li>
+<li><code>void renderGameOver()</code> : Gestion du rendu game over.</li>
+<li><code>void renderLevelMenu()</code> : Gestion du rendu des menus du mode de level.</li>
+<li><code>void renderStore()</code> : Gestion du rendu des menus du mode de store.</li>
+<li><code>void handleEvents()</code> : Gère les événements du jeu.</li>
+<li><code>void handleMainMenuEvents(SDL_Event &amp;event)</code> : Gère les événements du menu principal.</li>
+<li><code>void handleRunningEvents(SDL_Event &amp;event)</code> : Gère les événements du jeu en cours.</li>
+<li><code>void handleControlMenuEvents(SDL_Event &amp;event)</code> : Gère les événements du menu control.</li>
+<li><code>void handlePausedEvents(SDL_Event &amp;event)</code> : Gère les événements du menu pause.</li>
+<li><code>void handleGameOverEvents(SDL_Event &amp;event, Uint32 gameTime)</code> : Gère les événements du game over.</li>
+<li><code>void handleLevelMenuEvents(const SDL_Event &amp;event)</code> : Gère les événements de menu level.</li>
+<li><code>void handleStoreEvents(const SDL_Event &amp;event)</code> : Gère les événements de menu store.</li>
+<li><code>SDL_Rect MyRect_to_SDLRect(const Rect::My_Rect *rect)</code> : Convertit un objet My_Rect en SDL_Rect.</li>
+</ul>
+<h4><a class="anchor" id="autotoc_md51"></a>
+Fonctions membres privées :</h4>
+<ul>
+<li><code>void playMusic(Mix_Music *music)</code> : Joue la musique spécifiée.</li>
+<li><code>void stopMusic()</code></li>
+<li><code>void pauseMusic()</code></li>
+<li><code>void resumeMusic()</code></li>
+<li><code>SDL_Texture* renderText(const std::string &amp;text, TTF_Font *font, SDL_Color color)</code> </li>
+</ul>
+</div></div><!-- PageDoc -->
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

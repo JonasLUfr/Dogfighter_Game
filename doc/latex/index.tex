@@ -1,0 +1,477 @@
+\hypertarget{index_intro}{}\doxysection{Introduction}\label{index_intro}
+Dog\+Fighter est un jeu-\/vidéo developpé en c++ en utilisant la SDL/\+SDL2. Ce projet de developpement à été réalisé dans le cadre de l\textquotesingle{}UE LIFAP4 ~\newline
+ Voir la page du cours \+: \href{https://perso.liris.cnrs.fr/alexandre.meyer/public_html/www/doku.php?id=lifap4}{\texttt{ https\+://perso.\+liris.\+cnrs.\+fr/alexandre.\+meyer/public\+\_\+html/www/doku.\+php?id=lifap4}}
+
+Ce dossier contient un makefile permettant d\textquotesingle{}executer le code du jeu-\/vidéo.~\newline
+ le Dossier src contient les sous-\/dossiers /core /sdl2 et /txt qui contiennent les modules spécifiques du jeu. (fichiers .h et .cpp) ~\newline
+
+
+Le jeu-\/vidéo est jouable en version console(version texte) sans interface graphique et en version graphique avec la SDL.
+
+Il peut se compiler sous Linux/ Mac\+OS et Windows (avec WSL notamment) , avec la commande make depuis le dossier source.\hypertarget{index_autotoc_md0}{}\doxysubsection{Code et l\textquotesingle{}organisation des fichiers}\label{index_autotoc_md0}
+Le code est divisé en plusieurs modules répartis entre le coeur (fichiers dans le dossiers /src/core) qui constitue le noyau du programme et entre les modes d\textquotesingle{}interfaces (fichiers dans le sous-\/dossier /src/txt) pour la version console(texte) et l\textquotesingle{}interface graphique (fichiers dans le sous-\/dossier src/sdl2) pour la version en SDL. \hypertarget{index_autotoc_md1}{}\doxysubsection{PROJET Dog\+FIghter pour l\textquotesingle{}\+UE LIFAP4}\label{index_autotoc_md1}
+Auteur \+:~\newline
+ Zhenshan LI {\ttfamily zhenshan.\+li@etu.\+univ-\/lyon1.\+fr} {\ttfamily p2018814}~\newline
+ Runnian LU {\ttfamily runnian.\+lu@etu.\+univ-\/lyon1.\+fr} {\ttfamily p2209010}~\newline
+ La page de Git\+: \href{https://forge.univ-lyon1.fr/p2209010/lifapa_tp}{\texttt{ https\+://forge.\+univ-\/lyon1.\+fr/p2209010/lifapa\+\_\+tp}}\hypertarget{index_compil}{}\doxysection{Compilation}\label{index_compil}
+L\textquotesingle{}organistion des fichiers est la suivante.
+
+
+\begin{DoxyItemize}
+\item {\bfseries{bin}} \+: Contient les fichiers executable créees avec la commande make depuis le dossier racine , pour éxecuter un fichier il faut executer la commande ./\+Debug/nom\+\_\+executable , exemple \+: ./\+Debug/\+Plane
+\item {\bfseries{bin/\+Debug}} \+: Contient les fichiers exécutables du Makefile
+\item {\bfseries{data}} \+: Contient les fichiers images,audio et fonts du jeu
+\item {\bfseries{doc}} \+: Contient le fichier .doxy permettant d\textquotesingle{}éditer et générer la documentation doxygen.
+\item {\bfseries{doc/html/index.\+html}} \+: La page internet de la documentation généré par doxygen.
+\item {\bfseries{obj}} \+: répertoire comportant les fichiers objets créés lors de la compilation.
+\item {\bfseries{src}} \+: Contient les sous-\/dossiers /core /sdl2 et /txt
+\item {\bfseries{src/core}} \+: Contient les fichiers source .cpp et .h qui constitue les modules principaux du jeu , les modules noyau.
+\item {\bfseries{src/sdl2}} \+: Contient les fichiers source .cpp et .h qui constitue de les modules principaux pour la version graphique SDL du jeu.
+\item {\bfseries{src/txt}} \+: Contient les fichiers source .cpp et .h qui constitue les modules principaux pour la version txt du jeu.
+\end{DoxyItemize}
+
+Pour la documentation du code, voir la rubrique \char`\"{}documentation du code\char`\"{} plus bas.\hypertarget{index_autotoc_md2}{}\doxysubsection{Pour compiler}\label{index_autotoc_md2}
+\hypertarget{index_autotoc_md3}{}\doxysubsubsection{Sous Linux}\label{index_autotoc_md3}
+Si vous êtes sous Linux, assurez-\/vous d\textquotesingle{}avoir SDL/\+SDL2 installé sur votre machine.
+\begin{DoxyItemize}
+\item Ouvrez un terminal et exécutez simplement la commande \+: {\ttfamily sudo apt install libsdl2-\/dev libsdl2-\/image-\/dev libsdl2-\/ttf-\/dev libsdl2-\/mixer-\/dev imagemagick}
+\item Puis, depuis le dossier racine du jeu, exécutez, depuis votre terminal, la commande \+: {\ttfamily make}
+\item Une fois la compilation terminée, exécutez la commande {\ttfamily ./bin/\+Debug/\+Plane} pour lancer du jeu
+\end{DoxyItemize}
+
+Si la commande d\textquotesingle{}installation de la SDL/\+SDL2 ne fonctionne pas, référez-\/vous à la commande spécifique pour installer SDL/\+SDL2 selon votre distribution Linux.\hypertarget{index_autotoc_md4}{}\doxysubsubsection{Sous mac\+OS}\label{index_autotoc_md4}
+Pour compiler sous mac\+OS, assurez-\/vous d\textquotesingle{}avoir SDL/\+SDL2 installé sur votre machine.
+\begin{DoxyItemize}
+\item Installez Homebrew si ce n\textquotesingle{}est pas déjà fait \+: {\ttfamily /bin/bash -\/c \char`\"{}\$(curl -\/fs\+SL https\+://raw.\+githubusercontent.\+com/\+Homebrew/install/\+HEAD/install.\+sh)\char`\"{}}
+\item Installez les bibliothèques SDL2 \+: {\ttfamily brew install sdl2 sdl2\+\_\+image sdl2\+\_\+ttf sdl2\+\_\+mixer}
+\item Puis, depuis le dossier racine du jeu, exécutez la commande \+: {\ttfamily make}
+\item Une fois la compilation terminée, exécutez la commande {\ttfamily ./bin/\+Debug/\+Plane} pour lancer du jeu
+\end{DoxyItemize}\hypertarget{index_autotoc_md5}{}\doxysubsubsection{Sous Windows avec Visual Studio}\label{index_autotoc_md5}
+Pour compiler sous Windows avec Visual Studio, assurez-\/vous d\textquotesingle{}avoir SDL/\+SDL2 installé sur votre machine.
+\begin{DoxyItemize}
+\item Téléchargez les bibliothèques SDL2 (\href{https://www.libsdl.org/download-2.0.php}{\texttt{ https\+://www.\+libsdl.\+org/download-\/2.\+0.\+php}}) et décompressez-\/les
+\item Créez un nouveau projet Visual Studio C++ et ajoutez les fichiers sources du jeu
+\item Configurez les propriétés du projet pour inclure les répertoires d\textquotesingle{}en-\/tête et les bibliothèques de SDL2
+\item Compilez le projet et exécutez le jeu depuis Visual Studio
+\end{DoxyItemize}\hypertarget{index_autotoc_md6}{}\doxysubsubsection{Sous Windows avec Code\+::\+Blocks}\label{index_autotoc_md6}
+Pour compiler sous Windows avec Code\+::\+Blocks, assurez-\/vous d\textquotesingle{}avoir SDL/\+SDL2 installé sur votre machine.
+\begin{DoxyItemize}
+\item Téléchargez les bibliothèques SDL2 (\href{https://www.libsdl.org/download-2.0.php}{\texttt{ https\+://www.\+libsdl.\+org/download-\/2.\+0.\+php}}) et décompressez-\/les
+\item Créez un nouveau projet Code\+::\+Blocks C++ et ajoutez les fichiers sources du jeu
+\item Configurez les propriétés du projet pour inclure les répertoires d\textquotesingle{}en-\/tête et les bibliothèques de SDL2
+\item Compilez le projet (F9) et exécutez le jeu depuis Code\+::\+Blocks
+\end{DoxyItemize}\hypertarget{index_autotoc_md7}{}\doxysubsubsection{Préambule \+: si vous voulez un Linux sous Windows, vous pouvez installer WSL !}\label{index_autotoc_md7}
+Voir la page de l\textquotesingle{}UE \+: \href{https://perso.liris.cnrs.fr/alexandre.meyer/public_html/www/doku.php?id=lifap4\#wsl_pour_faire_tourner_un_linux_ultra_leger_sous_windows}{\texttt{ https\+://perso.\+liris.\+cnrs.\+fr/alexandre.\+meyer/public\+\_\+html/www/doku.\+php?id=lifap4\#wsl\+\_\+pour\+\_\+faire\+\_\+tourner\+\_\+un\+\_\+linux\+\_\+ultra\+\_\+leger\+\_\+sous\+\_\+windows}}
+
+C\textquotesingle{}est léger, pratique, rapide et suffisant pour de nombreuses applications. Windows/\+WSL est exactement comme une machine Linux avec des drivers minimalistes, donc la gestion de certains périphériques commes la carte son ou l\textquotesingle{}accélération 3D peut ne pas marcher mais pour ce cours ca peut être suffisant. Il faut parcontre que vous ayez installé XMing pour pouvoir ouvrir des fenêtres comme expliqué sur la page du cours. Valgrind marche aussi !\hypertarget{index_autotoc_md8}{}\doxysubsubsection{Pour installer SDL2}\label{index_autotoc_md8}
+Afin d\textquotesingle{}installer SDL2 sous Linux ou avec WSL/\+Windows, veuillez suivre les instructions ci-\/dessous avec soin \+:~\newline
+ {\ttfamily sudo apt install libsdl2-\/dev libsdl2-\/image-\/dev libsdl2-\/ttf-\/dev libsdl2-\/mixer-\/dev imagemagick}
+
+Veuillez noter que cette commande peut varier en fonction de votre distribution Linux. Consultez la documentation de votre distribution pour connaître la commande appropriée.\hypertarget{index_autotoc_md9}{}\doxysubsubsection{Compilation en ligne de commande après l\textquotesingle{}installation de SDL2 et WSL (si nécessaire)}\label{index_autotoc_md9}
+Une fois SDL2 et WSL (le cas échéant) correctement installés, veillez à effectuer la compilation en ligne de commande avec prudence \+:
+
+
+\begin{DoxyItemize}
+\item Depuis le répertoire racine du module image, exécutez attentivement la commande {\ttfamily make}.
+\item Si la compilation ne s\textquotesingle{}effectue pas comme prévu, vérifiez minutieusement que les chemins d\textquotesingle{}inclusion spécifiés dans le fichier Makefile à la racine du projet correspondent à votre installation de SDL2 (par défaut {\ttfamily /usr/include}).
+\item Adaptez les chemins d\textquotesingle{}inclusion si nécessaire, en fonction de votre configuration et de l\textquotesingle{}emplacement de l\textquotesingle{}installation SDL2.
+\end{DoxyItemize}\hypertarget{index_doc}{}\doxysection{Documentation}\label{index_doc}
+Une documentation détaillée générée grâce à Doxygen est disponible dans le répertoire {\ttfamily doc}. ~\newline
+
+
+Le programme contient 11 classes principales, classées par nom de fichier, et utilise plusieurs librairies.~\newline
+
+
+Les classes principales sont \+:
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{\hyperlink{classBomb}{Bomb}}}
+\item {\ttfamily \mbox{\hyperlink{classBullet}{Bullet}}}
+\item {\ttfamily Collision}
+\item {\ttfamily \mbox{\hyperlink{classDrop}{Drop}}}
+\item {\ttfamily \mbox{\hyperlink{classEnemy}{Enemy}}}
+\item {\ttfamily \mbox{\hyperlink{classMap}{Map}}}
+\item {\ttfamily \mbox{\hyperlink{classPlayer}{Player}}}
+\item {\ttfamily \mbox{\hyperlink{classScoreManager}{Score\+Manager}}}
+\item {\ttfamily \mbox{\hyperlink{classStore}{Store}}}
+\item {\ttfamily \mbox{\hyperlink{classGame}{Game}}}
+\item {\ttfamily \mbox{\hyperlink{classsdlGame}{sdl\+Game}}}
+\end{DoxyItemize}
+
+Le programme utilise principalement les bibliothèques suivantes \+:\hypertarget{index_autotoc_md10}{}\doxysubsubsection{Bibliothèques C++ \+:}\label{index_autotoc_md10}
+
+\begin{DoxyItemize}
+\item {\ttfamily include $<$vector$>$}
+\item {\ttfamily include $<$cmath$>$}
+\item {\ttfamily include $<$stdlib.\+h$>$}
+\end{DoxyItemize}\hypertarget{index_autotoc_md11}{}\doxysubsubsection{Bibliothèques SDL \+:}\label{index_autotoc_md11}
+
+\begin{DoxyItemize}
+\item {\ttfamily include $<$SDL2/\+SDL.\+h$>$}
+\item {\ttfamily include $<$SDL2/\+SDL\+\_\+image.\+h$>$}
+\item {\ttfamily include $<$SDL2/\+SDL\+\_\+ttf.\+h$>$}
+\item {\ttfamily include $<$SDL2/\+SDL\+\_\+mixer.\+h$>$}
+
+~\newline
+
+\end{DoxyItemize}\hypertarget{index_autotoc_md12}{}\doxysubsubsection{Classe Bomb}\label{index_autotoc_md12}
+La classe \mbox{\hyperlink{classBomb}{Bomb}} représente une bombe dans le jeu. Elle gère les différents états d\textquotesingle{}une bombe, ainsi que sa position et sa mise à jour.~\newline
+\hypertarget{index_autotoc_md13}{}\doxyparagraph{Types publics\+:}\label{index_autotoc_md13}
+{\ttfamily enum class Bomb\+State \{ Active, Inactive \};}\hypertarget{index_autotoc_md14}{}\doxyparagraph{Fonctions membres publiques\+:}\label{index_autotoc_md14}
+
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{\hyperlink{classBomb}{Bomb(int x, int y)}}}\+: Construit un nouvel objet Bombe.
+\item {\ttfamily $\sim$\+Bomb()}\+: Détruit l\textquotesingle{}objet Bombe.
+\item {\ttfamily Bomb\+State get\+State() const}\+: Récupère l\textquotesingle{}état de la bombe.
+\item {\ttfamily void set\+State(\+Bomb\+State new\+State)}\+: Modifie l\textquotesingle{}état de la bombe.
+\item {\ttfamily int get\+X() const}\+: Récupère la coordonnée x de la bombe.
+\item {\ttfamily int get\+Y() const}\+: Récupère la coordonnée y de la bombe.
+\item {\ttfamily void set\+X(int x)}\+: Modifie la coordonnée x de la bombe.
+\item {\ttfamily void set\+Y(int y)}\+: Modifie la coordonnée y de la bombe.
+\item {\ttfamily void reset()}\+: Réinitialise l\textquotesingle{}objet bombe.
+\item {\ttfamily void update(uint32\+\_\+t current\+Time)}\+: Met à jour l\textquotesingle{}objet bombe.
+\item {\ttfamily int get\+Current\+Frame() const}\+: Récupère le numéro de l\textquotesingle{}image actuelle.
+\end{DoxyItemize}\hypertarget{index_autotoc_md15}{}\doxyparagraph{Attributs privés\+:}\label{index_autotoc_md15}
+
+\begin{DoxyItemize}
+\item {\ttfamily int x}
+\item {\ttfamily int y}
+\item {\ttfamily int current\+Frame}
+\item {\ttfamily int max\+Frames}
+\item {\ttfamily Bomb\+State state}
+\item {\ttfamily uint32\+\_\+t last\+Frame\+Time}
+\item {\ttfamily const uint32\+\_\+t frame\+Duration = 60} 
+\end{DoxyItemize}\hypertarget{index_autotoc_md16}{}\doxysubsubsection{Classe Bullet}\label{index_autotoc_md16}
+La classe \mbox{\hyperlink{classBullet}{Bullet}} représente une balle dans le jeu. Elle gère les différents états, trajectoires, vitesses et dégâts d\textquotesingle{}une balle, ainsi que sa position et sa mise à jour.\hypertarget{index_autotoc_md17}{}\doxyparagraph{Types publics\+:}\label{index_autotoc_md17}
+{\ttfamily enum class Bullet\+Trajectory \{ Weapon1, Weapon2, Weapon3, Weapon4, Weapon5 \};} {\ttfamily enum class Bullet\+State \{ Active, Inactive \};}\hypertarget{index_autotoc_md18}{}\doxyparagraph{Fonctions membres publiques\+:}\label{index_autotoc_md18}
+
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{\hyperlink{classBullet}{Bullet(int x, int y, int speed, Bullet\+Trajectory trajectory)}}}\+: Construit une nouvelle balle.
+\item {\ttfamily \mbox{\hyperlink{classBullet}{Bullet()}}}\+: Construit une nouvelle balle.
+\item {\ttfamily void set\+X(int x)}\+: Modifie la coordonnée x de la balle.
+\item {\ttfamily void set\+Y(int y)}\+: Modifie la coordonnée y de la balle.
+\item {\ttfamily Bullet\+State get\+State() const}\+: Récupère l\textquotesingle{}état de la balle.
+\item {\ttfamily void set\+State(\+Bullet\+State new\+State)}\+: Modifie l\textquotesingle{}état de la balle.
+\item {\ttfamily int get\+X() const}\+: Récupère la coordonnée x de la balle.
+\item {\ttfamily int get\+Y() const}\+: Récupère la coordonnée y de la balle.
+\item {\ttfamily int get\+Speed() const}\+: Récupère la vitesse de la balle.
+\item {\ttfamily void set\+Speed(int speed)}\+: Modifie la vitesse de la balle.
+\item {\ttfamily void reset()}\+: Réinitialise l\textquotesingle{}objet balle.
+\item {\ttfamily int get\+Damage() const}\+: Récupère les dégâts de la balle.
+\item {\ttfamily void set\+Damage(int new\+Damage)}\+: Modifie les dégâts de la balle.
+\item {\ttfamily int get\+Fire\+Interval() const}\+: Récupère l\textquotesingle{}intervalle de génération de la balle.
+\item {\ttfamily void set\+Fire\+Interval(int new\+Fire\+Interval)}\+: Modifie l\textquotesingle{}intervalle de génération de la balle.
+\item {\ttfamily void set\+Trajectory(\+Bullet\+Trajectory new\+Trajectory)}\+: Modifie la trajectoire de la balle.
+\item {\ttfamily void update()}\+: Met à jour l\textquotesingle{}objet balle.
+\item {\ttfamily void set\+Speed\+X(float speed\+X)}\+: Modifie la vitesse horizontale de la balle.
+\item {\ttfamily void set\+Speed\+Y(float speed\+Y)}\+: Modifie la vitesse verticale de la balle.
+\item {\ttfamily \mbox{\hyperlink{structRect_1_1My__Rect}{Rect\+::\+My\+\_\+\+Rect}} get\+Collision\+Rect() const}\+: Récupère le rectangle de collision de la balle.
+\end{DoxyItemize}\hypertarget{index_autotoc_md19}{}\doxyparagraph{Attributs privés\+:}\label{index_autotoc_md19}
+
+\begin{DoxyItemize}
+\item {\ttfamily int x}
+\end{DoxyItemize}
+
+{\ttfamily int y}
+\begin{DoxyItemize}
+\item {\ttfamily Bullet\+Trajectory trajectory}
+\item {\ttfamily float speedX}
+\item {\ttfamily float speedY}
+\item {\ttfamily int bullet\+Width}
+\item {\ttfamily int bullet\+Height}
+\item {\ttfamily int speed}
+\item {\ttfamily Bullet\+State state}
+\item {\ttfamily int damage}
+\item {\ttfamily int fire\+Interval}
+\end{DoxyItemize}\hypertarget{index_autotoc_md20}{}\doxysubsubsection{Classe Drop}\label{index_autotoc_md20}
+La classe \mbox{\hyperlink{classDrop}{Drop}} représente un objet qui tombe dans le jeu, tel qu\textquotesingle{}un bonus ou un boost de vitesse. Elle gère les différents types de bonus, leurs coordonnées, leur état actif et leur mise à jour.\hypertarget{index_autotoc_md21}{}\doxyparagraph{Types publics\+:}\label{index_autotoc_md21}
+{\ttfamily enum class Drop\+Type \{ Bonus, Speed\+Boost, Fire\+Rate\+Boost \};}\hypertarget{index_autotoc_md22}{}\doxyparagraph{Fonctions membres publiques\+:}\label{index_autotoc_md22}
+
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{\hyperlink{classDrop}{Drop(int x, int y, int speed, Drop\+Type type)}}}\+: Construit un nouvel objet qui tombe.
+\item {\ttfamily \mbox{\hyperlink{classDrop}{Drop()}} = default}\+: Construit un nouvel objet qui tombe.
+\item {\ttfamily int get\+X() const}\+: Récupère la coordonnée x de l\textquotesingle{}objet.
+\item {\ttfamily int get\+Y() const}\+: Récupère la coordonnée y de l\textquotesingle{}objet.
+\item {\ttfamily void set\+X(int setx)}\+: Modifie la coordonnée x de l\textquotesingle{}objet.
+\item {\ttfamily void set\+Y(int sety)}\+: Modifie la coordonnée y de l\textquotesingle{}objet.
+\item {\ttfamily Drop\+Type get\+Type() const}\+: Récupère le type de l\textquotesingle{}objet qui tombe.
+\item {\ttfamily bool is\+Active() const}\+: Indique si l\textquotesingle{}objet est actif.
+\item {\ttfamily void set\+Active(bool active)}\+: Modifie l\textquotesingle{}état actif de l\textquotesingle{}objet.
+\item {\ttfamily void update()}\+: Met à jour l\textquotesingle{}objet.
+\item {\ttfamily \mbox{\hyperlink{structRect_1_1My__Rect}{Rect\+::\+My\+\_\+\+Rect}} get\+Collision\+Rect() const}\+: Récupère le rectangle de collision de l\textquotesingle{}objet.
+\end{DoxyItemize}\hypertarget{index_autotoc_md23}{}\doxyparagraph{Attributs publics\+:}\label{index_autotoc_md23}
+
+\begin{DoxyItemize}
+\item {\ttfamily Drop\+Type type}
+\end{DoxyItemize}\hypertarget{index_autotoc_md24}{}\doxyparagraph{Attributs privés\+:}\label{index_autotoc_md24}
+
+\begin{DoxyItemize}
+\item {\ttfamily int x}
+\item {\ttfamily int y}
+\item {\ttfamily int speed}
+\item {\ttfamily bool active}
+\item {\ttfamily int width\+\_\+}
+\item {\ttfamily int height\+\_\+}
+\end{DoxyItemize}\hypertarget{index_autotoc_md25}{}\doxysubsubsection{Classe Enemy}\label{index_autotoc_md25}
+La classe \mbox{\hyperlink{classEnemy}{Enemy}} représente un ennemi dans le jeu. Elle gère les coordonnées, l\textquotesingle{}état, la vitesse de déplacement et les intervalles de temps entre chaque tir de l\textquotesingle{}ennemi.\hypertarget{index_autotoc_md26}{}\doxyparagraph{Types publics\+:}\label{index_autotoc_md26}
+{\ttfamily enum class Enemy\+State \{ Active, Inactive \};}\hypertarget{index_autotoc_md27}{}\doxyparagraph{Fonctions membres publiques\+:}\label{index_autotoc_md27}
+
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{\hyperlink{classEnemy}{Enemy(int x, int y, int interval, int speed)}}}\+: Construit un nouvel ennemi.
+\item {\ttfamily \mbox{\hyperlink{classEnemy}{Enemy()}}}\+: Construit un nouvel ennemi.
+\item {\ttfamily int get\+X() const}\+: Récupère la coordonnée x de l\textquotesingle{}ennemi.
+\item {\ttfamily int get\+Y() const}\+: Récupère la coordonnée y de l\textquotesingle{}ennemi.
+\item {\ttfamily void set\+X(int x)}\+: Modifie la coordonnée x de l\textquotesingle{}ennemi.
+\item {\ttfamily void set\+Y(int y)}\+: Modifie la coordonnée y de l\textquotesingle{}ennemi.
+\item {\ttfamily Enemy\+State get\+State() const}\+: Récupère l\textquotesingle{}état de l\textquotesingle{}ennemi.
+\item {\ttfamily void set\+State(\+Enemy\+State new\+State)}\+: Modifie l\textquotesingle{}état de l\textquotesingle{}ennemi.
+\item {\ttfamily int get\+Interval() const}\+: Récupère l\textquotesingle{}intervalle de temps entre chaque tir de l\textquotesingle{}ennemi.
+\item {\ttfamily int get\+Speed() const}\+: Récupère la vitesse de déplacement de l\textquotesingle{}ennemi.
+\item {\ttfamily void set\+Speed(int set\+Speed)}\+: Modifie la vitesse de déplacement de l\textquotesingle{}ennemi.
+\item {\ttfamily void update()}\+: Met à jour l\textquotesingle{}ennemi.
+\item {\ttfamily void reset()}\+: Réinitialise l\textquotesingle{}ennemi.
+\item {\ttfamily \mbox{\hyperlink{structRect_1_1My__Rect}{Rect\+::\+My\+\_\+\+Rect}} get\+Collision\+Rect() const}\+: Récupère le rectangle de collision de l\textquotesingle{}ennemi.
+\end{DoxyItemize}\hypertarget{index_autotoc_md28}{}\doxyparagraph{Attributs privés\+:}\label{index_autotoc_md28}
+
+\begin{DoxyItemize}
+\item {\ttfamily int x}
+\item {\ttfamily int y}
+\item {\ttfamily int interval}
+\item {\ttfamily int speed}
+\item {\ttfamily int enemy\+Width}
+\item {\ttfamily int enemy\+Height}
+\item {\ttfamily Enemy\+State state}
+\end{DoxyItemize}\hypertarget{index_autotoc_md29}{}\doxysubsubsection{Classe Map}\label{index_autotoc_md29}
+La classe \mbox{\hyperlink{classMap}{Map}} gère la carte et la position de la carte dans le jeu.\hypertarget{index_autotoc_md30}{}\doxyparagraph{Fonctions membres publiques\+:}\label{index_autotoc_md30}
+
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{\hyperlink{classMap}{Map()}}}\+: Constructeur d\textquotesingle{}un nouvel objet \mbox{\hyperlink{classMap}{Map}}.
+\item {\ttfamily void map\+Position(int scroll\+\_\+speed)}\+: Mettre à jour la position de la carte.
+\item {\ttfamily int get\+Width() const}\+: Obtenir la largeur de la carte.
+\item {\ttfamily int get\+Height() const}\+: Obtenir la hauteur de la carte.
+\item {\ttfamily int get\+Map1\+Pos\+Y() const}\+: Obtenir la position de la carte1.
+\item {\ttfamily int get\+Map2\+Pos\+Y() const}\+: Obtenir la position de la carte2.
+\end{DoxyItemize}\hypertarget{index_autotoc_md31}{}\doxyparagraph{Attributs privés\+:}\label{index_autotoc_md31}
+
+\begin{DoxyItemize}
+\item {\ttfamily int width\+\_\+}
+\item {\ttfamily int height\+\_\+}
+\item {\ttfamily int map1\+\_\+posY}
+\item {\ttfamily int map2\+\_\+posY}
+\end{DoxyItemize}\hypertarget{index_autotoc_md32}{}\doxysubsubsection{Classe Player}\label{index_autotoc_md32}
+La classe \mbox{\hyperlink{classPlayer}{Player}} représente un joueur dans le jeu et gère ses coordonnées, sa vitesse et sa santé.\hypertarget{index_autotoc_md33}{}\doxyparagraph{Fonctions membres publiques\+:}\label{index_autotoc_md33}
+
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{\hyperlink{classPlayer}{Player(int window\+Width, int window\+Height)}}}\+: Construit un nouvel objet \mbox{\hyperlink{classPlayer}{Player}}.
+\item {\ttfamily void move\+Left()}\+: Déplacer le joueur vers la gauche.
+\item {\ttfamily void move\+Right()}\+: Déplacer le joueur vers la droite.
+\item {\ttfamily void move\+Up()}\+: Déplacer le joueur vers le haut.
+\item {\ttfamily void move\+Down()}\+: Déplacer le joueur vers le bas.
+\item {\ttfamily int get\+Speed() const}\+: Obtient la vitesse du joueur.
+\item {\ttfamily void set\+Speed(int new\+Speed)}\+: Définit la vitesse du joueur.
+\item {\ttfamily int get\+X() const}\+: Obtient la coordonnée x du joueur.
+\item {\ttfamily int get\+Y() const}\+: Obtient la coordonnée y du joueur.
+\item {\ttfamily void set\+X(int x)}\+: Définit la coordonnée x du joueur.
+\item {\ttfamily void set\+Y(int y)}\+: Définit la coordonnée y du joueur.
+\item {\ttfamily void reset()}\+: Réinitialise la position du joueur au centre de la fenêtre.
+\item {\ttfamily \mbox{\hyperlink{structRect_1_1My__Rect}{Rect\+::\+My\+\_\+\+Rect}} get\+Collision\+Rect() const}\+: Obtient le rectangle de collision du joueur.
+\item {\ttfamily int get\+Health() const}\+: Obtient la santé du joueur.
+\item {\ttfamily void set\+Health(int new\+Health)}\+: Définit la santé du joueur.
+\end{DoxyItemize}\hypertarget{index_autotoc_md34}{}\doxyparagraph{Attributs privés\+:}\label{index_autotoc_md34}
+
+\begin{DoxyItemize}
+\item {\ttfamily int x}
+\item {\ttfamily int y}
+\item {\ttfamily int speed}
+\item {\ttfamily int window\+Width}
+\item {\ttfamily int window\+Height}
+\item {\ttfamily int player\+Width}
+\item {\ttfamily int player\+Height}
+\end{DoxyItemize}\hypertarget{index_autotoc_md35}{}\doxysubsubsection{Classe Rect}\label{index_autotoc_md35}
+La classe \mbox{\hyperlink{classRect}{Rect}} est utilisée pour la détection de collisions avec des rectangles.\hypertarget{index_autotoc_md36}{}\doxyparagraph{Fonctions membres publiques statiques\+:}\label{index_autotoc_md36}
+
+\begin{DoxyItemize}
+\item {\ttfamily static bool has\+Intersection(const My\+\_\+\+Rect $\ast$\+A, const My\+\_\+\+Rect $\ast$\+B)}\+: Vérifie si deux rectangles ont une intersection.
+\end{DoxyItemize}\hypertarget{index_autotoc_md37}{}\doxysubsubsection{Classe Score\+Manager}\label{index_autotoc_md37}
+La classe \mbox{\hyperlink{classScoreManager}{Score\+Manager}} gère le score du joueur, le meilleur score et le score total.\hypertarget{index_autotoc_md38}{}\doxyparagraph{Fonctions membres publiques\+:}\label{index_autotoc_md38}
+
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{\hyperlink{classScoreManager}{Score\+Manager()}}}\+: Construit un nouvel objet \mbox{\hyperlink{classScoreManager}{Score\+Manager}}.
+\item {\ttfamily $\sim$\+Score\+Manager()}\+: Détruit l\textquotesingle{}objet \mbox{\hyperlink{classScoreManager}{Score\+Manager}}.
+\item {\ttfamily int get\+Player\+Score() const}\+: Obtient le score actuel du joueur.
+\item {\ttfamily void set\+Player\+Score(int score)}\+: Définit le score actuel du joueur.
+\item {\ttfamily int get\+High\+Score() const}\+: Obtient le meilleur score actuel.
+\item {\ttfamily void set\+High\+Score(int score)}\+: Définit le meilleur score actuel.
+\item {\ttfamily int get\+Total\+Score()}\+: Obtient le score total.
+\item {\ttfamily void load\+Score()}\+: Charge le score depuis un fichier.
+\item {\ttfamily void save\+Score()}\+: Sauvegarde le score dans un fichier.
+\item {\ttfamily void update\+High\+Score(int score)}\+: Met à jour le meilleur score.
+\end{DoxyItemize}\hypertarget{index_autotoc_md39}{}\doxysubsubsection{Classe Store}\label{index_autotoc_md39}
+La classe \mbox{\hyperlink{classStore}{Store}} représente un magasin dans le jeu. Elle permet de gérer le score du joueur et les achats d\textquotesingle{}articles.\hypertarget{index_autotoc_md40}{}\doxyparagraph{Types publics\+:}\label{index_autotoc_md40}
+{\ttfamily enum class Purchase\+State \{ Success, Failure, Un\+Purchase, Is\+Purchased \}}~\newline
+
+\begin{DoxyItemize}
+\item L\textquotesingle{}énumération Purchase\+State définit l\textquotesingle{}état d\textquotesingle{}achat des articles du magasin.
+\end{DoxyItemize}\hypertarget{index_autotoc_md41}{}\doxyparagraph{Fonctions membres publiques\+:}\label{index_autotoc_md41}
+
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{\hyperlink{classStore}{Store(int initial\+Score)}}}\+: Constructeur de la classe \mbox{\hyperlink{classStore}{Store}}.
+\item {\ttfamily void set\+Player\+Score(int new\+Score)}\+: Définit le score du joueur.
+\item {\ttfamily int get\+Player\+Score() const}\+: Renvoie le score actuel du joueur.
+\end{DoxyItemize}\hypertarget{index_autotoc_md42}{}\doxyparagraph{Attributs privés\+:}\label{index_autotoc_md42}
+
+\begin{DoxyItemize}
+\item {\ttfamily int player\+Score}
+\end{DoxyItemize}\hypertarget{index_autotoc_md43}{}\doxysubsubsection{Classe Game}\label{index_autotoc_md43}
+La classe \mbox{\hyperlink{classGame}{Game}} est la classe principale du jeu qui gère l\textquotesingle{}état du jeu, les objets du jeu et les entrées utilisateur.\hypertarget{index_autotoc_md44}{}\doxyparagraph{Types publics\+:}\label{index_autotoc_md44}
+
+\begin{DoxyItemize}
+\item {\ttfamily enum class Game\+State \{ Main\+Menu, Level, Control\+Menu, Mouse\+Control, Keyboard\+Control, Running, Pause, \mbox{\hyperlink{classStore}{Store}}, Game\+Over \}}
+\item Énumération des différents états du jeu.
+\item {\ttfamily enum class Control\+Type \{ Keyboard, Mouse \}}
+\item Énumération des différents types de contrôles.
+\item {\ttfamily enum class Level\+Selection \{ Easy, Normal, Hard \}}
+\item Énumération des différents niveaux de difficulté.
+\end{DoxyItemize}\hypertarget{index_autotoc_md45}{}\doxyparagraph{Fonctions membres publiques\+:}\label{index_autotoc_md45}
+
+\begin{DoxyItemize}
+\item {\ttfamily Game\+State get\+Current\+State() const}\+: Obtenir l\textquotesingle{}état actuel du jeu.
+\item {\ttfamily bool has\+State\+Changed() const}\+: Vérifie si l\textquotesingle{}état du jeu a changé.
+\item {\ttfamily void set\+Current\+State(\+Game\+State state)}\+: Définir l\textquotesingle{}état actuel du jeu.
+\item {\ttfamily \mbox{\hyperlink{classGame}{Game()}}}\+: Constructeur par défaut de la classe \mbox{\hyperlink{classGame}{Game}}.
+\item {\ttfamily \mbox{\hyperlink{classGame}{Game(int window\+Width, int window\+Height)}}}\+: Constructeur de la classe \mbox{\hyperlink{classGame}{Game}} avec les dimensions de la fenêtre.
+\item {\ttfamily void menu\+Input(const char input)}\+: Traite les entrées utilisateur dans le menu principal.
+\item {\ttfamily void running\+Input(const char input)}\+: Traite les entrées utilisateur dans l\textquotesingle{}état de jeu en cours.
+\item {\ttfamily void control\+Input(const char input)}\+: Traite les entrées utilisateur dans le menu de contrôle.
+\item {\ttfamily void level\+Input(const char input)}\+: Traite les entrées utilisateur dans le menu de sélection de niveau.
+\item {\ttfamily void store\+Input(const char input)}\+: Traite les entrées utilisateur dans le menu du magasin.
+\item {\ttfamily void update()}\+: Met à jour l\textquotesingle{}état du jeu et les objets du jeu.
+\item {\ttfamily void reset\+Game\+Objects()}\+: Réinitialise les objets du jeu.
+\item {\ttfamily void save\+Score()}\+: Enregistre le score du joueur.
+\item {\ttfamily int get\+Player\+Score() const}\+: Récupère le score actuel du joueur.
+\item {\ttfamily void set\+Player\+Score(int score)}\+: Définit le score du joueur.
+\item {\ttfamily void save()}\+: Enregistre le score du joueur.
+\item {\ttfamily void record\+Game(int player\+Score, float game\+Time)}\+: Enregistre une partie de jeu avec le score et le temps de jeu.
+\item {\ttfamily void set\+Bomb\+Sound(bool value)}\+: Définit si le son de la bombe doit être joué.
+\item {\ttfamily bool get\+Bomb\+Sound() const}\+: Récupère l\textquotesingle{}état du son de la bombe (joué ou non).
+\item {\ttfamily Control\+Type get\+Control\+Type() const}\+: Récupère le type de contrôle actuel (clavier ou souris).
+\item {\ttfamily void set\+Control\+Type(\+Control\+Type control\+Type)}\+: Définit le type de contrôle à utiliser (clavier ou souris).
+\item {\ttfamily Level\+Selection get\+Current\+Level() const}\+: Récupère le niveau actuel (facile, normal ou difficile).
+\item {\ttfamily void set\+Current\+Level(\+Level\+Selection level)}\+: Définit le niveau actuel (facile, normal ou difficile).
+\item {\ttfamily void fire\+Bullet(\+Bullet\+::\+Bullet\+Trajectory trajectory)}\+: Tire une balle avec une trajectoire donnée.
+\item {\ttfamily void fire\+Single\+Bullet(\+Bullet\+::\+Bullet\+Trajectory trajectory)}\+: Tire une seule balle avec une trajectoire donnée.
+\item {\ttfamily void fire\+Multiple\+Bullets(\+Bullet\+::\+Bullet\+Trajectory trajectory, int bullet\+Count)}\+: Tire plusieurs balles avec une trajectoire donnée.
+\item {\ttfamily uint32\+\_\+t get\+My\+Timer() const}\+: Récupère le timer actuel.
+\item {\ttfamily void update\+My\+Timer(uint32\+\_\+t delta\+Time)}\+: Met à jour le timer avec un delta de temps.
+\item {\ttfamily \mbox{\hyperlink{classPlayer}{Player}}\& get\+Player()}\+: Récupère l\textquotesingle{}objet joueur.
+\item {\ttfamily std\+::vector$<$\mbox{\hyperlink{classBullet}{Bullet}}$>$\& get\+Bullets()}\+: Récupère la liste des balles.
+\item {\ttfamily std\+::vector$<$\mbox{\hyperlink{classEnemy}{Enemy}}$>$\& get\+Enemies()}\+: Récupère la liste des ennemis.
+\item {\ttfamily \mbox{\hyperlink{classMap}{Map}}\& get\+Map()}\+: Récupère l\textquotesingle{}objet carte.
+\item {\ttfamily std\+::vector$<$\mbox{\hyperlink{classBomb}{Bomb}}$>$\& get\+Bombs()}\+: Récécupère la liste des bombes.
+\item {\ttfamily std\+::vector$<$\mbox{\hyperlink{classDrop}{Drop}}$>$\& get\+Drops()}\+: Récupère la liste des objets ramassables.
+\item {\ttfamily \mbox{\hyperlink{classScoreManager}{Score\+Manager}}\& get\+Score\+Manager()}\+: Récupère le gestionnaire de score.
+\item {\ttfamily \mbox{\hyperlink{classBullet_a74e59768613e272c1094ff0d2b3de3d4}{Bullet\+::\+Bullet\+Trajectory}} get\+Trajectory() const}\+: Récupère la trajectoire actuelle des balles.
+\item {\ttfamily \mbox{\hyperlink{classStore_ab33bb3829205915b763973387a721eb7}{Store\+::\+Purchase\+State}} get\+Purchase\+State() const}\+: Récupère l\textquotesingle{}état d\textquotesingle{}achat actuel.
+\item {\ttfamily double get\+Fire\+Interval() const}\+: Récupère l\textquotesingle{}intervalle de tir actuel.
+\item {\ttfamily void set\+Fire\+Interval(double new\+Fire\+Interval)}\+: Définit le nouvel intervalle de tir.
+\item {\ttfamily std\+::vector$<$\mbox{\hyperlink{classDrop_a2de083545776187b1125c73c1aa736e9}{Drop\+::\+Drop\+Type}}$>$\& get\+Drop\+Type() const}\+: Récupère la liste des types d\textquotesingle{}objets ramassables.
+\end{DoxyItemize}\hypertarget{index_autotoc_md46}{}\doxyparagraph{Attributs publics\+:}\label{index_autotoc_md46}
+
+\begin{DoxyItemize}
+\item {\ttfamily Game\+State current\+State}\+: L\textquotesingle{}état actuel du jeu.~\newline
+
+\item {\ttfamily int menu\+Selection}\+: La sélection actuelle du menu principal.~\newline
+
+\item {\ttfamily int options\+Menu\+Selection}\+: La sélection actuelle du menu des options.~\newline
+
+\item {\ttfamily int control\+Selection}\+: La sélection actuelle du menu de contrôle.~\newline
+
+\item {\ttfamily int control\+Menu\+Selection}\+: La sélection actuelle du menu de contrôle.~\newline
+
+\item {\ttfamily int level\+Menu\+Selection}\+: La sélection actuelle du menu de sélection de niveau.~\newline
+
+\item {\ttfamily int store\+Menu\+Selection}\+: La sélection actuelle du menu du magasin.~\newline
+
+\item {\ttfamily int magazine\+Size = 100}\+: La taille du chargeur de l\textquotesingle{}arme.~\newline
+
+\item {\ttfamily Game\+State previous\+State}\+: L\textquotesingle{}état précédent du jeu.~\newline
+
+\item {\ttfamily bool play\+Sound = false}\+: Indique si le son doit être joué ou non.~\newline
+
+\item {\ttfamily bool use\+Mouse\+Control}\+: Indique si les contrôles de la souris sont utilisés.~\newline
+
+\item {\ttfamily Control\+Type current\+Control\+Type = Control\+Type\+::\+Keyboard}\+: Le type de contrôle actuel (clavier ou souris).~\newline
+
+\item {\ttfamily uint32\+\_\+t last\+Enemy\+Spawn\+Time}\+: Le dernier moment où un ennemi a été généré.~\newline
+
+\item {\ttfamily int enemy\+Spawn\+Interval}\+: L\textquotesingle{}intervalle de génération des ennemis.~\newline
+
+\item {\ttfamily int max\+Enemy\+Count}\+: Le nombre maximal d\textquotesingle{}ennemis.~\newline
+
+\item {\ttfamily Level\+Selection current\+Level = Level\+Selection\+::\+Normal}\+: Le niveau de difficulté actuel.~\newline
+
+\end{DoxyItemize}\hypertarget{index_autotoc_md47}{}\doxyparagraph{Fonctions membres privées\+:}\label{index_autotoc_md47}
+
+\begin{DoxyItemize}
+\item {\ttfamily void check\+Collisions()}\+: Vérifie les collisions entre les objets du jeu.
+\item {\ttfamily \mbox{\hyperlink{classStore_ab33bb3829205915b763973387a721eb7}{Store\+::\+Purchase\+State}} purchase\+Weapon(\+Bullet\+::\+Bullet\+Trajectory weapon, int cost, Score\+Manager \&score\+Manager)}\+: Fonction pour l\textquotesingle{}achat d\textquotesingle{}armes dans le jeu.
+\end{DoxyItemize}\hypertarget{index_autotoc_md48}{}\doxyparagraph{Attributs privés\+:}\label{index_autotoc_md48}
+
+\begin{DoxyItemize}
+\item {\ttfamily uint32\+\_\+t my\+Timer = 0}\+: Le timer actuel du jeu.
+\item {\ttfamily \mbox{\hyperlink{classMap}{Map}} m\+\_\+map}\+: La carte du jeu.
+\item {\ttfamily int scroll\+\_\+speed}\+: La vitesse de défilement de la carte.
+\item {\ttfamily \mbox{\hyperlink{classPlayer}{Player}} player}\+: L\textquotesingle{}objet joueur.
+\item {\ttfamily std\+::vector$<$\mbox{\hyperlink{classBullet}{Bullet}}$>$ bullets}\+: La liste des balles.
+\item {\ttfamily std\+::vector$<$\mbox{\hyperlink{classEnemy}{Enemy}}$>$ enemies}\+: La liste des ennemis.
+\item {\ttfamily std\+::vector$<$\mbox{\hyperlink{classBomb}{Bomb}}$>$ bombs}\+: La liste des bombes.
+\item {\ttfamily std\+::vector$<$\mbox{\hyperlink{classDrop}{Drop}}$>$ drops}\+: La liste des objets ramassables.
+\item {\ttfamily \mbox{\hyperlink{classScoreManager}{Score\+Manager}} score\+Manager}\+: Le gestionnaire de score.
+\item {\ttfamily \mbox{\hyperlink{classStore}{Store}} store}\+: Le magasin du jeu.
+\item {\ttfamily int weapon\+Prices\mbox{[}5\mbox{]}}\+: Les prix des armes.
+\item {\ttfamily \mbox{\hyperlink{classBullet_a74e59768613e272c1094ff0d2b3de3d4}{Bullet\+::\+Bullet\+Trajectory}} current\+Trajectory}\+: La trajectoire actuelle des balles.
+\item {\ttfamily bool auto\+Fire = false}\+: Indique si le tir automatique est activé.
+\item {\ttfamily \mbox{\hyperlink{classStore_ab33bb3829205915b763973387a721eb7}{Store\+::\+Purchase\+State}} current\+Purchase\+State}\+: L\textquotesingle{}état d\textquotesingle{}achat actuel.
+\item {\ttfamily uint32\+\_\+t last\+Fire\+Time}\+: Le dernier moment où une balle a été tirée.
+\item {\ttfamily int fire\+Interval = 700}\+: L\textquotesingle{}intervalle de tir.
+\item {\ttfamily uint32\+\_\+t last\+Drop\+Spawn\+Time}\+: Le dernier moment où un objet ramassable a été généré.
+\item {\ttfamily const int drop\+Spawn\+Interval = 3000}\+: L\textquotesingle{}intervalle de génération des objets ramassables.
+\end{DoxyItemize}\hypertarget{index_autotoc_md49}{}\doxysubsubsection{Classe sdl\+Game}\label{index_autotoc_md49}
+La classe \mbox{\hyperlink{classsdlGame}{sdl\+Game}} gère l\textquotesingle{}initialisation, le rendu et la gestion des événements du jeu.\hypertarget{index_autotoc_md50}{}\doxyparagraph{Fonctions membres publiques \+:}\label{index_autotoc_md50}
+
+\begin{DoxyItemize}
+\item {\ttfamily \mbox{\hyperlink{classsdlGame}{sdl\+Game()}}} \+: Construit un nouvel objet \mbox{\hyperlink{classsdlGame}{sdl\+Game}}.
+\item {\ttfamily \mbox{\hyperlink{classsdlGame}{sdl\+Game(const std\+::string \&title, int width, int height)}}} \+: Construit un nouvel objet \mbox{\hyperlink{classsdlGame}{sdl\+Game}} avec un titre, une largeur et une hauteur spécifiques.
+\item {\ttfamily $\sim$sdl\+Game()} \+: Détruit l\textquotesingle{}objet \mbox{\hyperlink{classsdlGame}{sdl\+Game}}.
+\item {\ttfamily bool init\+SDL()} \+: Initialise SDL.
+\item {\ttfamily void clean\+Up\+SDL()} \+: Nettoie SDL.
+\item {\ttfamily void run()} \+: Exécute la boucle principale du jeu.
+\item {\ttfamily void update\+Music()} \+: Met à jour la musique du jeu.
+\item {\ttfamily void render()} \+: Rendu total.
+\item {\ttfamily void render\+Main\+Menu()} \+: Gestion du rendu de menu principale.
+\item {\ttfamily void render\+Texture(\+SDL\+\_\+\+Texture $\ast$texture, SDL\+\_\+\+Renderer $\ast$renderer, int x, int y)} \+: Rend la texture spécifiée à la position spécifiée.
+\item {\ttfamily void render\+Game()} \+: Gestion du rendu de la partie du jeu.
+\item {\ttfamily void render\+Control\+Menu()} \+: Gestion du rendu des menus du mode de contrôle.
+\item {\ttfamily void render\+Paused\+Screen()} \+: Gestion du rendu de l\textquotesingle{}écran en pause.
+\item {\ttfamily void render\+Paused\+Score()} \+: Gestion de scores lorsque le rendu est en pause.
+\item {\ttfamily void render\+Score()} \+: Gestion de rendu du score.
+\item {\ttfamily void render\+Game\+Over()} \+: Gestion du rendu game over.
+\item {\ttfamily void render\+Level\+Menu()} \+: Gestion du rendu des menus du mode de level.
+\item {\ttfamily void render\+Store()} \+: Gestion du rendu des menus du mode de store.
+\item {\ttfamily void handle\+Events()} \+: Gère les événements du jeu.
+\item {\ttfamily void handle\+Main\+Menu\+Events(\+SDL\+\_\+\+Event \&event)} \+: Gère les événements du menu principal.
+\item {\ttfamily void handle\+Running\+Events(\+SDL\+\_\+\+Event \&event)} \+: Gère les événements du jeu en cours.
+\item {\ttfamily void handle\+Control\+Menu\+Events(\+SDL\+\_\+\+Event \&event)} \+: Gère les événements du menu control.
+\item {\ttfamily void handle\+Paused\+Events(\+SDL\+\_\+\+Event \&event)} \+: Gère les événements du menu pause.
+\item {\ttfamily void handle\+Game\+Over\+Events(\+SDL\+\_\+\+Event \&event, Uint32 game\+Time)} \+: Gère les événements du game over.
+\item {\ttfamily void handle\+Level\+Menu\+Events(const SDL\+\_\+\+Event \&event)} \+: Gère les événements de menu level.
+\item {\ttfamily void handle\+Store\+Events(const SDL\+\_\+\+Event \&event)} \+: Gère les événements de menu store.
+\item {\ttfamily SDL\+\_\+\+Rect My\+Rect\+\_\+to\+\_\+\+SDLRect(const Rect\+::\+My\+\_\+\+Rect $\ast$rect)} \+: Convertit un objet My\+\_\+\+Rect en SDL\+\_\+\+Rect.
+\end{DoxyItemize}\hypertarget{index_autotoc_md51}{}\doxyparagraph{Fonctions membres privées \+:}\label{index_autotoc_md51}
+
+\begin{DoxyItemize}
+\item {\ttfamily void play\+Music(\+Mix\+\_\+\+Music $\ast$music)} \+: Joue la musique spécifiée.
+\item {\ttfamily void stop\+Music()}
+\item {\ttfamily void pause\+Music()}
+\item {\ttfamily void resume\+Music()}
+\item {\ttfamily SDL\+\_\+\+Texture$\ast$ render\+Text(const std\+::string \&text, TTF\+\_\+\+Font $\ast$font, SDL\+\_\+\+Color color)} 
+\end{DoxyItemize}

@@ -1,0 +1,7 @@
+<map id="src/core/Enemy.h" name="src/core/Enemy.h">
+<area shape="rect" id="node1" title="Définition de la classe Enemy représentant un ennemi." alt="" coords="40,5,172,32"/>
+<area shape="rect" id="node2" href="$Collision_8h.html" title="Définition de la classe Rect pour la détection de collisions." alt="" coords="12,155,103,181"/>
+<area shape="rect" id="node3" href="$Bullet_8h.html" title="Définition de la classe Bullet représentant une balle." alt="" coords="22,80,94,107"/>
+<area shape="rect" id="node4" href="$Player_8h.html" title="Fichier d&#39;en&#45;tête pour la classe Player." alt="" coords="118,80,192,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="217,80,288,107"/>
+</map>

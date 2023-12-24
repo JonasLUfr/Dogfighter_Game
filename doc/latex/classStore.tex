@@ -1,0 +1,127 @@
+\hypertarget{classStore}{}\doxysection{Référence de la classe Store}
+\label{classStore}\index{Store@{Store}}
+
+
+La classe \mbox{\hyperlink{classStore}{Store}} représente un magasin de jeu.  
+
+
+
+
+{\ttfamily \#include $<$Store.\+h$>$}
+
+
+
+Graphe de collaboration de Store\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{classStore__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{classStore_ab33bb3829205915b763973387a721eb7}{Purchase\+State}} \{ \mbox{\hyperlink{classStore_ab33bb3829205915b763973387a721eb7a505a83f220c02df2f85c3810cd9ceb38}{Success}}
+, \mbox{\hyperlink{classStore_ab33bb3829205915b763973387a721eb7ae139a585510a502bbf1841cf589f5086}{Failure}}
+, \mbox{\hyperlink{classStore_ab33bb3829205915b763973387a721eb7ae1944a2f70b1068694bccfa8837dddbb}{Un\+Purchase}}
+, \mbox{\hyperlink{classStore_ab33bb3829205915b763973387a721eb7a3ade99316e5b7bca23727990d1454924}{Is\+Purchased}}
+ \}
+\begin{DoxyCompactList}\small\item\em L\textquotesingle{}énumération Purchase\+State définit l\textquotesingle{}état d\textquotesingle{}achat des articles du magasin. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classStore_aeb3b537bb4120837d37a9746af9d5984}{Store}} (int initial\+Score)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \mbox{\hyperlink{classStore}{Store}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStore_a7f76c692025bed51028ecbd0f6e54531}{set\+Player\+Score}} (int new\+Score)
+\begin{DoxyCompactList}\small\item\em Définit le score du joueur. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classStore_abd6bd6311d4f24360c157208ef64a6f9}{get\+Player\+Score}} () const
+\begin{DoxyCompactList}\small\item\em Renvoie le score actuel du joueur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+La classe \mbox{\hyperlink{classStore}{Store}} représente un magasin de jeu. 
+
+\doxysubsection{Documentation des énumérations membres}
+\mbox{\Hypertarget{classStore_ab33bb3829205915b763973387a721eb7}\label{classStore_ab33bb3829205915b763973387a721eb7}} 
+\index{Store@{Store}!PurchaseState@{PurchaseState}}
+\index{PurchaseState@{PurchaseState}!Store@{Store}}
+\doxysubsubsection{\texorpdfstring{PurchaseState}{PurchaseState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classStore_ab33bb3829205915b763973387a721eb7}{Store\+::\+Purchase\+State}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+L\textquotesingle{}énumération Purchase\+State définit l\textquotesingle{}état d\textquotesingle{}achat des articles du magasin. 
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Success@{Success}!Store@{Store}}\index{Store@{Store}!Success@{Success}}}\mbox{\Hypertarget{classStore_ab33bb3829205915b763973387a721eb7a505a83f220c02df2f85c3810cd9ceb38}\label{classStore_ab33bb3829205915b763973387a721eb7a505a83f220c02df2f85c3810cd9ceb38}} 
+Success&L\textquotesingle{}achat a réussi \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Failure@{Failure}!Store@{Store}}\index{Store@{Store}!Failure@{Failure}}}\mbox{\Hypertarget{classStore_ab33bb3829205915b763973387a721eb7ae139a585510a502bbf1841cf589f5086}\label{classStore_ab33bb3829205915b763973387a721eb7ae139a585510a502bbf1841cf589f5086}} 
+Failure&L\textquotesingle{}achat a échoué \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UnPurchase@{UnPurchase}!Store@{Store}}\index{Store@{Store}!UnPurchase@{UnPurchase}}}\mbox{\Hypertarget{classStore_ab33bb3829205915b763973387a721eb7ae1944a2f70b1068694bccfa8837dddbb}\label{classStore_ab33bb3829205915b763973387a721eb7ae1944a2f70b1068694bccfa8837dddbb}} 
+Un\+Purchase&L\textquotesingle{}article n\textquotesingle{}a pas été acheté \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IsPurchased@{IsPurchased}!Store@{Store}}\index{Store@{Store}!IsPurchased@{IsPurchased}}}\mbox{\Hypertarget{classStore_ab33bb3829205915b763973387a721eb7a3ade99316e5b7bca23727990d1454924}\label{classStore_ab33bb3829205915b763973387a721eb7a3ade99316e5b7bca23727990d1454924}} 
+Is\+Purchased&L\textquotesingle{}article a déjà été acheté \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classStore_aeb3b537bb4120837d37a9746af9d5984}\label{classStore_aeb3b537bb4120837d37a9746af9d5984}} 
+\index{Store@{Store}!Store@{Store}}
+\index{Store@{Store}!Store@{Store}}
+\doxysubsubsection{\texorpdfstring{Store()}{Store()}}
+{\footnotesize\ttfamily Store\+::\+Store (\begin{DoxyParamCaption}\item[{int}]{initial\+Score }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructeur de la classe \mbox{\hyperlink{classStore}{Store}}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em initial\+Score} & Score initial du joueur \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classStore_abd6bd6311d4f24360c157208ef64a6f9}\label{classStore_abd6bd6311d4f24360c157208ef64a6f9}} 
+\index{Store@{Store}!getPlayerScore@{getPlayerScore}}
+\index{getPlayerScore@{getPlayerScore}!Store@{Store}}
+\doxysubsubsection{\texorpdfstring{getPlayerScore()}{getPlayerScore()}}
+{\footnotesize\ttfamily int Store\+::get\+Player\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Renvoie le score actuel du joueur. 
+
+\begin{DoxyReturn}{Renvoie}
+Le score actuel du joueur 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStore_a7f76c692025bed51028ecbd0f6e54531}\label{classStore_a7f76c692025bed51028ecbd0f6e54531}} 
+\index{Store@{Store}!setPlayerScore@{setPlayerScore}}
+\index{setPlayerScore@{setPlayerScore}!Store@{Store}}
+\doxysubsubsection{\texorpdfstring{setPlayerScore()}{setPlayerScore()}}
+{\footnotesize\ttfamily void Store\+::set\+Player\+Score (\begin{DoxyParamCaption}\item[{int}]{new\+Score }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Définit le score du joueur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em new\+Score} & Le nouveau score du joueur \\
+\hline
+\end{DoxyParams}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/core/\mbox{\hyperlink{Store_8h}{Store.\+h}}\end{DoxyCompactItemize}

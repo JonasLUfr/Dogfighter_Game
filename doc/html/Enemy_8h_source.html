@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DogFigther:  Fichier source de src/core/Enemy.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">DogFigther
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Enemy.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Enemy_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef ENEMY_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define ENEMY_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Collision_8h.html">Collision.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Bullet_8h.html">Bullet.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Player_8h.html">Player.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classEnemy.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classEnemy.html">Enemy</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classEnemy.html#a94f30d348b6d2840fd71675472ba38dd">Enemy</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> interval, <span class="keywordtype">int</span> speed);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classEnemy.html#a94f30d348b6d2840fd71675472ba38dd">Enemy</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classEnemy.html#a14bead85804fe8c4cfd27ea20122594d">   36</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="classEnemy.html#a14bead85804fe8c4cfd27ea20122594d">EnemyState</a> {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="classEnemy.html#a14bead85804fe8c4cfd27ea20122594da4d3d769b812b6faa6b76e1a8abaece2d">Active</a>,     </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="classEnemy.html#a14bead85804fe8c4cfd27ea20122594da3cab03c00dbd11bc3569afa0748013f0">Inactive</a>    </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    };</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classEnemy.html#a1536187429da4464004b93e19770502f">getX</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classEnemy.html#ac9cdab9c1102747c78baf9a4a30c6b01">getY</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classEnemy.html#a6a6cf8e42d1553f8d1331887d70127cb">setX</a>(<span class="keywordtype">int</span> x);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classEnemy.html#aaadfef27ce8caba1799c5ce833407afc">setY</a>(<span class="keywordtype">int</span> y);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="classEnemy.html#a14bead85804fe8c4cfd27ea20122594d">EnemyState</a> <a class="code" href="classEnemy.html#af89829a2ed3d51a440973f7fbce17336">getState</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classEnemy.html#aa7438a15391497bdeeae36dc0f3c136c">setState</a>(<a class="code" href="classEnemy.html#a14bead85804fe8c4cfd27ea20122594d">EnemyState</a> newState);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classEnemy.html#a365b8519f5e28b2277ddd7e3ebd3192d">getInterval</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classEnemy.html#ac1cc1be96a8fa6e280836afa7d6b24dd">getSpeed</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classEnemy.html#a8c747108172064c9c5691b622f11afa9">setSpeed</a>(<span class="keywordtype">int</span> <a class="code" href="classEnemy.html#a8c747108172064c9c5691b622f11afa9">setSpeed</a>);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classEnemy.html#ad55ee71b5a8c23fbd00b3c368b90cc64">update</a>();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classEnemy.html#a0755a2799e2c7d10a242c13513321e3e">reset</a>();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="code" href="structRect_1_1My__Rect.html">Rect::My_Rect</a> <a class="code" href="classEnemy.html#a1be34c62c22e3931d4b5ae5939dff989">getCollisionRect</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">int</span> x;                      </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">int</span> y;                      </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">int</span> interval;               </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">int</span> speed;                  </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">int</span> enemyWidth;             </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">int</span> enemyHeight;            </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="code" href="classEnemy.html#a14bead85804fe8c4cfd27ea20122594d">EnemyState</a> state;           </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;};</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// ENEMY_H</span></div>
+<div class="ttc" id="aBullet_8h_html"><div class="ttname"><a href="Bullet_8h.html">Bullet.h</a></div><div class="ttdoc">Définition de la classe Bullet représentant une balle.</div></div>
+<div class="ttc" id="aCollision_8h_html"><div class="ttname"><a href="Collision_8h.html">Collision.h</a></div><div class="ttdoc">Définition de la classe Rect pour la détection de collisions.</div></div>
+<div class="ttc" id="aPlayer_8h_html"><div class="ttname"><a href="Player_8h.html">Player.h</a></div><div class="ttdoc">Fichier d'en-tête pour la classe Player.</div></div>
+<div class="ttc" id="aclassEnemy_html"><div class="ttname"><a href="classEnemy.html">Enemy</a></div><div class="ttdoc">Classe représentant un ennemi.</div><div class="ttdef"><b>Definition:</b> Enemy.h:18</div></div>
+<div class="ttc" id="aclassEnemy_html_a0755a2799e2c7d10a242c13513321e3e"><div class="ttname"><a href="classEnemy.html#a0755a2799e2c7d10a242c13513321e3e">Enemy::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdoc">Réinitialise l'ennemi.</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:74</div></div>
+<div class="ttc" id="aclassEnemy_html_a14bead85804fe8c4cfd27ea20122594d"><div class="ttname"><a href="classEnemy.html#a14bead85804fe8c4cfd27ea20122594d">Enemy::EnemyState</a></div><div class="ttdeci">EnemyState</div><div class="ttdoc">Énumération des états possibles de l'ennemi.</div><div class="ttdef"><b>Definition:</b> Enemy.h:36</div></div>
+<div class="ttc" id="aclassEnemy_html_a14bead85804fe8c4cfd27ea20122594da3cab03c00dbd11bc3569afa0748013f0"><div class="ttname"><a href="classEnemy.html#a14bead85804fe8c4cfd27ea20122594da3cab03c00dbd11bc3569afa0748013f0">Enemy::EnemyState::Inactive</a></div><div class="ttdeci">@ Inactive</div></div>
+<div class="ttc" id="aclassEnemy_html_a14bead85804fe8c4cfd27ea20122594da4d3d769b812b6faa6b76e1a8abaece2d"><div class="ttname"><a href="classEnemy.html#a14bead85804fe8c4cfd27ea20122594da4d3d769b812b6faa6b76e1a8abaece2d">Enemy::EnemyState::Active</a></div><div class="ttdeci">@ Active</div></div>
+<div class="ttc" id="aclassEnemy_html_a1536187429da4464004b93e19770502f"><div class="ttname"><a href="classEnemy.html#a1536187429da4464004b93e19770502f">Enemy::getX</a></div><div class="ttdeci">int getX() const</div><div class="ttdoc">Récupère la coordonnée x de l'ennemi.</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:17</div></div>
+<div class="ttc" id="aclassEnemy_html_a1be34c62c22e3931d4b5ae5939dff989"><div class="ttname"><a href="classEnemy.html#a1be34c62c22e3931d4b5ae5939dff989">Enemy::getCollisionRect</a></div><div class="ttdeci">Rect::My_Rect getCollisionRect() const</div><div class="ttdoc">Récupère le rectangle de collision de l'ennemi.</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:78</div></div>
+<div class="ttc" id="aclassEnemy_html_a365b8519f5e28b2277ddd7e3ebd3192d"><div class="ttname"><a href="classEnemy.html#a365b8519f5e28b2277ddd7e3ebd3192d">Enemy::getInterval</a></div><div class="ttdeci">int getInterval() const</div><div class="ttdoc">Récupère l'intervalle de temps entre chaque tir de l'ennemi.</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:42</div></div>
+<div class="ttc" id="aclassEnemy_html_a6a6cf8e42d1553f8d1331887d70127cb"><div class="ttname"><a href="classEnemy.html#a6a6cf8e42d1553f8d1331887d70127cb">Enemy::setX</a></div><div class="ttdeci">void setX(int x)</div><div class="ttdoc">Modifie la coordonnée x de l'ennemi.</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:25</div></div>
+<div class="ttc" id="aclassEnemy_html_a8c747108172064c9c5691b622f11afa9"><div class="ttname"><a href="classEnemy.html#a8c747108172064c9c5691b622f11afa9">Enemy::setSpeed</a></div><div class="ttdeci">void setSpeed(int setSpeed)</div><div class="ttdoc">Modifie la vitesse de déplacement de l'ennemi.</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:50</div></div>
+<div class="ttc" id="aclassEnemy_html_a94f30d348b6d2840fd71675472ba38dd"><div class="ttname"><a href="classEnemy.html#a94f30d348b6d2840fd71675472ba38dd">Enemy::Enemy</a></div><div class="ttdeci">Enemy()</div><div class="ttdoc">Construit un nouvel ennemi.</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:12</div></div>
+<div class="ttc" id="aclassEnemy_html_aa7438a15391497bdeeae36dc0f3c136c"><div class="ttname"><a href="classEnemy.html#aa7438a15391497bdeeae36dc0f3c136c">Enemy::setState</a></div><div class="ttdeci">void setState(EnemyState newState)</div><div class="ttdoc">Modifie l'état de l'ennemi.</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:37</div></div>
+<div class="ttc" id="aclassEnemy_html_aaadfef27ce8caba1799c5ce833407afc"><div class="ttname"><a href="classEnemy.html#aaadfef27ce8caba1799c5ce833407afc">Enemy::setY</a></div><div class="ttdeci">void setY(int y)</div><div class="ttdoc">Modifie la coordonnée y de l'ennemi.</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:29</div></div>
+<div class="ttc" id="aclassEnemy_html_ac1cc1be96a8fa6e280836afa7d6b24dd"><div class="ttname"><a href="classEnemy.html#ac1cc1be96a8fa6e280836afa7d6b24dd">Enemy::getSpeed</a></div><div class="ttdeci">int getSpeed() const</div><div class="ttdoc">Récupère la vitesse de déplacement de l'ennemi.</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:46</div></div>
+<div class="ttc" id="aclassEnemy_html_ac9cdab9c1102747c78baf9a4a30c6b01"><div class="ttname"><a href="classEnemy.html#ac9cdab9c1102747c78baf9a4a30c6b01">Enemy::getY</a></div><div class="ttdeci">int getY() const</div><div class="ttdoc">Récupère la coordonnée y de l'ennemi.</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:21</div></div>
+<div class="ttc" id="aclassEnemy_html_ad55ee71b5a8c23fbd00b3c368b90cc64"><div class="ttname"><a href="classEnemy.html#ad55ee71b5a8c23fbd00b3c368b90cc64">Enemy::update</a></div><div class="ttdeci">void update()</div><div class="ttdoc">Met à jour l'ennemi.</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:55</div></div>
+<div class="ttc" id="aclassEnemy_html_af89829a2ed3d51a440973f7fbce17336"><div class="ttname"><a href="classEnemy.html#af89829a2ed3d51a440973f7fbce17336">Enemy::getState</a></div><div class="ttdeci">EnemyState getState() const</div><div class="ttdoc">Récupère l'état de l'ennemi.</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:33</div></div>
+<div class="ttc" id="astructRect_1_1My__Rect_html"><div class="ttname"><a href="structRect_1_1My__Rect.html">Rect::My_Rect</a></div><div class="ttdoc">Structure représentant un rectangle.</div><div class="ttdef"><b>Definition:</b> Collision.h:18</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

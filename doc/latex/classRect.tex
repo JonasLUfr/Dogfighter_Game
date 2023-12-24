@@ -1,0 +1,63 @@
+\hypertarget{classRect}{}\doxysection{Référence de la classe Rect}
+\label{classRect}\index{Rect@{Rect}}
+
+
+Classe pour la détection de collisions avec des rectangles.  
+
+
+
+
+{\ttfamily \#include $<$Collision.\+h$>$}
+
+
+
+Graphe de collaboration de Rect\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{classRect__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structRect_1_1My__Rect}{My\+\_\+\+Rect}}
+\begin{DoxyCompactList}\small\item\em Structure représentant un rectangle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classRect_a486795ff5ccc23cea0740685fc116c68}{has\+Intersection}} (const \mbox{\hyperlink{structRect_1_1My__Rect}{My\+\_\+\+Rect}} $\ast$A, const \mbox{\hyperlink{structRect_1_1My__Rect}{My\+\_\+\+Rect}} $\ast$B)
+\begin{DoxyCompactList}\small\item\em Vérifie si deux rectangles ont une intersection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Classe pour la détection de collisions avec des rectangles. 
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classRect_a486795ff5ccc23cea0740685fc116c68}\label{classRect_a486795ff5ccc23cea0740685fc116c68}} 
+\index{Rect@{Rect}!hasIntersection@{hasIntersection}}
+\index{hasIntersection@{hasIntersection}!Rect@{Rect}}
+\doxysubsubsection{\texorpdfstring{hasIntersection()}{hasIntersection()}}
+{\footnotesize\ttfamily bool Rect\+::has\+Intersection (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structRect_1_1My__Rect}{My\+\_\+\+Rect}} $\ast$}]{A,  }\item[{const \mbox{\hyperlink{structRect_1_1My__Rect}{My\+\_\+\+Rect}} $\ast$}]{B }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Vérifie si deux rectangles ont une intersection. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em A} & Le premier rectangle. \\
+\hline
+{\em B} & Le deuxième rectangle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+true si les deux rectangles ont une intersection, false sinon. 
+\end{DoxyReturn}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/core/\mbox{\hyperlink{Collision_8h}{Collision.\+h}}\item 
+src/core/\mbox{\hyperlink{Collision_8cpp}{Collision.\+cpp}}\end{DoxyCompactItemize}

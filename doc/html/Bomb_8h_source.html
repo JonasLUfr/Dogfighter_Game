@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DogFigther:  Fichier source de src/core/Bomb.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">DogFigther
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Bomb.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Bomb_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef BOMB_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define BOMB_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Collision_8h.html">Collision.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;cstdint&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classBomb.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classBomb.html">Bomb</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="classBomb.html#a318b2684bf1c574999874a943478b264">Bomb</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classBomb.html#acbb47327cfb2fa429887774ef3597965">~Bomb</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classBomb.html#a3fb0af58477c6fec0052be23dcb4e236">   33</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="classBomb.html#a3fb0af58477c6fec0052be23dcb4e236">BombState</a> {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="classBomb.html#a3fb0af58477c6fec0052be23dcb4e236a4d3d769b812b6faa6b76e1a8abaece2d">Active</a>,     </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="classBomb.html#a3fb0af58477c6fec0052be23dcb4e236a3cab03c00dbd11bc3569afa0748013f0">Inactive</a>    </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    };</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="classBomb.html#a3fb0af58477c6fec0052be23dcb4e236">BombState</a> <a class="code" href="classBomb.html#a8e1b1ac6c7ec69afc5f28c224fa98270">getState</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classBomb.html#a9c8e19a4cbfcc2601c9de7164045089b">setState</a>(<a class="code" href="classBomb.html#a3fb0af58477c6fec0052be23dcb4e236">BombState</a> newState);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classBomb.html#a9783cf547a5ef5cf224b964ed30e8008">getX</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classBomb.html#ab1d447bb08a6fd78f79caba03308be19">getY</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classBomb.html#a98a0282a6c695f0fc6a0a05683084bd9">setX</a>(<span class="keywordtype">int</span> x);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classBomb.html#aea71ea33e134e588cbd0a67b7f4932c5">setY</a>(<span class="keywordtype">int</span> y);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classBomb.html#a780fc6b4666be7f9034c9a751e9d070b">   77</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classBomb.html#a780fc6b4666be7f9034c9a751e9d070b">reset</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classBomb.html#a5b6ada759b550fd4687b232e10dc9b31">update</a>(uint32_t currentTime);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classBomb.html#a61a189de4457776fb7ae5257e69b3495">getCurrentFrame</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">int</span> x;                      </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">int</span> y;                      </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">int</span> currentFrame;           </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">int</span> maxFrames;              </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="classBomb.html#a3fb0af58477c6fec0052be23dcb4e236">BombState</a> state;            </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    uint32_t lastFrameTime;       </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">const</span> uint32_t frameDuration = 60; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;};</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// BOMB_H</span></div>
+<div class="ttc" id="aCollision_8h_html"><div class="ttname"><a href="Collision_8h.html">Collision.h</a></div><div class="ttdoc">Définition de la classe Rect pour la détection de collisions.</div></div>
+<div class="ttc" id="aclassBomb_html"><div class="ttname"><a href="classBomb.html">Bomb</a></div><div class="ttdoc">Classe représentant un objet bombe.</div><div class="ttdef"><b>Definition:</b> Bomb.h:16</div></div>
+<div class="ttc" id="aclassBomb_html_a318b2684bf1c574999874a943478b264"><div class="ttname"><a href="classBomb.html#a318b2684bf1c574999874a943478b264">Bomb::Bomb</a></div><div class="ttdeci">Bomb(int x, int y)</div><div class="ttdoc">Construit un nouvel objet Bombe.</div><div class="ttdef"><b>Definition:</b> Bomb.cpp:8</div></div>
+<div class="ttc" id="aclassBomb_html_a3fb0af58477c6fec0052be23dcb4e236"><div class="ttname"><a href="classBomb.html#a3fb0af58477c6fec0052be23dcb4e236">Bomb::BombState</a></div><div class="ttdeci">BombState</div><div class="ttdoc">Énumération des états possibles de la bombe.</div><div class="ttdef"><b>Definition:</b> Bomb.h:33</div></div>
+<div class="ttc" id="aclassBomb_html_a3fb0af58477c6fec0052be23dcb4e236a3cab03c00dbd11bc3569afa0748013f0"><div class="ttname"><a href="classBomb.html#a3fb0af58477c6fec0052be23dcb4e236a3cab03c00dbd11bc3569afa0748013f0">Bomb::BombState::Inactive</a></div><div class="ttdeci">@ Inactive</div></div>
+<div class="ttc" id="aclassBomb_html_a3fb0af58477c6fec0052be23dcb4e236a4d3d769b812b6faa6b76e1a8abaece2d"><div class="ttname"><a href="classBomb.html#a3fb0af58477c6fec0052be23dcb4e236a4d3d769b812b6faa6b76e1a8abaece2d">Bomb::BombState::Active</a></div><div class="ttdeci">@ Active</div></div>
+<div class="ttc" id="aclassBomb_html_a5b6ada759b550fd4687b232e10dc9b31"><div class="ttname"><a href="classBomb.html#a5b6ada759b550fd4687b232e10dc9b31">Bomb::update</a></div><div class="ttdeci">void update(uint32_t currentTime)</div><div class="ttdoc">Met à jour l'objet bombe.</div><div class="ttdef"><b>Definition:</b> Bomb.cpp:41</div></div>
+<div class="ttc" id="aclassBomb_html_a61a189de4457776fb7ae5257e69b3495"><div class="ttname"><a href="classBomb.html#a61a189de4457776fb7ae5257e69b3495">Bomb::getCurrentFrame</a></div><div class="ttdeci">int getCurrentFrame() const</div><div class="ttdoc">Récupère le numéro de l'image actuelle.</div><div class="ttdef"><b>Definition:</b> Bomb.cpp:54</div></div>
+<div class="ttc" id="aclassBomb_html_a780fc6b4666be7f9034c9a751e9d070b"><div class="ttname"><a href="classBomb.html#a780fc6b4666be7f9034c9a751e9d070b">Bomb::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdoc">Réinitialise l'objet bombe.</div></div>
+<div class="ttc" id="aclassBomb_html_a8e1b1ac6c7ec69afc5f28c224fa98270"><div class="ttname"><a href="classBomb.html#a8e1b1ac6c7ec69afc5f28c224fa98270">Bomb::getState</a></div><div class="ttdeci">BombState getState() const</div><div class="ttdoc">Récupère l'état de la bombe.</div><div class="ttdef"><b>Definition:</b> Bomb.cpp:32</div></div>
+<div class="ttc" id="aclassBomb_html_a9783cf547a5ef5cf224b964ed30e8008"><div class="ttname"><a href="classBomb.html#a9783cf547a5ef5cf224b964ed30e8008">Bomb::getX</a></div><div class="ttdeci">int getX() const</div><div class="ttdoc">Récupère la coordonnée x de la bombe.</div><div class="ttdef"><b>Definition:</b> Bomb.cpp:16</div></div>
+<div class="ttc" id="aclassBomb_html_a98a0282a6c695f0fc6a0a05683084bd9"><div class="ttname"><a href="classBomb.html#a98a0282a6c695f0fc6a0a05683084bd9">Bomb::setX</a></div><div class="ttdeci">void setX(int x)</div><div class="ttdoc">Modifie la coordonnée x de la bombe.</div><div class="ttdef"><b>Definition:</b> Bomb.cpp:24</div></div>
+<div class="ttc" id="aclassBomb_html_a9c8e19a4cbfcc2601c9de7164045089b"><div class="ttname"><a href="classBomb.html#a9c8e19a4cbfcc2601c9de7164045089b">Bomb::setState</a></div><div class="ttdeci">void setState(BombState newState)</div><div class="ttdoc">Modifie l'état de la bombe.</div><div class="ttdef"><b>Definition:</b> Bomb.cpp:36</div></div>
+<div class="ttc" id="aclassBomb_html_ab1d447bb08a6fd78f79caba03308be19"><div class="ttname"><a href="classBomb.html#ab1d447bb08a6fd78f79caba03308be19">Bomb::getY</a></div><div class="ttdeci">int getY() const</div><div class="ttdoc">Récupère la coordonnée y de la bombe.</div><div class="ttdef"><b>Definition:</b> Bomb.cpp:20</div></div>
+<div class="ttc" id="aclassBomb_html_acbb47327cfb2fa429887774ef3597965"><div class="ttname"><a href="classBomb.html#acbb47327cfb2fa429887774ef3597965">Bomb::~Bomb</a></div><div class="ttdeci">~Bomb()</div><div class="ttdoc">Détruit l'objet Bombe.</div><div class="ttdef"><b>Definition:</b> Bomb.cpp:13</div></div>
+<div class="ttc" id="aclassBomb_html_aea71ea33e134e588cbd0a67b7f4932c5"><div class="ttname"><a href="classBomb.html#aea71ea33e134e588cbd0a67b7f4932c5">Bomb::setY</a></div><div class="ttdeci">void setY(int y)</div><div class="ttdoc">Modifie la coordonnée y de la bombe.</div><div class="ttdef"><b>Definition:</b> Bomb.cpp:28</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

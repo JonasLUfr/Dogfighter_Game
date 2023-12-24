@@ -1,0 +1,245 @@
+\hypertarget{classPlayer}{}\doxysection{Référence de la classe Player}
+\label{classPlayer}\index{Player@{Player}}
+
+
+Une classe représentant le joueur du jeu.  
+
+
+
+
+{\ttfamily \#include $<$Player.\+h$>$}
+
+
+
+Graphe de collaboration de Player\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{classPlayer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlayer_a7d5e5ce9e814571fae724dd411e5bc31}{Player}} (int window\+Width, int window\+Height)
+\begin{DoxyCompactList}\small\item\em Construit un nouvel objet \mbox{\hyperlink{classPlayer}{Player}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_ae3bbcf1159bdc059bff1c2513f2505f7}{move\+Left}} ()
+\item 
+void \mbox{\hyperlink{classPlayer_a6a2b68bc4b21d4c4a79a23b498896ec2}{move\+Right}} ()
+\item 
+void \mbox{\hyperlink{classPlayer_a225a3e732b737cb8a9d807f97b7930aa}{move\+Up}} ()
+\item 
+void \mbox{\hyperlink{classPlayer_a6e759d186d9d40609ecf0511e8f50e4c}{move\+Down}} ()
+\item 
+int \mbox{\hyperlink{classPlayer_a9d284ba174e4f2655a7cae8088b7eb3d}{get\+Speed}} () const
+\begin{DoxyCompactList}\small\item\em Obtient la vitesse du joueur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_a2820d3154962f2dd5698b95c84b583d3}{set\+Speed}} (int new\+Speed)
+\begin{DoxyCompactList}\small\item\em Définit la vitesse du joueur. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPlayer_ae9bcae10b1841b186b2ac0a5b07dd6e1}{getX}} () const
+\begin{DoxyCompactList}\small\item\em Obtient la coordonnée x du joueur. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPlayer_ab761a1ddba353a619403be9af249b835}{getY}} () const
+\begin{DoxyCompactList}\small\item\em Obtient la coordonnée y du joueur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_a1dc6a6798a23bd5b743dfda7a7e3ece2}{setX}} (int x)
+\begin{DoxyCompactList}\small\item\em Définit la coordonnée x du joueur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_a6f2857bc9600f500303fde59a76038f1}{setY}} (int y)
+\begin{DoxyCompactList}\small\item\em Définit la coordonnée y du joueur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_a1af5d39f7bac2aeaa1e30c7dda2332fa}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Réinitialise la position du joueur au centre de la fenêtre. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structRect_1_1My__Rect}{Rect\+::\+My\+\_\+\+Rect}} \mbox{\hyperlink{classPlayer_a12cc53288cb955c29f518e55ecfefe0e}{get\+Collision\+Rect}} () const
+\begin{DoxyCompactList}\small\item\em Obtient le rectangle de collision du joueur. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPlayer_a518eb6e16ed51238b7c1511ccfe6572f}{get\+Health}} () const
+\begin{DoxyCompactList}\small\item\em Obtient la santé du joueur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_a9fa3b806810b40e0465f1c0dbbd94bd8}{set\+Health}} (int new\+Health)
+\begin{DoxyCompactList}\small\item\em Définit la santé du joueur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Une classe représentant le joueur du jeu. 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classPlayer_a7d5e5ce9e814571fae724dd411e5bc31}\label{classPlayer_a7d5e5ce9e814571fae724dd411e5bc31}} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{int}]{window\+Width,  }\item[{int}]{window\+Height }\end{DoxyParamCaption})}
+
+
+
+Construit un nouvel objet \mbox{\hyperlink{classPlayer}{Player}}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window\+Width} & La largeur de la fenêtre du jeu. \\
+\hline
+{\em window\+Height} & La hauteur de la fenêtre du jeu. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classPlayer_a12cc53288cb955c29f518e55ecfefe0e}\label{classPlayer_a12cc53288cb955c29f518e55ecfefe0e}} 
+\index{Player@{Player}!getCollisionRect@{getCollisionRect}}
+\index{getCollisionRect@{getCollisionRect}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getCollisionRect()}{getCollisionRect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structRect_1_1My__Rect}{Rect\+::\+My\+\_\+\+Rect}} Player\+::get\+Collision\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtient le rectangle de collision du joueur. 
+
+\begin{DoxyReturn}{Renvoie}
+Le rectangle de collision du joueur. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPlayer_a518eb6e16ed51238b7c1511ccfe6572f}\label{classPlayer_a518eb6e16ed51238b7c1511ccfe6572f}} 
+\index{Player@{Player}!getHealth@{getHealth}}
+\index{getHealth@{getHealth}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getHealth()}{getHealth()}}
+{\footnotesize\ttfamily int Player\+::get\+Health (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtient la santé du joueur. 
+
+\begin{DoxyReturn}{Renvoie}
+La santé du joueur. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPlayer_a9d284ba174e4f2655a7cae8088b7eb3d}\label{classPlayer_a9d284ba174e4f2655a7cae8088b7eb3d}} 
+\index{Player@{Player}!getSpeed@{getSpeed}}
+\index{getSpeed@{getSpeed}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getSpeed()}{getSpeed()}}
+{\footnotesize\ttfamily int Player\+::get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtient la vitesse du joueur. 
+
+\begin{DoxyReturn}{Renvoie}
+La vitesse du joueur. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPlayer_ae9bcae10b1841b186b2ac0a5b07dd6e1}\label{classPlayer_ae9bcae10b1841b186b2ac0a5b07dd6e1}} 
+\index{Player@{Player}!getX@{getX}}
+\index{getX@{getX}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily int Player\+::getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtient la coordonnée x du joueur. 
+
+\begin{DoxyReturn}{Renvoie}
+La coordonnée x du joueur. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPlayer_ab761a1ddba353a619403be9af249b835}\label{classPlayer_ab761a1ddba353a619403be9af249b835}} 
+\index{Player@{Player}!getY@{getY}}
+\index{getY@{getY}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily int Player\+::getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtient la coordonnée y du joueur. 
+
+\begin{DoxyReturn}{Renvoie}
+La coordonnée y du joueur. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPlayer_a6e759d186d9d40609ecf0511e8f50e4c}\label{classPlayer_a6e759d186d9d40609ecf0511e8f50e4c}} 
+\index{Player@{Player}!moveDown@{moveDown}}
+\index{moveDown@{moveDown}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{moveDown()}{moveDown()}}
+{\footnotesize\ttfamily void Player\+::move\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPlayer_ae3bbcf1159bdc059bff1c2513f2505f7}\label{classPlayer_ae3bbcf1159bdc059bff1c2513f2505f7}} 
+\index{Player@{Player}!moveLeft@{moveLeft}}
+\index{moveLeft@{moveLeft}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{moveLeft()}{moveLeft()}}
+{\footnotesize\ttfamily void Player\+::move\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPlayer_a6a2b68bc4b21d4c4a79a23b498896ec2}\label{classPlayer_a6a2b68bc4b21d4c4a79a23b498896ec2}} 
+\index{Player@{Player}!moveRight@{moveRight}}
+\index{moveRight@{moveRight}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{moveRight()}{moveRight()}}
+{\footnotesize\ttfamily void Player\+::move\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPlayer_a225a3e732b737cb8a9d807f97b7930aa}\label{classPlayer_a225a3e732b737cb8a9d807f97b7930aa}} 
+\index{Player@{Player}!moveUp@{moveUp}}
+\index{moveUp@{moveUp}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{moveUp()}{moveUp()}}
+{\footnotesize\ttfamily void Player\+::move\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classPlayer_a1af5d39f7bac2aeaa1e30c7dda2332fa}\label{classPlayer_a1af5d39f7bac2aeaa1e30c7dda2332fa}} 
+\index{Player@{Player}!reset@{reset}}
+\index{reset@{reset}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Player\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Réinitialise la position du joueur au centre de la fenêtre. 
+
+\mbox{\Hypertarget{classPlayer_a9fa3b806810b40e0465f1c0dbbd94bd8}\label{classPlayer_a9fa3b806810b40e0465f1c0dbbd94bd8}} 
+\index{Player@{Player}!setHealth@{setHealth}}
+\index{setHealth@{setHealth}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setHealth()}{setHealth()}}
+{\footnotesize\ttfamily void Player\+::set\+Health (\begin{DoxyParamCaption}\item[{int}]{new\+Health }\end{DoxyParamCaption})}
+
+
+
+Définit la santé du joueur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em new\+Health} & La nouvelle valeur de santé pour le joueur. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlayer_a2820d3154962f2dd5698b95c84b583d3}\label{classPlayer_a2820d3154962f2dd5698b95c84b583d3}} 
+\index{Player@{Player}!setSpeed@{setSpeed}}
+\index{setSpeed@{setSpeed}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setSpeed()}{setSpeed()}}
+{\footnotesize\ttfamily void Player\+::set\+Speed (\begin{DoxyParamCaption}\item[{int}]{new\+Speed }\end{DoxyParamCaption})}
+
+
+
+Définit la vitesse du joueur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em new\+Speed} & La nouvelle vitesse du joueur. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlayer_a1dc6a6798a23bd5b743dfda7a7e3ece2}\label{classPlayer_a1dc6a6798a23bd5b743dfda7a7e3ece2}} 
+\index{Player@{Player}!setX@{setX}}
+\index{setX@{setX}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setX()}{setX()}}
+{\footnotesize\ttfamily void Player\+::setX (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Définit la coordonnée x du joueur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em x} & La nouvelle coordonnée x du joueur. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlayer_a6f2857bc9600f500303fde59a76038f1}\label{classPlayer_a6f2857bc9600f500303fde59a76038f1}} 
+\index{Player@{Player}!setY@{setY}}
+\index{setY@{setY}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setY()}{setY()}}
+{\footnotesize\ttfamily void Player\+::setY (\begin{DoxyParamCaption}\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Définit la coordonnée y du joueur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em y} & La nouvelle coordonnée y du joueur. \\
+\hline
+\end{DoxyParams}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/core/\mbox{\hyperlink{Player_8h}{Player.\+h}}\item 
+src/core/\mbox{\hyperlink{Player_8cpp}{Player.\+cpp}}\end{DoxyCompactItemize}

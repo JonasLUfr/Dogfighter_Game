@@ -1,0 +1,9 @@
+<map id="src/core/Drop.h" name="src/core/Drop.h">
+<area shape="rect" id="node1" title="Définition de la classe Drop représentant un objet qui tombe." alt="" coords="90,5,210,32"/>
+<area shape="rect" id="node2" href="$Drop_8cpp.html" title="Fichier de code source pour la classe Drop." alt="" coords="5,80,140,107"/>
+<area shape="rect" id="node3" href="$Game_8h.html" title="Fichier d&#39;en&#45;tête pour la classe Game objet." alt="" coords="165,80,293,107"/>
+<area shape="rect" id="node4" href="$Game_8cpp.html" title="Fichier de code source pour la classe Game." alt="" coords="72,155,215,181"/>
+<area shape="rect" id="node5" href="$mainSDL_8h.html" title=" " alt="" coords="239,155,386,181"/>
+<area shape="rect" id="node6" href="$main_8cpp.html" title=" " alt="" coords="158,229,294,256"/>
+<area shape="rect" id="node7" href="$mainSDL_8cpp.html" title=" " alt="" coords="319,229,480,256"/>
+</map>

@@ -1,0 +1,427 @@
+\hypertarget{classBullet}{}\doxysection{Référence de la classe Bullet}
+\label{classBullet}\index{Bullet@{Bullet}}
+
+
+Classe représentant une balle.  
+
+
+
+
+{\ttfamily \#include $<$Bullet.\+h$>$}
+
+
+
+Graphe de collaboration de Bullet\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{classBullet__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Types publics}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{classBullet_a74e59768613e272c1094ff0d2b3de3d4}{Bullet\+Trajectory}} \{ \newline
+\mbox{\hyperlink{classBullet_a74e59768613e272c1094ff0d2b3de3d4a45b8e35ca0d193d01df2cf1858e27e55}{Weapon1}}
+, \mbox{\hyperlink{classBullet_a74e59768613e272c1094ff0d2b3de3d4a2905fb91ecc7d7758ecfd869b369428d}{Weapon2}}
+, \mbox{\hyperlink{classBullet_a74e59768613e272c1094ff0d2b3de3d4a3e0d5c63a23464e75ff485bbf6fa34ce}{Weapon3}}
+, \mbox{\hyperlink{classBullet_a74e59768613e272c1094ff0d2b3de3d4a7d5056fa0b2b23a2b7dca8780ab71e46}{Weapon4}}
+, \newline
+\mbox{\hyperlink{classBullet_a74e59768613e272c1094ff0d2b3de3d4a35cf73f976488a496d9e1ec837b50270}{Weapon5}}
+ \}
+\begin{DoxyCompactList}\small\item\em Énumération des différentes trajectoires de balles. \end{DoxyCompactList}\item 
+enum class \mbox{\hyperlink{classBullet_a40a57c759baa47b6e1bf4ecd0d4a8a53}{Bullet\+State}} \{ \mbox{\hyperlink{classBullet_a40a57c759baa47b6e1bf4ecd0d4a8a53a4d3d769b812b6faa6b76e1a8abaece2d}{Active}}
+, \mbox{\hyperlink{classBullet_a40a57c759baa47b6e1bf4ecd0d4a8a53a3cab03c00dbd11bc3569afa0748013f0}{Inactive}}
+ \}
+\begin{DoxyCompactList}\small\item\em Énumération des états possibles des balles. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBullet_a33ccabac4a363fee26e3bc5906c5a67d}{Bullet}} (int x, int y, int speed, \mbox{\hyperlink{classBullet_a74e59768613e272c1094ff0d2b3de3d4}{Bullet\+Trajectory}} trajectory)
+\begin{DoxyCompactList}\small\item\em Construit une nouvelle balle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBullet_acd7befc0bc18907cc1d871d37bbdddeb}{Bullet}} ()
+\begin{DoxyCompactList}\small\item\em Construit une nouvelle balle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBullet_a4e15a108efbeb6105b764d8c9d95c45f}{setX}} (int x)
+\begin{DoxyCompactList}\small\item\em Modifie la coordonnée x de la balle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBullet_a949b2a8455aa466c9a83087125de3381}{setY}} (int y)
+\begin{DoxyCompactList}\small\item\em Modifie la coordonnée y de la balle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBullet_a40a57c759baa47b6e1bf4ecd0d4a8a53}{Bullet\+State}} \mbox{\hyperlink{classBullet_a2fa75627c15001ff5813b1e219609d42}{get\+State}} () const
+\begin{DoxyCompactList}\small\item\em Récupère l\textquotesingle{}état de la balle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBullet_a39d75a3c51d4f6621f3fb3746552b51e}{set\+State}} (\mbox{\hyperlink{classBullet_a40a57c759baa47b6e1bf4ecd0d4a8a53}{Bullet\+State}} new\+State)
+\begin{DoxyCompactList}\small\item\em Modifie l\textquotesingle{}état de la balle. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBullet_abe5e0b0862207f4a716d7d7d40ccb305}{getX}} () const
+\begin{DoxyCompactList}\small\item\em Récupère la coordonnée x de la balle. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBullet_aa186dfa46c7d3003bfa8d701a93434ea}{getY}} () const
+\begin{DoxyCompactList}\small\item\em Récupère la coordonnée y de la balle. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBullet_abc8b6b4542e1c8ee844d5351cffd4635}{get\+Speed}} () const
+\begin{DoxyCompactList}\small\item\em Récupère la vitesse de la balle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBullet_aa9ae43c52b4b5afbd14dca98c6655c03}{set\+Speed}} (int speed)
+\begin{DoxyCompactList}\small\item\em Modifie la vitesse de la balle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBullet_af2e8a6860232266f180efbdb2a68f8c9}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Réinitialise l\textquotesingle{}objet balle. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBullet_a8dc55689316ad486a844735e290a7e7b}{get\+Damage}} () const
+\begin{DoxyCompactList}\small\item\em Récupère les dégâts de la balle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBullet_a376864897be4e74782295ef91c6a177b}{set\+Damage}} (int new\+Damage)
+\begin{DoxyCompactList}\small\item\em Modifie les dégâts de la balle. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBullet_aef1a79edd1be3fa9e14474d86aa8f9ee}{get\+Fire\+Interval}} () const
+\begin{DoxyCompactList}\small\item\em Récupère l\textquotesingle{}intervalle de génération de la balle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBullet_a4fafd1068c648ed1a3ad7caf9e2428c8}{set\+Fire\+Interval}} (int new\+Fire\+Interval)
+\begin{DoxyCompactList}\small\item\em Modifie l\textquotesingle{}intervalle de génération de la balle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBullet_aeaf23a65e0268f030126ec6ec93e5bf7}{set\+Trajectory}} (\mbox{\hyperlink{classBullet_a74e59768613e272c1094ff0d2b3de3d4}{Bullet\+Trajectory}} new\+Trajectory)
+\begin{DoxyCompactList}\small\item\em Modifie la trajectoire de la balle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBullet_a32f4a0611fe2dd245fee955d14ca1f68}{update}} ()
+\begin{DoxyCompactList}\small\item\em Met à jour l\textquotesingle{}objet balle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBullet_afca197d72e9d9814d57f7d39f989a8c6}{set\+SpeedX}} (float speedX)
+\begin{DoxyCompactList}\small\item\em Modifie la vitesse horizontale de la balle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBullet_a3c65d291d10bb42b3650f0a9c80ac75a}{set\+SpeedY}} (float speedY)
+\begin{DoxyCompactList}\small\item\em Modifie la vitesse verticale de la balle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structRect_1_1My__Rect}{Rect\+::\+My\+\_\+\+Rect}} \mbox{\hyperlink{classBullet_ab52fe81b9d99d4b6c2f0b9b09a94b6da}{get\+Collision\+Rect}} () const
+\begin{DoxyCompactList}\small\item\em Récupère le rectangle de collision de la balle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Classe représentant une balle. 
+
+\doxysubsection{Documentation des énumérations membres}
+\mbox{\Hypertarget{classBullet_a40a57c759baa47b6e1bf4ecd0d4a8a53}\label{classBullet_a40a57c759baa47b6e1bf4ecd0d4a8a53}} 
+\index{Bullet@{Bullet}!BulletState@{BulletState}}
+\index{BulletState@{BulletState}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{BulletState}{BulletState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classBullet_a40a57c759baa47b6e1bf4ecd0d4a8a53}{Bullet\+::\+Bullet\+State}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Énumération des états possibles des balles. 
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Active@{Active}!Bullet@{Bullet}}\index{Bullet@{Bullet}!Active@{Active}}}\mbox{\Hypertarget{classBullet_a40a57c759baa47b6e1bf4ecd0d4a8a53a4d3d769b812b6faa6b76e1a8abaece2d}\label{classBullet_a40a57c759baa47b6e1bf4ecd0d4a8a53a4d3d769b812b6faa6b76e1a8abaece2d}} 
+Active&La balle est active \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Inactive@{Inactive}!Bullet@{Bullet}}\index{Bullet@{Bullet}!Inactive@{Inactive}}}\mbox{\Hypertarget{classBullet_a40a57c759baa47b6e1bf4ecd0d4a8a53a3cab03c00dbd11bc3569afa0748013f0}\label{classBullet_a40a57c759baa47b6e1bf4ecd0d4a8a53a3cab03c00dbd11bc3569afa0748013f0}} 
+Inactive&La balle est inactive \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{classBullet_a74e59768613e272c1094ff0d2b3de3d4}\label{classBullet_a74e59768613e272c1094ff0d2b3de3d4}} 
+\index{Bullet@{Bullet}!BulletTrajectory@{BulletTrajectory}}
+\index{BulletTrajectory@{BulletTrajectory}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{BulletTrajectory}{BulletTrajectory}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classBullet_a74e59768613e272c1094ff0d2b3de3d4}{Bullet\+::\+Bullet\+Trajectory}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Énumération des différentes trajectoires de balles. 
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Weapon1@{Weapon1}!Bullet@{Bullet}}\index{Bullet@{Bullet}!Weapon1@{Weapon1}}}\mbox{\Hypertarget{classBullet_a74e59768613e272c1094ff0d2b3de3d4a45b8e35ca0d193d01df2cf1858e27e55}\label{classBullet_a74e59768613e272c1094ff0d2b3de3d4a45b8e35ca0d193d01df2cf1858e27e55}} 
+Weapon1&Trajectoire de l\textquotesingle{}arme 1. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Weapon2@{Weapon2}!Bullet@{Bullet}}\index{Bullet@{Bullet}!Weapon2@{Weapon2}}}\mbox{\Hypertarget{classBullet_a74e59768613e272c1094ff0d2b3de3d4a2905fb91ecc7d7758ecfd869b369428d}\label{classBullet_a74e59768613e272c1094ff0d2b3de3d4a2905fb91ecc7d7758ecfd869b369428d}} 
+Weapon2&Trajectoire de l\textquotesingle{}arme 2. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Weapon3@{Weapon3}!Bullet@{Bullet}}\index{Bullet@{Bullet}!Weapon3@{Weapon3}}}\mbox{\Hypertarget{classBullet_a74e59768613e272c1094ff0d2b3de3d4a3e0d5c63a23464e75ff485bbf6fa34ce}\label{classBullet_a74e59768613e272c1094ff0d2b3de3d4a3e0d5c63a23464e75ff485bbf6fa34ce}} 
+Weapon3&Trajectoire de l\textquotesingle{}arme 3. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Weapon4@{Weapon4}!Bullet@{Bullet}}\index{Bullet@{Bullet}!Weapon4@{Weapon4}}}\mbox{\Hypertarget{classBullet_a74e59768613e272c1094ff0d2b3de3d4a7d5056fa0b2b23a2b7dca8780ab71e46}\label{classBullet_a74e59768613e272c1094ff0d2b3de3d4a7d5056fa0b2b23a2b7dca8780ab71e46}} 
+Weapon4&Trajectoire de l\textquotesingle{}arme 4. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Weapon5@{Weapon5}!Bullet@{Bullet}}\index{Bullet@{Bullet}!Weapon5@{Weapon5}}}\mbox{\Hypertarget{classBullet_a74e59768613e272c1094ff0d2b3de3d4a35cf73f976488a496d9e1ec837b50270}\label{classBullet_a74e59768613e272c1094ff0d2b3de3d4a35cf73f976488a496d9e1ec837b50270}} 
+Weapon5&Trajectoire de l\textquotesingle{}arme 5. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classBullet_a33ccabac4a363fee26e3bc5906c5a67d}\label{classBullet_a33ccabac4a363fee26e3bc5906c5a67d}} 
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{Bullet()}{Bullet()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Bullet\+::\+Bullet (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{speed,  }\item[{\mbox{\hyperlink{classBullet_a74e59768613e272c1094ff0d2b3de3d4}{Bullet\+Trajectory}}}]{trajectory }\end{DoxyParamCaption})}
+
+
+
+Construit une nouvelle balle. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em x} & La coordonnée x de la balle. \\
+\hline
+{\em y} & La coordonnée y de la balle. \\
+\hline
+{\em speed} & La vitesse de la balle. \\
+\hline
+{\em trajectory} & La trajectoire de la balle. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBullet_acd7befc0bc18907cc1d871d37bbdddeb}\label{classBullet_acd7befc0bc18907cc1d871d37bbdddeb}} 
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{Bullet()}{Bullet()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Bullet\+::\+Bullet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construit une nouvelle balle. 
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classBullet_ab52fe81b9d99d4b6c2f0b9b09a94b6da}\label{classBullet_ab52fe81b9d99d4b6c2f0b9b09a94b6da}} 
+\index{Bullet@{Bullet}!getCollisionRect@{getCollisionRect}}
+\index{getCollisionRect@{getCollisionRect}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{getCollisionRect()}{getCollisionRect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structRect_1_1My__Rect}{Rect\+::\+My\+\_\+\+Rect}} Bullet\+::get\+Collision\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Récupère le rectangle de collision de la balle. 
+
+\begin{DoxyReturn}{Renvoie}
+Le rectangle de collision de la balle. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBullet_a8dc55689316ad486a844735e290a7e7b}\label{classBullet_a8dc55689316ad486a844735e290a7e7b}} 
+\index{Bullet@{Bullet}!getDamage@{getDamage}}
+\index{getDamage@{getDamage}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{getDamage()}{getDamage()}}
+{\footnotesize\ttfamily int Bullet\+::get\+Damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Récupère les dégâts de la balle. 
+
+\begin{DoxyReturn}{Renvoie}
+Les dégâts de la balle. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBullet_aef1a79edd1be3fa9e14474d86aa8f9ee}\label{classBullet_aef1a79edd1be3fa9e14474d86aa8f9ee}} 
+\index{Bullet@{Bullet}!getFireInterval@{getFireInterval}}
+\index{getFireInterval@{getFireInterval}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{getFireInterval()}{getFireInterval()}}
+{\footnotesize\ttfamily int Bullet\+::get\+Fire\+Interval (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Récupère l\textquotesingle{}intervalle de génération de la balle. 
+
+\begin{DoxyReturn}{Renvoie}
+L\textquotesingle{}intervalle de génération de la balle. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBullet_abc8b6b4542e1c8ee844d5351cffd4635}\label{classBullet_abc8b6b4542e1c8ee844d5351cffd4635}} 
+\index{Bullet@{Bullet}!getSpeed@{getSpeed}}
+\index{getSpeed@{getSpeed}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{getSpeed()}{getSpeed()}}
+{\footnotesize\ttfamily int Bullet\+::get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Récupère la vitesse de la balle. 
+
+\begin{DoxyReturn}{Renvoie}
+La vitesse de la balle. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBullet_a2fa75627c15001ff5813b1e219609d42}\label{classBullet_a2fa75627c15001ff5813b1e219609d42}} 
+\index{Bullet@{Bullet}!getState@{getState}}
+\index{getState@{getState}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBullet_a40a57c759baa47b6e1bf4ecd0d4a8a53}{Bullet\+::\+Bullet\+State}} Bullet\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Récupère l\textquotesingle{}état de la balle. 
+
+\begin{DoxyReturn}{Renvoie}
+L\textquotesingle{}état de la balle. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBullet_abe5e0b0862207f4a716d7d7d40ccb305}\label{classBullet_abe5e0b0862207f4a716d7d7d40ccb305}} 
+\index{Bullet@{Bullet}!getX@{getX}}
+\index{getX@{getX}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily int Bullet\+::getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Récupère la coordonnée x de la balle. 
+
+\begin{DoxyReturn}{Renvoie}
+La coordonnée x de la balle. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBullet_aa186dfa46c7d3003bfa8d701a93434ea}\label{classBullet_aa186dfa46c7d3003bfa8d701a93434ea}} 
+\index{Bullet@{Bullet}!getY@{getY}}
+\index{getY@{getY}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily int Bullet\+::getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Récupère la coordonnée y de la balle. 
+
+\begin{DoxyReturn}{Renvoie}
+La coordonnée y de la balle. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBullet_af2e8a6860232266f180efbdb2a68f8c9}\label{classBullet_af2e8a6860232266f180efbdb2a68f8c9}} 
+\index{Bullet@{Bullet}!reset@{reset}}
+\index{reset@{reset}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Bullet\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Réinitialise l\textquotesingle{}objet balle. 
+
+\mbox{\Hypertarget{classBullet_a376864897be4e74782295ef91c6a177b}\label{classBullet_a376864897be4e74782295ef91c6a177b}} 
+\index{Bullet@{Bullet}!setDamage@{setDamage}}
+\index{setDamage@{setDamage}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{setDamage()}{setDamage()}}
+{\footnotesize\ttfamily void Bullet\+::set\+Damage (\begin{DoxyParamCaption}\item[{int}]{new\+Damage }\end{DoxyParamCaption})}
+
+
+
+Modifie les dégâts de la balle. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em new\+Damage} & Les nouveaux dégâts. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBullet_a4fafd1068c648ed1a3ad7caf9e2428c8}\label{classBullet_a4fafd1068c648ed1a3ad7caf9e2428c8}} 
+\index{Bullet@{Bullet}!setFireInterval@{setFireInterval}}
+\index{setFireInterval@{setFireInterval}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{setFireInterval()}{setFireInterval()}}
+{\footnotesize\ttfamily void Bullet\+::set\+Fire\+Interval (\begin{DoxyParamCaption}\item[{int}]{new\+Fire\+Interval }\end{DoxyParamCaption})}
+
+
+
+Modifie l\textquotesingle{}intervalle de génération de la balle. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em new\+Fire\+Interval} & Le nouvel intervalle de génération. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBullet_aa9ae43c52b4b5afbd14dca98c6655c03}\label{classBullet_aa9ae43c52b4b5afbd14dca98c6655c03}} 
+\index{Bullet@{Bullet}!setSpeed@{setSpeed}}
+\index{setSpeed@{setSpeed}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{setSpeed()}{setSpeed()}}
+{\footnotesize\ttfamily void Bullet\+::set\+Speed (\begin{DoxyParamCaption}\item[{int}]{speed }\end{DoxyParamCaption})}
+
+
+
+Modifie la vitesse de la balle. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em speed} & La nouvelle vitesse. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBullet_afca197d72e9d9814d57f7d39f989a8c6}\label{classBullet_afca197d72e9d9814d57f7d39f989a8c6}} 
+\index{Bullet@{Bullet}!setSpeedX@{setSpeedX}}
+\index{setSpeedX@{setSpeedX}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{setSpeedX()}{setSpeedX()}}
+{\footnotesize\ttfamily void Bullet\+::set\+SpeedX (\begin{DoxyParamCaption}\item[{float}]{speedX }\end{DoxyParamCaption})}
+
+
+
+Modifie la vitesse horizontale de la balle. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em speedX} & La nouvelle vitesse horizontale. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBullet_a3c65d291d10bb42b3650f0a9c80ac75a}\label{classBullet_a3c65d291d10bb42b3650f0a9c80ac75a}} 
+\index{Bullet@{Bullet}!setSpeedY@{setSpeedY}}
+\index{setSpeedY@{setSpeedY}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{setSpeedY()}{setSpeedY()}}
+{\footnotesize\ttfamily void Bullet\+::set\+SpeedY (\begin{DoxyParamCaption}\item[{float}]{speedY }\end{DoxyParamCaption})}
+
+
+
+Modifie la vitesse verticale de la balle. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em speedY} & La nouvelle vitesse verticale. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBullet_a39d75a3c51d4f6621f3fb3746552b51e}\label{classBullet_a39d75a3c51d4f6621f3fb3746552b51e}} 
+\index{Bullet@{Bullet}!setState@{setState}}
+\index{setState@{setState}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily void Bullet\+::set\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBullet_a40a57c759baa47b6e1bf4ecd0d4a8a53}{Bullet\+State}}}]{new\+State }\end{DoxyParamCaption})}
+
+
+
+Modifie l\textquotesingle{}état de la balle. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em new\+State} & Le nouvel état. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBullet_aeaf23a65e0268f030126ec6ec93e5bf7}\label{classBullet_aeaf23a65e0268f030126ec6ec93e5bf7}} 
+\index{Bullet@{Bullet}!setTrajectory@{setTrajectory}}
+\index{setTrajectory@{setTrajectory}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{setTrajectory()}{setTrajectory()}}
+{\footnotesize\ttfamily void Bullet\+::set\+Trajectory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBullet_a74e59768613e272c1094ff0d2b3de3d4}{Bullet\+Trajectory}}}]{new\+Trajectory }\end{DoxyParamCaption})}
+
+
+
+Modifie la trajectoire de la balle. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em new\+Trajectory} & La nouvelle trajectoire. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBullet_a4e15a108efbeb6105b764d8c9d95c45f}\label{classBullet_a4e15a108efbeb6105b764d8c9d95c45f}} 
+\index{Bullet@{Bullet}!setX@{setX}}
+\index{setX@{setX}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{setX()}{setX()}}
+{\footnotesize\ttfamily void Bullet\+::setX (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Modifie la coordonnée x de la balle. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em x} & La nouvelle coordonnée x. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBullet_a949b2a8455aa466c9a83087125de3381}\label{classBullet_a949b2a8455aa466c9a83087125de3381}} 
+\index{Bullet@{Bullet}!setY@{setY}}
+\index{setY@{setY}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{setY()}{setY()}}
+{\footnotesize\ttfamily void Bullet\+::setY (\begin{DoxyParamCaption}\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Modifie la coordonnée y de la balle. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em y} & La nouvelle coordonnée y. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBullet_a32f4a0611fe2dd245fee955d14ca1f68}\label{classBullet_a32f4a0611fe2dd245fee955d14ca1f68}} 
+\index{Bullet@{Bullet}!update@{update}}
+\index{update@{update}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Bullet\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Met à jour l\textquotesingle{}objet balle. 
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/core/\mbox{\hyperlink{Bullet_8h}{Bullet.\+h}}\item 
+src/core/\mbox{\hyperlink{Bullet_8cpp}{Bullet.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['save_341',['save',['../classGame.html#a042f79c6a3aeffafd6bbca2bb31ae891',1,'Game']]],
+  ['savescore_342',['saveScore',['../classGame.html#a1888041ac8d15adc6aeab61c5d9f53e0',1,'Game::saveScore()'],['../classScoreManager.html#a90311561d54f94dc24a85a00a80a37e9',1,'ScoreManager::saveScore()']]],
+  ['scoremanager_343',['ScoreManager',['../classScoreManager.html#a4f3866ff832127664543349da5c4fbf4',1,'ScoreManager']]],
+  ['sdlgame_344',['sdlGame',['../classsdlGame.html#a9f6abd7548ea0f8258ebe5958050135b',1,'sdlGame::sdlGame()'],['../classsdlGame.html#a554c08f7439aaa69c27db728c28e0d9d',1,'sdlGame::sdlGame(const std::string &amp;title, int width, int height)']]],
+  ['set_345',['set',['../classRectBox.html#aa01c4321cea2e699ec3b46176e8743a4',1,'RectBox']]],
+  ['setactive_346',['setActive',['../classDrop.html#a31fff427714fc2c4b8b8ec4733a9a568',1,'Drop']]],
+  ['setbombsound_347',['setBombSound',['../classGame.html#a31f465db3ff4353579b2b9ff9c57f1b2',1,'Game']]],
+  ['setcontroltype_348',['setControlType',['../classGame.html#a8b4a9f5610f7fd3042c345a7583faadc',1,'Game']]],
+  ['setcurrentlevel_349',['setCurrentLevel',['../classGame.html#acfe95aecfa9a75780152d0d463a0c3b3',1,'Game']]],
+  ['setcurrentstate_350',['setCurrentState',['../classGame.html#a5941b0d0312d4117e1538b7b5cd337dc',1,'Game']]],
+  ['setdamage_351',['setDamage',['../classBullet.html#a376864897be4e74782295ef91c6a177b',1,'Bullet']]],
+  ['setfireinterval_352',['setFireInterval',['../classBullet.html#a4fafd1068c648ed1a3ad7caf9e2428c8',1,'Bullet::setFireInterval()'],['../classGame.html#afb5311bf0f5c02da15622197f68c2f55',1,'Game::setFireInterval()']]],
+  ['sethealth_353',['setHealth',['../classPlayer.html#a9fa3b806810b40e0465f1c0dbbd94bd8',1,'Player']]],
+  ['sethighscore_354',['setHighScore',['../classScoreManager.html#a0bfd391540e807c07d8c2771a8c29a35',1,'ScoreManager']]],
+  ['setplayerscore_355',['setPlayerScore',['../classGame.html#afe944bbcac70655eb71e4c9701991da1',1,'Game::setPlayerScore()'],['../classScoreManager.html#a6c8942acf68de2c8a85e226cd1821fe3',1,'ScoreManager::setPlayerScore()'],['../classStore.html#a7f76c692025bed51028ecbd0f6e54531',1,'Store::setPlayerScore()']]],
+  ['setspeed_356',['setSpeed',['../classBullet.html#aa9ae43c52b4b5afbd14dca98c6655c03',1,'Bullet::setSpeed()'],['../classPlayer.html#a2820d3154962f2dd5698b95c84b583d3',1,'Player::setSpeed()'],['../classEnemy.html#a8c747108172064c9c5691b622f11afa9',1,'Enemy::setSpeed()']]],
+  ['setspeedx_357',['setSpeedX',['../classBullet.html#afca197d72e9d9814d57f7d39f989a8c6',1,'Bullet']]],
+  ['setspeedy_358',['setSpeedY',['../classBullet.html#a3c65d291d10bb42b3650f0a9c80ac75a',1,'Bullet']]],
+  ['setstate_359',['setState',['../classBomb.html#a9c8e19a4cbfcc2601c9de7164045089b',1,'Bomb::setState()'],['../classBullet.html#a39d75a3c51d4f6621f3fb3746552b51e',1,'Bullet::setState()'],['../classEnemy.html#aa7438a15391497bdeeae36dc0f3c136c',1,'Enemy::setState()']]],
+  ['settrajectory_360',['setTrajectory',['../classBullet.html#aeaf23a65e0268f030126ec6ec93e5bf7',1,'Bullet']]],
+  ['setx_361',['setX',['../classDrop.html#a79d21a3ccaa0e9d57b6c109b023ce4ee',1,'Drop::setX()'],['../classPlayer.html#a1dc6a6798a23bd5b743dfda7a7e3ece2',1,'Player::setX()'],['../classEnemy.html#a6a6cf8e42d1553f8d1331887d70127cb',1,'Enemy::setX()'],['../classBullet.html#a4e15a108efbeb6105b764d8c9d95c45f',1,'Bullet::setX()'],['../classBomb.html#a98a0282a6c695f0fc6a0a05683084bd9',1,'Bomb::setX(int x)']]],
+  ['sety_362',['setY',['../classBomb.html#aea71ea33e134e588cbd0a67b7f4932c5',1,'Bomb::setY()'],['../classBullet.html#a949b2a8455aa466c9a83087125de3381',1,'Bullet::setY()'],['../classDrop.html#a02052e6ee5e7288156f34ca017b262d8',1,'Drop::setY()'],['../classEnemy.html#aaadfef27ce8caba1799c5ce833407afc',1,'Enemy::setY()'],['../classPlayer.html#a6f2857bc9600f500303fde59a76038f1',1,'Player::setY()']]],
+  ['store_363',['Store',['../classStore.html#aeb3b537bb4120837d37a9746af9d5984',1,'Store']]],
+  ['storeinput_364',['storeInput',['../classGame.html#a1cb5649ab0767ff9eef7ee7440f18328',1,'Game']]]
+];

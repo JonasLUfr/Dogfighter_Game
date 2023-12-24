@@ -1,0 +1,399 @@
+\hypertarget{classsdlGame}{}\doxysection{Référence de la classe sdl\+Game}
+\label{classsdlGame}\index{sdlGame@{sdlGame}}
+
+
+Classe pour gérer le jeu SDL.  
+
+
+
+
+{\ttfamily \#include $<$main\+SDL.\+h$>$}
+
+
+
+Graphe de collaboration de sdl\+Game\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classsdlGame__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classsdlGame_a9f6abd7548ea0f8258ebe5958050135b}{sdl\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Construit un nouvel objet \mbox{\hyperlink{classsdlGame}{sdl\+Game}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsdlGame_a554c08f7439aaa69c27db728c28e0d9d}{sdl\+Game}} (const std\+::string \&title, int width, int height)
+\begin{DoxyCompactList}\small\item\em Construit un nouvel objet \mbox{\hyperlink{classsdlGame}{sdl\+Game}} avec un titre, une largeur et une hauteur spécifiques. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classsdlGame_a7d4303420d40060e120195ced1d3d9e7}{$\sim$sdl\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Détruit l\textquotesingle{}objet \mbox{\hyperlink{classsdlGame}{sdl\+Game}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classsdlGame_a7615a549c7559b79e9eb5d255858a4df}{init\+SDL}} ()
+\begin{DoxyCompactList}\small\item\em Initialise SDL. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsdlGame_ae6f0ec650b3c25a5e0c10fa2d972cba1}{clean\+Up\+SDL}} ()
+\begin{DoxyCompactList}\small\item\em Nettoie SDL. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsdlGame_a706f237c4378d7dd39fcd759144d6871}{run}} ()
+\begin{DoxyCompactList}\small\item\em Exécute la boucle principale du jeu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsdlGame_ad4ed54899fd002ec33bfd99709c4c166}{update\+Music}} ()
+\begin{DoxyCompactList}\small\item\em Met à jour la musique du jeu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsdlGame_a3152c02dfb0f7b14f41a853d92e845fc}{render}} ()
+\begin{DoxyCompactList}\small\item\em Rendu total. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsdlGame_a54ee83d3d1109903edf2e888c9c5d28b}{render\+Main\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Gestion du rendu de menu principale. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsdlGame_acaf0daf605f8d0528edb76b997768812}{render\+Texture}} (SDL\+\_\+\+Texture $\ast$texture, SDL\+\_\+\+Renderer $\ast$renderer, int x, int y)
+\begin{DoxyCompactList}\small\item\em Rend la texture spécifiée à la position spécifiée. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsdlGame_a80e8a81ac8eac2d3637b7c7eb83f03ce}{render\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Gestion du rendu de la partie du jeu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsdlGame_ad345445923d6ea000a0e4d6426e13a67}{render\+Control\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Gestion du rendu des menus du mode de contrôle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsdlGame_ada9466f2942f664e9a263fdffcc993b0}{render\+Paused\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Gestion du rendu de l\textquotesingle{}écran en pause. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsdlGame_aa2650509376fbd63e03ffbc6a0b8446c}{render\+Paused\+Score}} ()
+\begin{DoxyCompactList}\small\item\em Gestion de scores lorsque le rendu est en pause. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsdlGame_ab71fc8b14de82497908aff188aa292e3}{render\+Score}} ()
+\begin{DoxyCompactList}\small\item\em Gestion de rendu du score. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsdlGame_a55bf56c7c78fef47dc212d20603ebc8e}{render\+Game\+Over}} ()
+\begin{DoxyCompactList}\small\item\em Gestion du rendu game over. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsdlGame_a7f99ea982162cd607289a8365feb0bf6}{render\+Level\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Gestion du rendu des menus du mode de level. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsdlGame_a0943d277dec13ad86d930fcbb6e2bf66}{render\+Store}} ()
+\begin{DoxyCompactList}\small\item\em Gestion du rendu des menus du mode de store. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsdlGame_a937dc50049ecc4515a0ecb07a053bc98}{handle\+Events}} ()
+\begin{DoxyCompactList}\small\item\em Gère les événements du jeu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsdlGame_a3af991c1c34545df7e7eb7d854824985}{handle\+Main\+Menu\+Events}} (SDL\+\_\+\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Gère les événements du menu principal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsdlGame_ab438c027531b68bf0576967cc69d237d}{handle\+Running\+Events}} (SDL\+\_\+\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Gère les événements du jeu en cours. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsdlGame_a08b5ace3d1ed975e7bc7fa1af1d51e90}{handle\+Control\+Menu\+Events}} (SDL\+\_\+\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Gère les événements du menu control. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsdlGame_ae374ee120e5d8774c9e0125af6e0ac23}{handle\+Paused\+Events}} (SDL\+\_\+\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Gère les événements du menu pause. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsdlGame_aa23843729293080edbbb998c9232b607}{handle\+Game\+Over\+Events}} (SDL\+\_\+\+Event \&event, Uint32 game\+Time)
+\begin{DoxyCompactList}\small\item\em Gère les événements du game over. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsdlGame_adeb33e7c24bb3fcb7e2a0e93ff9be4d7}{handle\+Level\+Menu\+Events}} (const SDL\+\_\+\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Gère les événements de menu level. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsdlGame_ac6a68e654ed6fa8c63f200b809604d0b}{handle\+Store\+Events}} (const SDL\+\_\+\+Event \&event)
+\begin{DoxyCompactList}\small\item\em Gère les événements de menu store. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{classsdlGame_aa9ef353dcfb859edd53b3219d990bac1}{My\+Rect\+\_\+to\+\_\+\+SDLRect}} (const \mbox{\hyperlink{structRect_1_1My__Rect}{Rect\+::\+My\+\_\+\+Rect}} $\ast$rect)
+\begin{DoxyCompactList}\small\item\em Convertit un objet My\+\_\+\+Rect en SDL\+\_\+\+Rect. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Classe pour gérer le jeu SDL. 
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classsdlGame_a9f6abd7548ea0f8258ebe5958050135b}\label{classsdlGame_a9f6abd7548ea0f8258ebe5958050135b}} 
+\index{sdlGame@{sdlGame}!sdlGame@{sdlGame}}
+\index{sdlGame@{sdlGame}!sdlGame@{sdlGame}}
+\doxysubsubsection{\texorpdfstring{sdlGame()}{sdlGame()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily sdl\+Game\+::sdl\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construit un nouvel objet \mbox{\hyperlink{classsdlGame}{sdl\+Game}}. 
+
+\mbox{\Hypertarget{classsdlGame_a554c08f7439aaa69c27db728c28e0d9d}\label{classsdlGame_a554c08f7439aaa69c27db728c28e0d9d}} 
+\index{sdlGame@{sdlGame}!sdlGame@{sdlGame}}
+\index{sdlGame@{sdlGame}!sdlGame@{sdlGame}}
+\doxysubsubsection{\texorpdfstring{sdlGame()}{sdlGame()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily sdl\+Game\+::sdl\+Game (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+Construit un nouvel objet \mbox{\hyperlink{classsdlGame}{sdl\+Game}} avec un titre, une largeur et une hauteur spécifiques. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em title} & Le titre de la fenêtre. \\
+\hline
+{\em width} & La largeur de la fenêtre. \\
+\hline
+{\em height} & La hauteur de la fenêtre. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classsdlGame_a7d4303420d40060e120195ced1d3d9e7}\label{classsdlGame_a7d4303420d40060e120195ced1d3d9e7}} 
+\index{sdlGame@{sdlGame}!````~sdlGame@{$\sim$sdlGame}}
+\index{````~sdlGame@{$\sim$sdlGame}!sdlGame@{sdlGame}}
+\doxysubsubsection{\texorpdfstring{$\sim$sdlGame()}{~sdlGame()}}
+{\footnotesize\ttfamily sdl\+Game\+::$\sim$sdl\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Détruit l\textquotesingle{}objet \mbox{\hyperlink{classsdlGame}{sdl\+Game}}. 
+
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classsdlGame_ae6f0ec650b3c25a5e0c10fa2d972cba1}\label{classsdlGame_ae6f0ec650b3c25a5e0c10fa2d972cba1}} 
+\index{sdlGame@{sdlGame}!cleanUpSDL@{cleanUpSDL}}
+\index{cleanUpSDL@{cleanUpSDL}!sdlGame@{sdlGame}}
+\doxysubsubsection{\texorpdfstring{cleanUpSDL()}{cleanUpSDL()}}
+{\footnotesize\ttfamily void sdl\+Game\+::clean\+Up\+SDL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Nettoie SDL. 
+
+\mbox{\Hypertarget{classsdlGame_a08b5ace3d1ed975e7bc7fa1af1d51e90}\label{classsdlGame_a08b5ace3d1ed975e7bc7fa1af1d51e90}} 
+\index{sdlGame@{sdlGame}!handleControlMenuEvents@{handleControlMenuEvents}}
+\index{handleControlMenuEvents@{handleControlMenuEvents}!sdlGame@{sdlGame}}
+\doxysubsubsection{\texorpdfstring{handleControlMenuEvents()}{handleControlMenuEvents()}}
+{\footnotesize\ttfamily void sdl\+Game\+::handle\+Control\+Menu\+Events (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Event \&}]{event }\end{DoxyParamCaption})}
+
+
+
+Gère les événements du menu control. 
+
+\mbox{\Hypertarget{classsdlGame_a937dc50049ecc4515a0ecb07a053bc98}\label{classsdlGame_a937dc50049ecc4515a0ecb07a053bc98}} 
+\index{sdlGame@{sdlGame}!handleEvents@{handleEvents}}
+\index{handleEvents@{handleEvents}!sdlGame@{sdlGame}}
+\doxysubsubsection{\texorpdfstring{handleEvents()}{handleEvents()}}
+{\footnotesize\ttfamily void sdl\+Game\+::handle\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gère les événements du jeu. 
+
+\mbox{\Hypertarget{classsdlGame_aa23843729293080edbbb998c9232b607}\label{classsdlGame_aa23843729293080edbbb998c9232b607}} 
+\index{sdlGame@{sdlGame}!handleGameOverEvents@{handleGameOverEvents}}
+\index{handleGameOverEvents@{handleGameOverEvents}!sdlGame@{sdlGame}}
+\doxysubsubsection{\texorpdfstring{handleGameOverEvents()}{handleGameOverEvents()}}
+{\footnotesize\ttfamily void sdl\+Game\+::handle\+Game\+Over\+Events (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Event \&}]{event,  }\item[{Uint32}]{game\+Time }\end{DoxyParamCaption})}
+
+
+
+Gère les événements du game over. 
+
+\mbox{\Hypertarget{classsdlGame_adeb33e7c24bb3fcb7e2a0e93ff9be4d7}\label{classsdlGame_adeb33e7c24bb3fcb7e2a0e93ff9be4d7}} 
+\index{sdlGame@{sdlGame}!handleLevelMenuEvents@{handleLevelMenuEvents}}
+\index{handleLevelMenuEvents@{handleLevelMenuEvents}!sdlGame@{sdlGame}}
+\doxysubsubsection{\texorpdfstring{handleLevelMenuEvents()}{handleLevelMenuEvents()}}
+{\footnotesize\ttfamily void sdl\+Game\+::handle\+Level\+Menu\+Events (\begin{DoxyParamCaption}\item[{const SDL\+\_\+\+Event \&}]{event }\end{DoxyParamCaption})}
+
+
+
+Gère les événements de menu level. 
+
+\mbox{\Hypertarget{classsdlGame_a3af991c1c34545df7e7eb7d854824985}\label{classsdlGame_a3af991c1c34545df7e7eb7d854824985}} 
+\index{sdlGame@{sdlGame}!handleMainMenuEvents@{handleMainMenuEvents}}
+\index{handleMainMenuEvents@{handleMainMenuEvents}!sdlGame@{sdlGame}}
+\doxysubsubsection{\texorpdfstring{handleMainMenuEvents()}{handleMainMenuEvents()}}
+{\footnotesize\ttfamily void sdl\+Game\+::handle\+Main\+Menu\+Events (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Event \&}]{event }\end{DoxyParamCaption})}
+
+
+
+Gère les événements du menu principal. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em event} & L\textquotesingle{}événement SDL à gérer. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classsdlGame_ae374ee120e5d8774c9e0125af6e0ac23}\label{classsdlGame_ae374ee120e5d8774c9e0125af6e0ac23}} 
+\index{sdlGame@{sdlGame}!handlePausedEvents@{handlePausedEvents}}
+\index{handlePausedEvents@{handlePausedEvents}!sdlGame@{sdlGame}}
+\doxysubsubsection{\texorpdfstring{handlePausedEvents()}{handlePausedEvents()}}
+{\footnotesize\ttfamily void sdl\+Game\+::handle\+Paused\+Events (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Event \&}]{event }\end{DoxyParamCaption})}
+
+
+
+Gère les événements du menu pause. 
+
+\mbox{\Hypertarget{classsdlGame_ab438c027531b68bf0576967cc69d237d}\label{classsdlGame_ab438c027531b68bf0576967cc69d237d}} 
+\index{sdlGame@{sdlGame}!handleRunningEvents@{handleRunningEvents}}
+\index{handleRunningEvents@{handleRunningEvents}!sdlGame@{sdlGame}}
+\doxysubsubsection{\texorpdfstring{handleRunningEvents()}{handleRunningEvents()}}
+{\footnotesize\ttfamily void sdl\+Game\+::handle\+Running\+Events (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Event \&}]{event }\end{DoxyParamCaption})}
+
+
+
+Gère les événements du jeu en cours. 
+
+\mbox{\Hypertarget{classsdlGame_ac6a68e654ed6fa8c63f200b809604d0b}\label{classsdlGame_ac6a68e654ed6fa8c63f200b809604d0b}} 
+\index{sdlGame@{sdlGame}!handleStoreEvents@{handleStoreEvents}}
+\index{handleStoreEvents@{handleStoreEvents}!sdlGame@{sdlGame}}
+\doxysubsubsection{\texorpdfstring{handleStoreEvents()}{handleStoreEvents()}}
+{\footnotesize\ttfamily void sdl\+Game\+::handle\+Store\+Events (\begin{DoxyParamCaption}\item[{const SDL\+\_\+\+Event \&}]{event }\end{DoxyParamCaption})}
+
+
+
+Gère les événements de menu store. 
+
+\mbox{\Hypertarget{classsdlGame_a7615a549c7559b79e9eb5d255858a4df}\label{classsdlGame_a7615a549c7559b79e9eb5d255858a4df}} 
+\index{sdlGame@{sdlGame}!initSDL@{initSDL}}
+\index{initSDL@{initSDL}!sdlGame@{sdlGame}}
+\doxysubsubsection{\texorpdfstring{initSDL()}{initSDL()}}
+{\footnotesize\ttfamily bool sdl\+Game\+::init\+SDL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialise SDL. 
+
+\begin{DoxyReturn}{Renvoie}
+true si l\textquotesingle{}initialisation a réussi, false sinon. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsdlGame_aa9ef353dcfb859edd53b3219d990bac1}\label{classsdlGame_aa9ef353dcfb859edd53b3219d990bac1}} 
+\index{sdlGame@{sdlGame}!MyRect\_to\_SDLRect@{MyRect\_to\_SDLRect}}
+\index{MyRect\_to\_SDLRect@{MyRect\_to\_SDLRect}!sdlGame@{sdlGame}}
+\doxysubsubsection{\texorpdfstring{MyRect\_to\_SDLRect()}{MyRect\_to\_SDLRect()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect sdl\+Game\+::\+My\+Rect\+\_\+to\+\_\+\+SDLRect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structRect_1_1My__Rect}{Rect\+::\+My\+\_\+\+Rect}} $\ast$}]{rect }\end{DoxyParamCaption})}
+
+
+
+Convertit un objet My\+\_\+\+Rect en SDL\+\_\+\+Rect. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em rect} & Un pointeur vers l\textquotesingle{}objet My\+\_\+\+Rect. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+L\textquotesingle{}objet SDL\+\_\+\+Rect correspondant. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsdlGame_a3152c02dfb0f7b14f41a853d92e845fc}\label{classsdlGame_a3152c02dfb0f7b14f41a853d92e845fc}} 
+\index{sdlGame@{sdlGame}!render@{render}}
+\index{render@{render}!sdlGame@{sdlGame}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void sdl\+Game\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Rendu total. 
+
+\mbox{\Hypertarget{classsdlGame_ad345445923d6ea000a0e4d6426e13a67}\label{classsdlGame_ad345445923d6ea000a0e4d6426e13a67}} 
+\index{sdlGame@{sdlGame}!renderControlMenu@{renderControlMenu}}
+\index{renderControlMenu@{renderControlMenu}!sdlGame@{sdlGame}}
+\doxysubsubsection{\texorpdfstring{renderControlMenu()}{renderControlMenu()}}
+{\footnotesize\ttfamily void sdl\+Game\+::render\+Control\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gestion du rendu des menus du mode de contrôle. 
+
+\mbox{\Hypertarget{classsdlGame_a80e8a81ac8eac2d3637b7c7eb83f03ce}\label{classsdlGame_a80e8a81ac8eac2d3637b7c7eb83f03ce}} 
+\index{sdlGame@{sdlGame}!renderGame@{renderGame}}
+\index{renderGame@{renderGame}!sdlGame@{sdlGame}}
+\doxysubsubsection{\texorpdfstring{renderGame()}{renderGame()}}
+{\footnotesize\ttfamily void sdl\+Game\+::render\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gestion du rendu de la partie du jeu. 
+
+\mbox{\Hypertarget{classsdlGame_a55bf56c7c78fef47dc212d20603ebc8e}\label{classsdlGame_a55bf56c7c78fef47dc212d20603ebc8e}} 
+\index{sdlGame@{sdlGame}!renderGameOver@{renderGameOver}}
+\index{renderGameOver@{renderGameOver}!sdlGame@{sdlGame}}
+\doxysubsubsection{\texorpdfstring{renderGameOver()}{renderGameOver()}}
+{\footnotesize\ttfamily void sdl\+Game\+::render\+Game\+Over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gestion du rendu game over. 
+
+\mbox{\Hypertarget{classsdlGame_a7f99ea982162cd607289a8365feb0bf6}\label{classsdlGame_a7f99ea982162cd607289a8365feb0bf6}} 
+\index{sdlGame@{sdlGame}!renderLevelMenu@{renderLevelMenu}}
+\index{renderLevelMenu@{renderLevelMenu}!sdlGame@{sdlGame}}
+\doxysubsubsection{\texorpdfstring{renderLevelMenu()}{renderLevelMenu()}}
+{\footnotesize\ttfamily void sdl\+Game\+::render\+Level\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gestion du rendu des menus du mode de level. 
+
+\mbox{\Hypertarget{classsdlGame_a54ee83d3d1109903edf2e888c9c5d28b}\label{classsdlGame_a54ee83d3d1109903edf2e888c9c5d28b}} 
+\index{sdlGame@{sdlGame}!renderMainMenu@{renderMainMenu}}
+\index{renderMainMenu@{renderMainMenu}!sdlGame@{sdlGame}}
+\doxysubsubsection{\texorpdfstring{renderMainMenu()}{renderMainMenu()}}
+{\footnotesize\ttfamily void sdl\+Game\+::render\+Main\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gestion du rendu de menu principale. 
+
+\mbox{\Hypertarget{classsdlGame_aa2650509376fbd63e03ffbc6a0b8446c}\label{classsdlGame_aa2650509376fbd63e03ffbc6a0b8446c}} 
+\index{sdlGame@{sdlGame}!renderPausedScore@{renderPausedScore}}
+\index{renderPausedScore@{renderPausedScore}!sdlGame@{sdlGame}}
+\doxysubsubsection{\texorpdfstring{renderPausedScore()}{renderPausedScore()}}
+{\footnotesize\ttfamily void sdl\+Game\+::render\+Paused\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gestion de scores lorsque le rendu est en pause. 
+
+\mbox{\Hypertarget{classsdlGame_ada9466f2942f664e9a263fdffcc993b0}\label{classsdlGame_ada9466f2942f664e9a263fdffcc993b0}} 
+\index{sdlGame@{sdlGame}!renderPausedScreen@{renderPausedScreen}}
+\index{renderPausedScreen@{renderPausedScreen}!sdlGame@{sdlGame}}
+\doxysubsubsection{\texorpdfstring{renderPausedScreen()}{renderPausedScreen()}}
+{\footnotesize\ttfamily void sdl\+Game\+::render\+Paused\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gestion du rendu de l\textquotesingle{}écran en pause. 
+
+\mbox{\Hypertarget{classsdlGame_ab71fc8b14de82497908aff188aa292e3}\label{classsdlGame_ab71fc8b14de82497908aff188aa292e3}} 
+\index{sdlGame@{sdlGame}!renderScore@{renderScore}}
+\index{renderScore@{renderScore}!sdlGame@{sdlGame}}
+\doxysubsubsection{\texorpdfstring{renderScore()}{renderScore()}}
+{\footnotesize\ttfamily void sdl\+Game\+::render\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gestion de rendu du score. 
+
+\mbox{\Hypertarget{classsdlGame_a0943d277dec13ad86d930fcbb6e2bf66}\label{classsdlGame_a0943d277dec13ad86d930fcbb6e2bf66}} 
+\index{sdlGame@{sdlGame}!renderStore@{renderStore}}
+\index{renderStore@{renderStore}!sdlGame@{sdlGame}}
+\doxysubsubsection{\texorpdfstring{renderStore()}{renderStore()}}
+{\footnotesize\ttfamily void sdl\+Game\+::render\+Store (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gestion du rendu des menus du mode de store. 
+
+\mbox{\Hypertarget{classsdlGame_acaf0daf605f8d0528edb76b997768812}\label{classsdlGame_acaf0daf605f8d0528edb76b997768812}} 
+\index{sdlGame@{sdlGame}!renderTexture@{renderTexture}}
+\index{renderTexture@{renderTexture}!sdlGame@{sdlGame}}
+\doxysubsubsection{\texorpdfstring{renderTexture()}{renderTexture()}}
+{\footnotesize\ttfamily void sdl\+Game\+::render\+Texture (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Texture $\ast$}]{texture,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Rend la texture spécifiée à la position spécifiée. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em texture} & La texture à rendre. \\
+\hline
+{\em renderer} & Le contexte de rendu. \\
+\hline
+{\em x} & La position x sur l\textquotesingle{}écran. \\
+\hline
+{\em y} & La position y sur l\textquotesingle{}écran. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classsdlGame_a706f237c4378d7dd39fcd759144d6871}\label{classsdlGame_a706f237c4378d7dd39fcd759144d6871}} 
+\index{sdlGame@{sdlGame}!run@{run}}
+\index{run@{run}!sdlGame@{sdlGame}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void sdl\+Game\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Exécute la boucle principale du jeu. 
+
+\mbox{\Hypertarget{classsdlGame_ad4ed54899fd002ec33bfd99709c4c166}\label{classsdlGame_ad4ed54899fd002ec33bfd99709c4c166}} 
+\index{sdlGame@{sdlGame}!updateMusic@{updateMusic}}
+\index{updateMusic@{updateMusic}!sdlGame@{sdlGame}}
+\doxysubsubsection{\texorpdfstring{updateMusic()}{updateMusic()}}
+{\footnotesize\ttfamily void sdl\+Game\+::update\+Music (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Met à jour la musique du jeu. 
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+src/sdl2/\mbox{\hyperlink{mainSDL_8h}{main\+SDL.\+h}}\item 
+src/sdl2/\mbox{\hyperlink{mainSDL_8cpp}{main\+SDL.\+cpp}}\end{DoxyCompactItemize}
